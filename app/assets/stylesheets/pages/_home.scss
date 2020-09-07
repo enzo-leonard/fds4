@@ -1,1 +1,32 @@
 // Specific CSS for your home-page
+nav{
+    background-color: white;
+    border-bottom: 1px solid grey;
+    padding: 30px;
+}
+
+
+header{
+    height: 30vh;
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .card{
+        border: 1px solid grey;
+        width: 200px;
+        height: 250px;
+
+        header{
+            background-color: grey;
+        }
+    }
+}

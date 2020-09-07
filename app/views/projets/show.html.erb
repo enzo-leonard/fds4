@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name structure:</strong>
+  <%= @projet.name_structure %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @projet.title %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @projet.url %>
+</p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @projet.keywords %>
+</p>
+
+<p>
+  <strong>Difficulty:</strong>
+  <%= @projet.difficulty %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @projet.date %>
+</p>
+
+<p>
+  <strong>Live:</strong>
+  <%= @projet.live %>
+</p>
+
+<p>
+  <strong>Synopsis:</strong>
+  <%= @projet.synopsis %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @projet.image %>
+</p>
+
+<p>
+  <strong>Territory:</strong>
+  <%= @projet.territory %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @projet.duration %>
+</p>
+
+<p>
+  <strong>Stars:</strong>
+  <%= @projet.stars %>
+</p>
+
+<p>
+  <strong>Stars text:</strong>
+  <%= @projet.stars_text %>
+</p>
+
+<p>
+  <strong>Theme:</strong>
+  <%= @projet.theme_id %>
+</p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @projet.target_id %>
+</p>
+
+<p>
+  <strong>Form:</strong>
+  <%= @projet.form_id %>
+</p>
+
+<%= link_to 'Edit', edit_projet_path(@projet) %> |
+<%= link_to 'Back', projets_path %>
