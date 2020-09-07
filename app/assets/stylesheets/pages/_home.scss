@@ -24,7 +24,20 @@ header{
         border: 1px solid grey;
         width: 200px;
         height: 250px;
+        padding: 12px;
 
+        header{
+            background-color: grey;
+        }
+    }
+
+    &.stars{
+        justify-content: space-between;
+    }
+
+    .card-stars{
+        border: none;
+        width: 25vw;
         header{
             background-color: grey;
         }
