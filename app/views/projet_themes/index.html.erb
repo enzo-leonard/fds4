@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Projet Themes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Projet</th>
+      <th>Theme</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projet_themes.each do |projet_theme| %>
+      <tr>
+        <td><%= projet_theme.projet_id %></td>
+        <td><%= projet_theme.theme_id %></td>
+        <td><%= link_to 'Show', projet_theme %></td>
+        <td><%= link_to 'Edit', edit_projet_theme_path(projet_theme) %></td>
+        <td><%= link_to 'Destroy', projet_theme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Projet Theme', new_projet_theme_path %>

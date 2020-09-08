@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Projet:</strong>
+  <%= @projet_theme.projet_id %>
+</p>
+
+<p>
+  <strong>Theme:</strong>
+  <%= @projet_theme.theme_id %>
+</p>
+
+<%= link_to 'Edit', edit_projet_theme_path(@projet_theme) %> |
+<%= link_to 'Back', projet_themes_path %>

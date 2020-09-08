@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :projet_themes
+  resources :projet_forms
+  resources :projet_targets
   resources :projets
   resources :forms
   resources :themes

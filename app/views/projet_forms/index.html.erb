@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Projet Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Projet</th>
+      <th>Form</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projet_forms.each do |projet_form| %>
+      <tr>
+        <td><%= projet_form.projet_id %></td>
+        <td><%= projet_form.form_id %></td>
+        <td><%= link_to 'Show', projet_form %></td>
+        <td><%= link_to 'Edit', edit_projet_form_path(projet_form) %></td>
+        <td><%= link_to 'Destroy', projet_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Projet Form', new_projet_form_path %>

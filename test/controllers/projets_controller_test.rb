@@ -17,7 +17,7 @@ class ProjetsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create projet" do
     assert_difference('Projet.count') do
-      post projets_url, params: { projet: { date: @projet.date, difficulty: @projet.difficulty, duration: @projet.duration, form_id: @projet.form_id, image: @projet.image, keywords: @projet.keywords, live: @projet.live, name_structure: @projet.name_structure, stars: @projet.stars, stars_text: @projet.stars_text, synopsis: @projet.synopsis, target_id: @projet.target_id, territory: @projet.territory, theme_id: @projet.theme_id, title: @projet.title, url: @projet.url } }
+      post projets_url, params: { projet: { date: @projet.date, difficulty: @projet.difficulty, duration: @projet.duration, image: @projet.image, keywords: @projet.keywords, live: @projet.live, name_structure: @projet.name_structure, stars: @projet.stars, stars_text: @projet.stars_text, synopsis: @projet.synopsis, territory: @projet.territory, title: @projet.title, url: @projet.url } }
     end
 
     assert_redirected_to projet_url(Projet.last)
@@ -34,7 +34,7 @@ class ProjetsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update projet" do
-    patch projet_url(@projet), params: { projet: { date: @projet.date, difficulty: @projet.difficulty, duration: @projet.duration, form_id: @projet.form_id, image: @projet.image, keywords: @projet.keywords, live: @projet.live, name_structure: @projet.name_structure, stars: @projet.stars, stars_text: @projet.stars_text, synopsis: @projet.synopsis, target_id: @projet.target_id, territory: @projet.territory, theme_id: @projet.theme_id, title: @projet.title, url: @projet.url } }
+    patch projet_url(@projet), params: { projet: { date: @projet.date, difficulty: @projet.difficulty, duration: @projet.duration, image: @projet.image, keywords: @projet.keywords, live: @projet.live, name_structure: @projet.name_structure, stars: @projet.stars, stars_text: @projet.stars_text, synopsis: @projet.synopsis, territory: @projet.territory, title: @projet.title, url: @projet.url } }
     assert_redirected_to projet_url(@projet)
   end
 

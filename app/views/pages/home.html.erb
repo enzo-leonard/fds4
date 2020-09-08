@@ -43,13 +43,20 @@ Fête de la science - Régions Rhône Alpe - blabla
 <br><br><br><br><br><br>
 
 
-<h2>Tous les projets</h2>
-<input placeholder="Rechercher un evenement" type=text><br><br>
+<h2 id="filter-section">Tous les projets</h2>
+<form>
+<input name="title" placeholder="Rechercher un evenement" type=text><br><br>
 Filtre | Réinitialisé 
 <hr>
 <div class="filtre-bar">
     <select name="theme">
-        <option>Thématique</option>
+        <option value>Thématique</option>
+        <option value="1">Sciences de l'environnement (Agronomie, écologie, développement durable)</option>
+        <option value="2">Sciences de l'ingénieur</option>
+        <option value="3">Sciences de la Terre et de l'univers, de l'espace</option>
+        <option value="4">Sciences de la vie et de la santé</option>
+        <option value="5">Sciences exactes (Maths, physique, chimie)</option>
+        <option value="6">Sciences humaines et sociales</option>
     </select>
     <select name="target">
         <option>Publique ciblé</option>
@@ -67,17 +74,25 @@ Filtre | Réinitialisé
         <option>Territoire</option>
     </select>
 </div>
+</form>
 <br><br>
 
 <div class=card-container>
+
+    <% @projets.each do |projet|%>
+
     <div class="card">
-        <header>
-        <h3>Titre Event</h3>
-        </header>
-        <h4> Nom de la structure </h4>
-        <div class> synopsys </div>
+        <header style="background-image: url(https://picsum.photos/200/200?random=<%=projet.id%>)">
         
+            <h3><mark><%= projet.title%></mark></h3>
+        </header>
+        <main>
+            <h4><%= projet.name_structure%></h4>
+            Pas d’électricité les jours sans soleil. C’est trop cher. Les panneaux ne se recyclent pas. S’il vous reste quelques idées reçues sur l’énergie photovoltaïque, participez à l’atelier pratique sur le sujet avec l’Hespul. Et, surtout, amusez-vous bien !
+        </main>
     </div>
+
+    <%end%>
 
    
 </div>
