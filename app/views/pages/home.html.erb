@@ -1,11 +1,20 @@
+<% 
+difficulty_array = ["Curieux","Amateur","Averti"]
+territory_array = ["Ain", "Ardèche", "Auvergne", "Drôme", "Isère", "Loire", "Rhône", "Savoie", "Haute-Savoie"]
+duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "Plus d'une heure"]
+
+%>
+
+
 <nav>
     <div class="container">
     <%= image_tag "logo_fds.svg" %>
     <%= image_tag "logo_region.svg"%>
     <%= image_tag "menu.svg" %>
-    <div>X</div>
+    <%= image_tag "menu_logo.svg" %>
     </div>
 </nav>
+
 
 
 
@@ -123,8 +132,8 @@
             Pas d’électricité les jours sans soleil. C’est trop cher. Les panneaux ne se recyclent pas. S’il vous reste quelques idées reçues sur l’énergie photovoltaïque, participez à l’atelier pratique sur le sujet avec l’Hespul. Et, surtout, amusez-vous bien !
         </main>
         <footer>
-            <div><i class="icon fas fa-info-circle"></i> <%=projet.show_target%> </div>
-            <%if projet.live %><i class="icon fas fa-info-circle"></i><%end%>
+            <div class=line><%= image_tag "target_logo.svg", class: "logo" %> <%=projet.show_target%> </div>
+            <%if projet.live %><%= image_tag "live_logo.svg", class:"logo" %><%end%>
         </footer>
     </div>
 
@@ -142,24 +151,27 @@
         <header><h4><%=projet.name_structure%></h4></header>
         <div class="left2">
             <div class="domain">    
-                <% projet.theme.each do |theme|  %>
-                <%= theme.name%> -
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
                 <%end%>
             </div>
             <div class="other">
-                <i class="icon fas fa-info-circle"></i><b><%= projet.show_target%></b>
-                <i class="icon fas fa-info-circle"></i><b><%= projet.territory%></b>
-                <i class="icon fas fa-info-circle"></i><b><%= projet.duration%></b>
-                <i class="icon fas fa-info-circle"></i><b><%= projet.difficulty %></b>
-                <% if projet.live%><i class="icon fas fa-info-circle"></i>En live <b><%= projet.date %></b><%end%>
+
+                <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory-1)]%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration-1)]%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty-1)] if projet.difficulty %></b></div>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i>En live <b><%= projet.date %></b></div><%end%>
             </div>
 
         </div>
         <div class="right2">
             <div class=content>
                 <b>
-                <% projet.form.each do |form|%>
-                    <%= form.name %>,
+                <% i = 0; max = projet.form.count %>
+                <% projet.form.each do |form| i+=1%>
+                    <%= form.name %><%= "," if i != max%>
                 <%end%>
                 </b>
 
@@ -183,7 +195,7 @@
 </div>
 
 <br><br>
-<div>Charger plus de contenu </div>
+
 
 <div>
 
@@ -199,7 +211,7 @@
         <header><h4>Planétarium</h4></header>
         <div class="left2">
             <div class="domain">    
-                Domaine 1 . Domaine 2 . Domaine 3 . Domaine 4 . Domaine 5
+                Domaine 1 ● Domaine 2 ● Domaine 3 ● Domaine 4 ● Domaine 5
             </div>
             <div class="other">
                 <i class="icon fas fa-info-circle"></i><b>Description</b>
