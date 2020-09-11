@@ -47,7 +47,7 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
 <br>
 <form action="/home#form">
 <input id="searchInput" name="title" placeholder="Rechercher un événement  |" type=text value="<%=params[:title]%>"><br><br>
-<b>FILTRES</b> | Réinitialisé 
+<b>FILTRES</b> | <div id="reboot" style="display: inline">Réinitialiser</div>
 <hr>
 
 <div class="filtre-bar">
@@ -70,36 +70,36 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
     </select>
     <select name="difficulty">
         <option value>Difficulté</option>
-        <option value="1" <%="selected" if params[:difficulty] == "1" %>>Curieux</option>
-        <option value="2" <%="selected" if params[:difficulty] == "2" %>>Amateur</option>
-        <option value="3" <%="selected" if params[:difficulty] == "3" %>>Averti</option>
+        <option value="0" <%="selected" if params[:difficulty] == "0" %>>Curieux</option>
+        <option value="1" <%="selected" if params[:difficulty] == "1" %>>Amateur</option>
+        <option value="2" <%="selected" if params[:difficulty] == "2" %>>Averti</option>
     </select>
    
     <select name="form">
         <option value>Format</option>
         <option value="1" <%="selected" if params[:form] == "1" %>>Conférence-débat</option>
         <option value="2" <%="selected" if params[:form] == "2" %>>Vidéo</option>
-        <option value="3" <%="selected" if params[:form] == "2" %>>Infographie</option>
-        <option value="4" <%="selected" if params[:form] == "3" %>>Article</option>
-        <option value="5" <%="selected" if params[:form] == "4" %>>Reportage</option>
-        <option value="6" <%="selected" if params[:form] == "5" %>>Visite virtuelle</option>
-        <option value="7" <%="selected" if params[:form] == "6" %>>Spectacle</option>
-        <option value="8" <%="selected" if params[:form] == "7" %>>Animation</option>
-        <option value="9" <%="selected" if params[:form] == "8" %>>Exposition</option>
-        <option value="10" <%="selected" if params[:form] == "9" %>>Jeu</option>
-        <option value="11" <%="selected" if params[:form] == "10" %>>Village des sciences virtuel</option>
-        <option value="12" <%="selected" if params[:form] == "11" %>>Atelier</option>
-        <option value="13" <%="selected" if params[:form] == "12" %>>Visio-conférence</option>
-        <option value="14" <%="selected" if params[:form] == "13" %>>Podcast</option>
-        <option value="15" <%="selected" if params[:form] == "14" %>>Webinaire interactif</option>
+        <option value="3" <%="selected" if params[:form] == "3" %>>Infographie</option>
+        <option value="4" <%="selected" if params[:form] == "4" %>>Article</option>
+        <option value="5" <%="selected" if params[:form] == "5" %>>Reportage</option>
+        <option value="6" <%="selected" if params[:form] == "6" %>>Visite virtuelle</option>
+        <option value="7" <%="selected" if params[:form] == "7" %>>Spectacle</option>
+        <option value="8" <%="selected" if params[:form] == "8" %>>Animation</option>
+        <option value="9" <%="selected" if params[:form] == "9" %>>Exposition</option>
+        <option value="10" <%="selected" if params[:form] == "10" %>>Jeu</option>
+        <option value="11" <%="selected" if params[:form] == "11" %>>Village des sciences virtuel</option>
+        <option value="12" <%="selected" if params[:form] == "12" %>>Atelier</option>
+        <option value="13" <%="selected" if params[:form] == "13" %>>Visio-conférence</option>
+        <option value="14" <%="selected" if params[:form] == "14" %>>Podcast</option>
+        <option value="15" <%="selected" if params[:form] == "15" %>>Webinaire interactif</option>
 
     </select>
     <select name="duration">
         <option value>Durée</option>
-        <option value="1" <%="selected" if params[:difficulty] == "1" %>>Moins de 5 minutes</option>
-        <option value="2" <%="selected" if params[:difficulty] == "2" %>>5 à 15 minutes</option>
-        <option value="3" <%="selected" if params[:difficulty] == "3" %>>15 à 60 minutes</option>
-        <option value="4" <%="selected" if params[:difficulty] == "4" %>>Plus d'une heure</option>
+        <option value="1" <%="selected" if params[:duration] == "1" %>>Moins de 5 minutes</option>
+        <option value="2" <%="selected" if params[:duration] == "2" %>>5 à 15 minutes</option>
+        <option value="3" <%="selected" if params[:duration] == "3" %>>15 à 60 minutes</option>
+        <option value="4" <%="selected" if params[:duration] == "4" %>>Plus d'une heure</option>
     </select>
     <select name="territory">
         <option value>Territoire</option>
@@ -159,9 +159,9 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
             <div class="other">
 
                 <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
-                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory-1)]%></b></div>
-                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration-1)]%></b></div>
-                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty-1)] if projet.difficulty %></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)]%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)]%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
                 <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i>En live <b><%= projet.date %></b></div><%end%>
             </div>
 
