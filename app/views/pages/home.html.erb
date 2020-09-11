@@ -1,77 +1,107 @@
 <nav>
-Fête de la science - Régions Rhône Alpe - blabla
+    <div class="container">
+    <%= image_tag "logo_fds.svg" %>
+    <%= image_tag "logo_region.svg"%>
+    <%= image_tag "menu.svg" %>
+    <div>X</div>
+    </div>
 </nav>
 
 
 
+<%= image_tag "hero_desktop.svg", class: "banner-desktop" %>
+
+
 <div class="container mt-5 mb-5">
 
-<header>
-    <h1>Fête de la Science</h1>
-</header>
-
-
-<h2>Projet à la une</h2>
+<section id="une">
+<h2>Les projets à la une</h2>
+<br><br>
 <div class="card-container stars">
+<% @projets.first(3).each do |projet| %>
     <div class="card-stars">
-            <header>
-           
-            </header>
-             <h3>Titre Event</h3>
-            <h4> Nom de la structure </h4>
-            <div class> synopsys </div>
+            <img src="https://picsum.photos/500/500?random=<%=projet.id%>">
+            <h3><mark><%= projet.title%></mark></h3>
+            <div class> <%= projet.synopsis%> </div>
     </div>
-
-    <div class="card-stars">
-            <header>
-            
-            </header>
-            <h3>Titre Event</h3>
-            <h4> Nom de la structure </h4>
-            <div class> synopsys </div>
-    </div>
-
-    <div class="card-stars">
-            <header>
-           
-            </header>
-             <h3>Titre Event</h3>
-            <h4> Nom de la structure </h4>
-            <div class> synopsys </div>
-    </div>
+<%end%>
 </div>
-<br><br><br><br><br><br>
+</section>
+<br><br><br><br>
 
 
-<h2 id="filter-section">Tous les projets</h2>
-<form>
-<input name="title" placeholder="Rechercher un evenement" type=text><br><br>
-Filtre | Réinitialisé 
+
+
+<section id=form>
+
+<h2><%= @title_search %></h2>
+<br>
+<form action="/home#form">
+<input id="searchInput" name="title" placeholder="Rechercher un événement  |" type=text value="<%=params[:title]%>"><br><br>
+<b>FILTRES</b> | Réinitialisé 
 <hr>
+
 <div class="filtre-bar">
     <select name="theme">
         <option value>Thématique</option>
-        <option value="1">Sciences de l'environnement (Agronomie, écologie, développement durable)</option>
-        <option value="2">Sciences de l'ingénieur</option>
-        <option value="3">Sciences de la Terre et de l'univers, de l'espace</option>
-        <option value="4">Sciences de la vie et de la santé</option>
-        <option value="5">Sciences exactes (Maths, physique, chimie)</option>
-        <option value="6">Sciences humaines et sociales</option>
+        <option value="1" <%="selected" if params[:theme] == "1" %>>Sciences de l'environnement (Agronomie, écologie, développement durable)</option>
+        <option value="2" <%="selected" if params[:theme] == "2" %>>Sciences de l'ingénieur</option>
+        <option value="3" <%="selected" if params[:theme] == "3" %>>Sciences de la Terre et de l'univers, de l'espace</option>
+        <option value="4" <%="selected" if params[:theme] == "4" %>>Sciences de la vie et de la santé</option>
+        <option value="5" <%="selected" if params[:theme] == "5" %>>Sciences exactes (Maths, physique, chimie)</option>
+        <option value="6" <%="selected" if params[:theme] == "6" %>>Sciences humaines et sociales</option>
     </select>
     <select name="target">
-        <option>Publique ciblé</option>
+        <option value>Publique ciblé</option>
+        <option value="1"<%="selected" if params[:target] == "1" %>>3 - 6 ans | Maternelle</option>
+        <option value="2"<%="selected" if params[:target] == "2" %>>6 - 11 ans | Primaire</option>
+        <option value="3"<%="selected" if params[:target] == "3" %>>11 - 15 ans | Collège</option>
+        <option value="4"<%="selected" if params[:target] == "4" %>>15 - 18 ans | Lycée</option>
+        <option value="5"<%="selected" if params[:target] == "5" %>>18 - 25 ans | Étudiant</option>
     </select>
     <select name="difficulty">
-        <option>Difficulté</option>
+        <option value>Difficulté</option>
+        <option value="1" <%="selected" if params[:difficulty] == "1" %>>Curieux</option>
+        <option value="2" <%="selected" if params[:difficulty] == "2" %>>Amateur</option>
+        <option value="3" <%="selected" if params[:difficulty] == "3" %>>Averti</option>
     </select>
+   
     <select name="form">
-        <option>Format</option>
+        <option value>Format</option>
+        <option value="1" <%="selected" if params[:form] == "1" %>>Conférence-débat</option>
+        <option value="2" <%="selected" if params[:form] == "2" %>>Vidéo</option>
+        <option value="3" <%="selected" if params[:form] == "2" %>>Infographie</option>
+        <option value="4" <%="selected" if params[:form] == "3" %>>Article</option>
+        <option value="5" <%="selected" if params[:form] == "4" %>>Reportage</option>
+        <option value="6" <%="selected" if params[:form] == "5" %>>Visite virtuelle</option>
+        <option value="7" <%="selected" if params[:form] == "6" %>>Spectacle</option>
+        <option value="8" <%="selected" if params[:form] == "7" %>>Animation</option>
+        <option value="9" <%="selected" if params[:form] == "8" %>>Exposition</option>
+        <option value="10" <%="selected" if params[:form] == "9" %>>Jeu</option>
+        <option value="11" <%="selected" if params[:form] == "10" %>>Village des sciences virtuel</option>
+        <option value="12" <%="selected" if params[:form] == "11" %>>Atelier</option>
+        <option value="13" <%="selected" if params[:form] == "12" %>>Visio-conférence</option>
+        <option value="14" <%="selected" if params[:form] == "13" %>>Podcast</option>
+        <option value="15" <%="selected" if params[:form] == "14" %>>Webinaire interactif</option>
+
     </select>
-    <select name="duraction">
-        <option>Durée</option>
+    <select name="duration">
+        <option value>Durée</option>
+        <option value="1" <%="selected" if params[:difficulty] == "1" %>>Moins de 5 minutes</option>
+        <option value="2" <%="selected" if params[:difficulty] == "2" %>>5 à 15 minutes</option>
+        <option value="3" <%="selected" if params[:difficulty] == "3" %>>15 à 60 minutes</option>
+        <option value="4" <%="selected" if params[:difficulty] == "4" %>>Plus d'une heure</option>
     </select>
     <select name="territory">
-        <option>Territoire</option>
+        <option value>Territoire</option>
+        <option value="1" <%="selected" if params[:territory] == "1" %>>Ain</option>
+        <option value="2" <%="selected" if params[:territory] == "2" %>>Ardèche</option>
+        <option value="3" <%="selected" if params[:territory] == "3" %>>Auvergne</option>
+        <option value="4" <%="selected" if params[:territory] == "4" %>>Haute-Savoie</option>
+        <option value="5" <%="selected" if params[:territory] == "5" %>>Isère</option>
+        <option value="6" <%="selected" if params[:territory] == "6" %>>Loire</option>
+        <option value="7" <%="selected" if params[:territory] == "7" %>>Rhône</option>
+        <option value="8" <%="selected" if params[:territory] == "8" %>>Savoie</option>
     </select>
 </div>
 </form>
@@ -81,7 +111,9 @@ Filtre | Réinitialisé
 
     <% @projets.each do |projet|%>
 
-    <div class="card">
+    
+
+    <div data-target="#modal_<%=projet.id%>" class="card">
         <header style="background-image: url(https://picsum.photos/200/200?random=<%=projet.id%>)">
         
             <h3><mark><%= projet.title%></mark></h3>
@@ -90,7 +122,60 @@ Filtre | Réinitialisé
             <h4><%= projet.name_structure%></h4>
             Pas d’électricité les jours sans soleil. C’est trop cher. Les panneaux ne se recyclent pas. S’il vous reste quelques idées reçues sur l’énergie photovoltaïque, participez à l’atelier pratique sur le sujet avec l’Hespul. Et, surtout, amusez-vous bien !
         </main>
+        <footer>
+            <div><i class="icon fas fa-info-circle"></i> <%=projet.show_target%> </div>
+            <%if projet.live %><i class="icon fas fa-info-circle"></i><%end%>
+        </footer>
     </div>
+
+
+
+
+    <div id="modal_<%=projet.id%>" class="modal-container hidden">
+    <div data-target="#modal_<%=projet.id%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
+    <div class="right">
+        <img src="https://picsum.photos/500/500?random=2">
+        <h3><mark><%= projet.title%></mark></h3>
+       
+    </div>
+    <div class="left">
+        <header><h4><%=projet.name_structure%></h4></header>
+        <div class="left2">
+            <div class="domain">    
+                <% projet.theme.each do |theme|  %>
+                <%= theme.name%> -
+                <%end%>
+            </div>
+            <div class="other">
+                <i class="icon fas fa-info-circle"></i><b><%= projet.show_target%></b>
+                <i class="icon fas fa-info-circle"></i><b><%= projet.territory%></b>
+                <i class="icon fas fa-info-circle"></i><b><%= projet.duration%></b>
+                <i class="icon fas fa-info-circle"></i><b><%= projet.difficulty %></b>
+                <% if projet.live%><i class="icon fas fa-info-circle"></i>En live <b><%= projet.date %></b><%end%>
+            </div>
+
+        </div>
+        <div class="right2">
+            <div class=content>
+                <b>
+                <% projet.form.each do |form|%>
+                    <%= form.name %>,
+                <%end%>
+                </b>
+
+                <%= projet.synopsis%>
+            
+            </div>
+        <a href="<%=projet.url%>" class="btn-modal">Accéder au projet</a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
 
     <%end%>
 
@@ -101,3 +186,40 @@ Filtre | Réinitialisé
 <div>Charger plus de contenu </div>
 
 <div>
+
+
+<div id="modal_new" class="modal-container hidden">
+    <div data-target="#modal_new" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
+    <div class="right">
+        <img src="https://picsum.photos/500/500?random=2">
+        <h3><mark>Lyon, épicentre de la recherche en infectiologie</mark></h3>
+       
+    </div>
+    <div class="left">
+        <header><h4>Planétarium</h4></header>
+        <div class="left2">
+            <div class="domain">    
+                Domaine 1 . Domaine 2 . Domaine 3 . Domaine 4 . Domaine 5
+            </div>
+            <div class="other">
+                <i class="icon fas fa-info-circle"></i><b>Description</b>
+                <i class="icon fas fa-info-circle"></i><b>Description</b>
+                <i class="icon fas fa-info-circle"></i><b>Description</b>
+                <i class="icon fas fa-info-circle"></i><b>Description</b>
+                <i class="icon fas fa-info-circle"></i><b>Description</b>
+            </div>
+
+        </div>
+        <div class="right2">
+            <div class=content>
+                <b>Spectacle, Interview</b>
+            
+                Pas d’électricité les jours sans soleil. C’est trop cher. Les panneaux ne se recyclent pas. S’il vous reste quelques idées reçues sur l’énergie photovoltaïque, participez à l’atelier pratique sur le sujet avec l’Hespul. Et, surtout, amusez-vous bien !
+            </div>
+        <div class="btn-modal">Accéder au projet</div>
+        </div>
+        
+    </div>
+</div>
+
+</section>

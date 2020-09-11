@@ -24,6 +24,8 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import initModal from "../channels/modal";
+import initFilter from "../channels/filter";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -31,5 +33,7 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  console.log('heu')
+  initModal()
+  initFilter()
+
 });
