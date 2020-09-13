@@ -104,7 +104,7 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
     </select>
     <select name="territory">
         <option value>Territoire</option>
-        <%i = -1; territory_array.each do |name| i+=1 %> <option value=<%=i%> <%="selected" if  params[:territory].to_i == i %> > <%= params[:duration]%>  <%=name%></option><%end%>
+        <%i = -1; territory_array.each do |name| i+=1 %> <option value=<%=i%> <%="selected" if  params[:territory] == i.to_s %> > <%= params[:duration]%>  <%=name%></option><%end%>
     </select>
 </div>
 </form>
