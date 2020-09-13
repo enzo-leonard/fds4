@@ -1,15 +1,25 @@
 const initModal = () => {
 
     const toggleBtn = document.querySelectorAll('[data-target]')
+    const blurBtn = document.querySelector('.background-modal')
+    const modals = document.querySelectorAll('.modal-container')
 
     toggleBtn.forEach((btn) => {
+       
         btn.addEventListener('click', () => {
+            console.log('hey')
             const target = btn.dataset.target 
             console.log(target)
             document.querySelector(`${target}`).classList.toggle('hidden')
+            blurBtn.classList.toggle("hidden")
         })
     })
-    console.log('couocu')
+
+    blurBtn.addEventListener('click', () => {
+        modals.forEach((modal) => {modal.classList.add('hidden')})
+        blurBtn.classList.add("hidden")
+    })
+
 }
 
 export default initModal

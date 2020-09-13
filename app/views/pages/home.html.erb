@@ -4,6 +4,7 @@ territory_array = ["Ain", "Ardèche", "Auvergne", "Drôme", "Isère", "Loire", "
 duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "Plus d'une heure"]
 
 %>
+<div class="background-modal hidden"></div>
 
 
 <nav>
@@ -96,21 +97,21 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
     </select>
     <select name="duration">
         <option value>Durée</option>
-        <option value="1" <%="selected" if params[:duration] == "1" %>>Moins de 5 minutes</option>
-        <option value="2" <%="selected" if params[:duration] == "2" %>>5 à 15 minutes</option>
-        <option value="3" <%="selected" if params[:duration] == "3" %>>15 à 60 minutes</option>
-        <option value="4" <%="selected" if params[:duration] == "4" %>>Plus d'une heure</option>
+        <option value="0" <%="selected" if params[:duration] == "0" %>>Moins de 5 minutes</option>
+        <option value="1" <%="selected" if params[:duration] == "1" %>>5 à 15 minutes</option>
+        <option value="2" <%="selected" if params[:duration] == "2" %>>15 à 60 minutes</option>
+        <option value="3" <%="selected" if params[:duration] == "3" %>>Plus d'une heure</option>
     </select>
     <select name="territory">
         <option value>Territoire</option>
-        <option value="1" <%="selected" if params[:territory] == "1" %>>Ain</option>
-        <option value="2" <%="selected" if params[:territory] == "2" %>>Ardèche</option>
-        <option value="3" <%="selected" if params[:territory] == "3" %>>Auvergne</option>
-        <option value="4" <%="selected" if params[:territory] == "4" %>>Haute-Savoie</option>
-        <option value="5" <%="selected" if params[:territory] == "5" %>>Isère</option>
-        <option value="6" <%="selected" if params[:territory] == "6" %>>Loire</option>
-        <option value="7" <%="selected" if params[:territory] == "7" %>>Rhône</option>
-        <option value="8" <%="selected" if params[:territory] == "8" %>>Savoie</option>
+        <option value="0" <%="selected" if params[:territory] == "0" %>>Ain</option>
+        <option value="1" <%="selected" if params[:territory] == "1" %>>Ardèche</option>
+        <option value="2" <%="selected" if params[:territory] == "2" %>>Auvergne</option>
+        <option value="3" <%="selected" if params[:territory] == "3" %>>Haute-Savoie</option>
+        <option value="4" <%="selected" if params[:territory] == "4" %>>Isère</option>
+        <option value="5" <%="selected" if params[:territory] == "5" %>>Loire</option>
+        <option value="6" <%="selected" if params[:territory] == "6" %>>Rhône</option>
+        <option value="7" <%="selected" if params[:territory] == "7" %>>Savoie</option>
     </select>
 </div>
 </form>
