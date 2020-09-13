@@ -104,14 +104,7 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
     </select>
     <select name="territory">
         <option value>Territoire</option>
-        <option value="0" <%="selected" if params[:territory] == "0" %>>Ain</option>
-        <option value="1" <%="selected" if params[:territory] == "1" %>>Ardèche</option>
-        <option value="2" <%="selected" if params[:territory] == "2" %>>Auvergne</option>
-        <option value="3" <%="selected" if params[:territory] == "3" %>>Haute-Savoie</option>
-        <option value="4" <%="selected" if params[:territory] == "4" %>>Isère</option>
-        <option value="5" <%="selected" if params[:territory] == "5" %>>Loire</option>
-        <option value="6" <%="selected" if params[:territory] == "6" %>>Rhône</option>
-        <option value="7" <%="selected" if params[:territory] == "7" %>>Savoie</option>
+        <%i = -1; territory_array.each do |name| i+=1 %> <option value=<%=i%> <%="selected" if  params[:territory].to_i == i %> > <%= params[:duration]%>  <%=name%></option><%end%>
     </select>
 </div>
 </form>
@@ -126,7 +119,7 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
     <div data-target="#modal_<%=projet.id%>" class="card">
         <header style="background-image: url(https://picsum.photos/200/200?random=<%=projet.id%>)">
         
-            <h3><mark><%= projet.title%></mark></h3>
+            <h3><mark><%= projet.title%> </mark></h3>
         </header>
         <main>
             <h4><%= projet.name_structure%></h4>
