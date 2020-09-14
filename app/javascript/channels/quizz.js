@@ -36,10 +36,12 @@ const initQuizz = () => {
         h2.classList.add('hidden')
         text.innerHTML = document.querySelector(`#projet_${id} [data-type="question"]`).content
         propContainer.innerHTML = ""
-       
-        propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop">${good_answer.content}</div>`)
+        let randomOrder = Math.floor(Math.random() * 3); 
+        if (randomOrder == 0) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop">${good_answer.content}</div>`)
         propContainer.insertAdjacentHTML('beforeend', `<div id="bad_1" class="prop">${prop_1.content}</div>`)
+        if (randomOrder == 1) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop">${good_answer.content}</div>`)
         if (prop_2) propContainer.insertAdjacentHTML('beforeend', `<div id="bad_2" class="prop">${prop_2.content}</div>`)
+        if (randomOrder == 2) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop">${good_answer.content}</div>`)
 
         let good = document.querySelector('#good')
         let bad_1 = document.querySelector('#bad_1')
