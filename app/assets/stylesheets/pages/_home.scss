@@ -16,6 +16,104 @@ h1, h2, h3 {
     width: 20px;
 }
 
+.quizz-desktop{
+    width: 100vw;
+
+    margin-top: -10vh;
+ 
+}
+
+.prop{
+    border: 1px solid white;
+    color: white;
+    padding: 12px;
+    margin: 4px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: white;
+        color: #039F3A;
+    }
+}
+
+#quizz-round{
+    background-color: red;
+}
+
+.quizz-center{
+    position: absolute;
+    padding: 30px;
+    height: 80vh;
+    //border: 1px solid rgba(236, 236, 236, 0.61);
+    width: 35vw;
+    top: 35vh;
+    left: 27vw;
+    border-radius: 999px;
+    padding: 124px 80px 80px 80px;
+
+    .btn-valid{
+        border: 1px solid;
+        margin: 0 auto;
+        cursor: pointer;
+        width: 50%;
+        padding: 8px;
+    }
+
+    &.question {
+        background-color:#039F3A ;
+    }
+}
+.menu-btn-container{
+   // border: 1px solid red;
+    height: 160px;
+    width: 350px;
+    position: absolute;
+    top: 30vw;
+    right: 14vw;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        width: 100%;
+       
+    }
+
+    .menu-btn {
+        background-color: #039F3A;
+        width: 150px;
+        cursor: pointer;
+        padding: 8px 12px;
+        color: white;
+        font-weight: 800;
+        font-size: 1.1rem;
+    }
+
+    #item1{
+        justify-content: flex-end;
+       
+    }
+    
+
+    #item2{
+        justify-content: center;
+        
+    }
+
+    #item3{
+        justify-content: flex-start;
+
+        .menu-btn{
+            border: 1px solid #33B263;
+            background-color: white;
+            color: #33B263;
+        }
+      
+    }
+   
+
+
+}
 
 .line{
     width: 100%;
@@ -67,6 +165,7 @@ nav{
     position: fixed;
     z-index: 2;
     width: 100%;
+    top: 0px;
 
     .container{
         height: 110px;
@@ -77,10 +176,17 @@ nav{
     }
 }
 
+#_100_:hover{
+    background-color: red;
+    border: 1px solid red;
+
+}
+
 .banner-desktop{
     width: 100%;
     margin-top: -33vw;
     padding: 7vw;
+
 }
 
 .hidden{
@@ -156,6 +262,7 @@ select{
 }
 
 
+
 .modal-container{
     position: fixed;
     top: 17vh;
@@ -227,6 +334,7 @@ select{
                 display: block;
                 font-weight: 600;
                 font-size: 0.8rem;
+                
             }
             .btn-modal{
                 background-color: black;
@@ -280,6 +388,11 @@ select{
             padding-left: 5px;
             font-weight: 500;
             width: 70%;
+           
+                #date{
+                    margin-left: 6px ;
+                    font-weight: 100;
+                }
             
         }
         img{

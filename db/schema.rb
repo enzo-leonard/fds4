@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_07_154632) do
+ActiveRecord::Schema.define(version: 2020_09_14_211137) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2020_09_07_154632) do
     t.string "url"
     t.string "keywords"
     t.integer "difficulty"
-    t.date "date"
+    t.datetime "date"
     t.boolean "live"
     t.text "synopsis"
     t.string "image"
@@ -64,6 +64,12 @@ ActiveRecord::Schema.define(version: 2020_09_07_154632) do
     t.text "stars_text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "question"
+    t.string "good_answer"
+    t.string "prop_1"
+    t.string "prop_2"
+    t.text "commentaire"
+    t.text "answer"
   end
 
   create_table "targets", force: :cascade do |t|

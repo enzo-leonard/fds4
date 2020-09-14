@@ -7,18 +7,14 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
 <div class="background-modal hidden"></div>
 
 
-<nav>
-    <div class="container">
-    <%= image_tag "logo_fds.svg" %>
-    <%= image_tag "logo_region.svg"%>
-    <%= image_tag "menu.svg" %>
-    <%= image_tag "menu_logo.svg" %>
-    </div>
-</nav>
 
 
 
-
+<div class="menu-btn-container">
+    <div id="item1" ><div class="menu-btn">A la une </div></div>
+    <div id="item2" ><div class="menu-btn">Tout les projets</div></div>
+    <div id="item3" ><a href="/quizz" class="menu-btn">Quizz</a></div>
+</div>
 <%= image_tag "hero_desktop.svg", class: "banner-desktop" %>
 
 
@@ -62,7 +58,7 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
         <option value="6" <%="selected" if params[:theme] == "6" %>>Sciences humaines et sociales</option>
     </select>
     <select name="target">
-        <option value>Publique ciblé</option>
+        <option value>Public ciblé</option>
         <option value="1"<%="selected" if params[:target] == "1" %>>3 - 6 ans | Maternelle</option>
         <option value="2"<%="selected" if params[:target] == "2" %>>6 - 11 ans | Primaire</option>
         <option value="3"<%="selected" if params[:target] == "3" %>>11 - 15 ans | Collège</option>
@@ -123,11 +119,14 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
         </header>
         <main>
             <h4><%= projet.name_structure%></h4>
-            Pas d’électricité les jours sans soleil. C’est trop cher. Les panneaux ne se recyclent pas. S’il vous reste quelques idées reçues sur l’énergie photovoltaïque, participez à l’atelier pratique sur le sujet avec l’Hespul. Et, surtout, amusez-vous bien !
+           
+            
+            <%= projet.synopsis %>
         </main>
         <footer>
             <div class=line><%= image_tag "target_logo.svg", class: "logo" %> <%=projet.show_target%> </div>
             <%if projet.live %><%= image_tag "live_logo.svg", class:"logo" %><%end%>
+           
         </footer>
     </div>
 
@@ -153,10 +152,10 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
             <div class="other">
 
                 <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
-                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)]%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)] if projet.territory%></b></div>
                 <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)]%></b></div>
                 <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
-                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i>En live <b><%= projet.date %></b></div><%end%>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i><b> En live  <span id=date><%=  projet.date.strftime('%d/%m/%y - %H:%M')if projet.date%></span></b></div><%end%>
             </div>
 
         </div>

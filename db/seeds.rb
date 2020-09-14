@@ -40,6 +40,8 @@ Form.create!({id:12, name: "Atelier"} )
 Form.create!({id:13, name: "Visio-conférence"} )
 Form.create!({id:14, name: "Podcast"} )
 Form.create!({id:15, name: "Webinaire interactif"} )
+Form.create!({id:16, name: "Stories Instagram"} )
+Form.create!({id:17, name: "Twitch"} )
 
 
 Target.create!({id:1, name: "3 - 6 ans | Maternelle"})
@@ -56,13 +58,18 @@ CSV.foreach("db/data.csv", csv_options) do |item|
 
 
 date = nil
+year = 0; month = 0; min = 0; day = 0; 
 if item['date']
     year = item['date'].split('/')[2].to_i
     month = item['date'].split('/')[1].to_i
     day = item['date'].split('/')[0].to_i
     hour = item['date_heure'].split(':')[0].to_i
-    puts "year:#{year}, month:#{month} , day:#{day} , hour:#{hour}"
-    date = DateTime.new(year, month, day, hour)
+    min = item['date_heure'].split(':')[1].to_i
+   # puts "#{hour}:#{min}"
+
+    date = DateTime.new(year, month, day, hour, min, 11, 22 )
+
+    
 end
 
 
@@ -72,15 +79,27 @@ arg_projet = {
     url:                    item["url"],
     keywords:               item['keywords'],
     date:                   date,
-    live:                   item['live'],
+    live:                   !item['live'],
     synopsis:               item['synopsis'],
     difficulty:             test_in(item['difficulty'], difficulty_array),
     territory:              test_in(item['territory'], territory_array),
     duration:               item['duration'][1..],
-    image:                  nil,
+    image:                  item['image'],
+    question:               item['question'],
+    good_answer:            item['good_answer'],
+    prop_1:                 item['prop_1'],
+    prop_2:                 item['prop_2'],
+    answer:                 item['answer'],
+    commentaire:            item['commentaire'],
  }
 
-projet = Projet.create!(arg_projet)
+
+projet = Projet.new(arg_projet)
+projet.date = date
+projet.save!
+puts date.strftime('%d/%m/%y - %H:%M') if date
+puts date.class if date
+puts projet.date.class if projet.date
 
 id_target = []
 id_form = []
@@ -102,24 +121,29 @@ end
 
 Projet.all.each do |projet|
 
-    puts "name:         \t#{projet.title}"
-    puts "structure:    \t#{projet.name_structure}"
-    puts "url:          \t#{projet.url}"
-    puts "keywords:     \t#{projet.keywords}"
-    puts "territory:    \t#{projet.territory}"
-    puts "duration:     \t#{projet.duration}"
-    puts "synopsis:     \t#{projet.synopsis.first(10)}"
-    puts "live:         \t#{projet.live}"
-    puts "date:         \t#{projet.date}"
+    puts "name:         \t#{projet.title}" 
+    # puts "structure:    \t#{projet.name_structure}"
+    # puts "url:          \t#{projet.url}"
+    # puts "keywords:     \t#{projet.keywords}"
+    # puts "territory:    \t#{projet.territory}"
+    # puts "duration:     \t#{projet.duration}"
+    # puts "synopsis:     \t#{projet.synopsis.first(10)}"
+    # puts "live:         \t#{projet.live}"
+    puts "date:          \t#{projet.date.strftime('%d/%m/%y - %H:%M') }" if projet.date
+    puts "question:      \t#{projet.question.first(10)}" 
+    puts "good_answer:   \t#{projet.good_answer.first(10)}" 
+    puts "prop_1:   \t#{projet.prop_1.first(10)}" 
+    puts "prop_2:   \t#{projet.prop_2.first(10) if projet.prop_2}" 
+    puts "answer:   \t#{projet.answer.first(10)}" 
 
-    puts "target:" 
-    projet.projet_target.each { |target| puts "- #{target.target.name}"}
+    # puts "target:" 
+    # projet.projet_target.each { |target| puts "- #{target.target.name}"}
 
-    puts "format:" 
-    projet.projet_form.each { |form| puts "- #{form.form.name}"}
+    # puts "format:" 
+    # projet.projet_form.each { |form| puts "- #{form.form.name}"}
 
-    puts "theme:" 
-    projet.projet_theme.each { |theme| puts "- #{theme.theme.name}"}
+    # puts "theme:" 
+    # projet.projet_theme.each { |theme| puts "- #{theme.theme.name}"}
     
-    puts '----------------------------'
+    #puts '----------------------------'
 end

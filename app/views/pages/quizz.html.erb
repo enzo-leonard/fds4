@@ -1,0 +1,89 @@
+<% 
+difficulty_array = ["Curieux","Amateur","Averti"]
+territory_array = ["Ain", "Ardèche", "Auvergne", "Drôme", "Isère", "Loire", "Rhône", "Savoie", "Haute-Savoie"]
+duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "Plus d'une heure"]
+
+%>
+<%= render "quizz"%>
+<%#= image_tag "quizz_bg.svg", class: "quizz-desktop" %>
+<div class="background-modal hidden"></div>
+
+<div class="quizz-center">
+<h2> Testez vos connaissances </h2>
+<p id="question" class="" >
+Si osculantur puer tuus aut uxorem tuam, osculum, non dico quod omnia quae sunt minis, et sic non tangetur, si aut ex eis moriatur.
+
+Quando ambulabat agendis admonere te qualis actio. Si ad corpus, quae plerumque Imaginare
+</p>
+
+<div class="prop-container"></div>
+
+<div class="btn-valid">Commencer le quizz</div>
+</div>
+
+
+
+<% @projets.each do |projet| %> 
+
+
+<div id="projet_<%= projet.id%>">
+    <meta data-type="question" data-uid="<%=projet.id%>" content="<%=projet.question%>">
+    <meta data-type="good" data-uid="<%=projet.id%>" content="<%= projet.good_answer %> ">
+    <meta data-type="prop_1" data-uid="<%=projet.id%>" content="<%= projet.prop_1 %> ">
+    <meta data-type="prop_2" data-uid="<%=projet.id%>" content="<%= projet.prop_2 %> ">
+    <meta data-type="answer" data-uid="<%=projet.id%>" content="<%= projet.answer %> ">
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="modal_<%=projet.id%>" class="modal-container hidden">
+    <div data-target="#modal_<%=projet.id%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
+    <div class="right">
+        <img src="https://picsum.photos/500/500?random=2">
+        <h3><mark><%= projet.title%></mark></h3>
+       
+    </div>
+    <div class="left">
+        <header><h4><%=projet.name_structure%></h4></header>
+        <div class="left2">
+            <div class="domain">    
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
+                <%end%>
+            </div>
+            <div class="other">
+
+                <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)] if projet.territory%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)]%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i><b> En live  <span id=date><%=  projet.date.strftime('%d/%m/%y - %H:%M')if projet.date%></span></b></div><%end%>
+            </div>
+
+        </div>
+        <div class="right2">
+            <div class=content>
+                <b>
+                <% i = 0; max = projet.form.count %>
+                <% projet.form.each do |form| i+=1%>
+                    <%= form.name %><%= "," if i != max%>
+                <%end%>
+                </b>
+
+                <%= projet.synopsis%>
+            
+            </div>
+        <a href="<%=projet.url%>" class="btn-modal">Accéder au projet</a>
+        </div>
+        
+    </div>
+    </div>
+<%end%>
