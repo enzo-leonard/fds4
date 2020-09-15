@@ -76,9 +76,9 @@ end
 double = false
 
 if last_question
-    double == true if last_question == item['question']
-    puts  "#{i} - " + last_question.first(20) + " == " + item['question'].first(20) + last_question == item['question']
-    puts 
+    double == true if "#{last_question}" == "#{item['question']}"
+    puts  "#{i} - " + last_question.first(50) + " == " + item['question'].first(50)
+    puts last_question == item['question']
     
 end
 arg_projet = {
