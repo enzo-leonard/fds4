@@ -52,11 +52,12 @@ Target.create!({id:5, name: "18 - 25 ans | Étudiant"})
 Target.create!({id:6, name: "25 ans et +"} )#6
 
 
-
+last_question = false
+i = 0
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
 CSV.foreach("db/data.csv", csv_options) do |item|
 
-
+i +=1
 date = nil
 year = 0; month = 0; min = 0; day = 0; 
 if item['date']
@@ -72,7 +73,14 @@ if item['date']
     
 end
 
+double = false
 
+if last_question
+    double == true if last_question == item['question']
+    puts  "#{i} - " + last_question.first(20) + " == " + item['question'].first(20) + last_question == item['question']
+    puts 
+    
+end
 arg_projet = {
     name_structure:         item["name_structure"],
     title:                  item["title"],
@@ -91,15 +99,16 @@ arg_projet = {
     prop_2:                 item['prop_2'],
     answer:                 item['answer'],
     commentaire:            item['commentaire'],
+    double:                 double,
  }
 
 
 projet = Projet.new(arg_projet)
 projet.date = date
 projet.save!
-puts date.strftime('%d/%m/%y - %H:%M') if date
-puts date.class if date
-puts projet.date.class if projet.date
+
+
+last_question = item['question']
 
 id_target = []
 id_form = []
@@ -121,7 +130,7 @@ end
 
 Projet.all.each do |projet|
 
-    puts "name:         \t#{projet.title}" 
+    puts "name:         \t#{projet.title} " if projet.double
     # puts "structure:    \t#{projet.name_structure}"
     # puts "url:          \t#{projet.url}"
     # puts "keywords:     \t#{projet.keywords}"
@@ -129,12 +138,12 @@ Projet.all.each do |projet|
     # puts "duration:     \t#{projet.duration}"
     # puts "synopsis:     \t#{projet.synopsis.first(10)}"
     # puts "live:         \t#{projet.live}"
-    puts "date:          \t#{projet.date.strftime('%d/%m/%y - %H:%M') }" if projet.date
-    puts "question:      \t#{projet.question.first(10)}" 
-    puts "good_answer:   \t#{projet.good_answer.first(10)}" 
-    puts "prop_1:   \t#{projet.prop_1.first(10)}" 
-    puts "prop_2:   \t#{projet.prop_2.first(10) if projet.prop_2}" 
-    puts "answer:   \t#{projet.answer.first(10)}" 
+    # puts "date:          \t#{projet.date.strftime('%d/%m/%y - %H:%M') }" if projet.date
+    # puts "question:      \t#{projet.question.first(10)}" 
+    # puts "good_answer:   \t#{projet.good_answer.first(10)}" 
+    # puts "prop_1:   \t#{projet.prop_1.first(10)}" 
+    # puts "prop_2:   \t#{projet.prop_2.first(10) if projet.prop_2}" 
+    # puts "answer:   \t#{projet.answer.first(10)}" 
 
     # puts "target:" 
     # projet.projet_target.each { |target| puts "- #{target.target.name}"}
