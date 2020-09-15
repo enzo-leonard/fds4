@@ -52,7 +52,7 @@ Target.create!({id:5, name: "18 - 25 ans | Étudiant"})
 Target.create!({id:6, name: "25 ans et +"} )#6
 
 
-last_question = false
+last_question = "nothing"
 i = 0
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
 CSV.foreach("db/data.csv", csv_options) do |item|
@@ -75,12 +75,12 @@ end
 
 double = false
 
-if last_question
-    double == true if "#{last_question}" == "#{item['question']}"
-    puts  "#{i} - " + last_question.first(50) + " == " + item['question'].first(50)
-    puts last_question == item['question']
-    
-end
+
+double = true if "#{last_question}" == "#{item['question']}"
+puts  "#{i} - " + last_question.first(50) + " == " + item['question'].first(50) 
+puts double
+
+
 arg_projet = {
     name_structure:         item["name_structure"],
     title:                  item["title"],
