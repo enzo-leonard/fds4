@@ -14,12 +14,19 @@
   <body>
       <nav>
         <div class="container">
-        <%= image_tag "logo_fds.svg" %>
-        <%= image_tag "logo_region.svg"%>
-        <%= image_tag "menu.svg" %>
-        <%= image_tag "menu_logo.svg" %>
+          <%= image_tag "logo_fds.svg" %>
+          <%= image_tag "logo_region.svg"%>
+          <%= image_tag "menu.svg" %>
+          <%= image_tag "menu_logo.svg" %>
         </div>
-    </nav>
+      </nav>
+      <div class="under-bar">
+        <div class="container">
+        <a href="/">Catalogue des projets</a>
+        <a href="/quizz">Quiz</a>
+        <a href="/">A propos</a>
+        </div>
+      </div>
       <%= render 'shared/flashes' %>
       <%= yield %>
 

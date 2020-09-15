@@ -3,6 +3,10 @@ const initModal = () => {
     const toggleBtn = document.querySelectorAll('[data-target]')
     const blurBtn = document.querySelector('.background-modal')
     const modals = document.querySelectorAll('.modal-container')
+    const navBar = document.querySelector('nav')
+    const underBar = document.querySelector('.under-bar')
+
+    navBar.addEventListener('click', () => { underBar.classList.toggle('active')})
 
     toggleBtn.forEach((btn) => {
        
