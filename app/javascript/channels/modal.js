@@ -19,6 +19,7 @@ const initModal = () => {
         })
     })
 
+    
     blurBtn.addEventListener('click', () => {
         modals.forEach((modal) => {modal.classList.add('hidden')})
         blurBtn.classList.add("hidden")

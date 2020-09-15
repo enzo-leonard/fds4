@@ -130,7 +130,7 @@ end
 
 Projet.all.each do |projet|
 
-    puts "name:         \t#{projet.title} " if projet.double
+    puts "name:         \t#{projet.title} "
     # puts "structure:    \t#{projet.name_structure}"
     # puts "url:          \t#{projet.url}"
     # puts "keywords:     \t#{projet.keywords}"

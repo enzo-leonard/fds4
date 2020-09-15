@@ -18,12 +18,13 @@ Quando ambulabat agendis admonere te qualis actio. Si ad corpus, quae plerumque 
 
 <div class="prop-container"></div>
 
-<div class="btn-valid">Commencer le quizz</div>
+<div class="btn-valid">Commencer le quizz <%= @projets.count %></div>
 </div>
 
 
 
 <% @projets.each do |projet| %> 
+
 
 
 <div id="projet_<%= projet.id%>">

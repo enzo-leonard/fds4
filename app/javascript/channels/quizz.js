@@ -6,7 +6,7 @@ const initQuizz = () => {
     const propContainer = document.querySelector('.prop-container')
     const h2 = document.querySelector('.quizz-center h2')
     const beginBtn = document.querySelector('.btn-valid')
-    const text = document.querySelector('#question')
+    let text = document.querySelector('#question')
 
     const questionMeta = document.querySelectorAll('[data-type="question"]')
     let questions = []
@@ -20,9 +20,10 @@ const initQuizz = () => {
     })
 
     const next = () => {
-        
+        text = document.querySelector('#question')
         let random = Math.floor(Math.random() * questions.length); 
         let id = questions[random]
+        console.log(questions)
         text.classList.add('active')
         let good_answer = document.querySelector(`#projet_${id} [data-type="good"]`)
         let prop_1 = document.querySelector(`#projet_${id} [data-type="prop_1"]`)
@@ -36,6 +37,7 @@ const initQuizz = () => {
 
 
         h2.classList.add('hidden')
+        console.log(id)
         text.innerHTML = document.querySelector(`#projet_${id} [data-type="question"]`).content
         propContainer.innerHTML = ""
         let randomOrder = Math.floor(Math.random() * 3); 
