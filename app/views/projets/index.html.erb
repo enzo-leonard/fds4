@@ -30,7 +30,7 @@
         <td><%= projet.name_structure %></td>
         <td><%= projet.title.first(30) %></td>
         <td><%= projet.url %></td>
-        <td><%= projet.keywords.first(30) %></td>
+        <td><%= projet.keywords.first(30) if projet.keywords %></td>
         <td><%= projet.difficulty %></td>
         <td><%= projet.date %></td>
         <td><%= projet.live %></td>
