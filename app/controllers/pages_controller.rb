@@ -18,6 +18,6 @@ class PagesController < ApplicationController
   end
 
   def quizz
-    @projets = Projet.all.includes(:theme, :form)
+    @projets = Projet.where(double: nil).includes(:theme, :form)
   end
 end

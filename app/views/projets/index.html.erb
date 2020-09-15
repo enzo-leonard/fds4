@@ -1,3 +1,4 @@
+<div class="container mt-5">
 <p id="notice"><%= notice %></p>
 
 <h1>Projets</h1>
@@ -32,7 +33,7 @@
         <td><%= projet.difficulty %></td>
         <td><%= projet.date %></td>
         <td><%= projet.live %></td>
-        <td><%= projet.synopsis %></td>
+        <td><%= projet.synopsis.first(50)%></td>
         <td><%= projet.image %></td>
         <td><%= projet.territory %></td>
         <td><%= projet.duration %></td>
@@ -49,3 +50,4 @@
 <br>
 
 <%= link_to 'New Projet', new_projet_path %>
+</div>

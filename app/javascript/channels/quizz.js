@@ -23,13 +23,15 @@ const initQuizz = () => {
         
         let random = Math.floor(Math.random() * questions.length); 
         let id = questions[random]
+        text.classList.add('active')
         let good_answer = document.querySelector(`#projet_${id} [data-type="good"]`)
         let prop_1 = document.querySelector(`#projet_${id} [data-type="prop_1"]`)
         let prop_2 = document.querySelector(`#projet_${id} [data-type="prop_2"]`)
         let quizzRound = document.querySelector('#quizz-round') 
-        quizzRound.outerHTML = '<circle id="quizz-round" cx="348.662" cy="348.662" r="348.662" transform="translate(1309.424 980.356) rotate(180)" fill="#039F3A" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>'
-        
-   
+        quizzRound.outerHTML = '<circle id="quizz-round" cx="348.662" cy="348.662" r="390" transform="translate(1309.424 980.356) rotate(180)" fill="#039F3A" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>'
+        Ellipse_64
+        let point = document.querySelector('#Ellipse_64') 
+        point.outerHTML = `<ellipse id="Ellipse_64" data-name="Ellipse 64" cx="10.164" cy="10.164" rx="10.164" ry="10.164" fill="#FFF"></ellipse>`
         
 
 
@@ -37,11 +39,11 @@ const initQuizz = () => {
         text.innerHTML = document.querySelector(`#projet_${id} [data-type="question"]`).content
         propContainer.innerHTML = ""
         let randomOrder = Math.floor(Math.random() * 3); 
-        if (randomOrder == 0) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop">${good_answer.content}</div>`)
-        propContainer.insertAdjacentHTML('beforeend', `<div id="bad_1" class="prop">${prop_1.content}</div>`)
-        if (randomOrder == 1) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop">${good_answer.content}</div>`)
-        if (prop_2) propContainer.insertAdjacentHTML('beforeend', `<div id="bad_2" class="prop">${prop_2.content}</div>`)
-        if (randomOrder == 2) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop">${good_answer.content}</div>`)
+        if (randomOrder == 0) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop large">${good_answer.content}</div>`)
+        propContainer.insertAdjacentHTML('beforeend', `<div id="bad_1" class="prop large">${prop_1.content}</div>`)
+        if (randomOrder == 1) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop large">${good_answer.content}</div>`)
+        if (prop_2) propContainer.insertAdjacentHTML('beforeend', `<div id="bad_2" class="prop large">${prop_2.content}</div>`)
+        if (randomOrder == 2) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop large">${good_answer.content}</div>`)
 
         let good = document.querySelector('#good')
         let bad_1 = document.querySelector('#bad_1')
@@ -58,15 +60,18 @@ const initQuizz = () => {
     }
 
     const go_answer = (result, id) => {
-     
+        text.classList.remove('active')
         let title = ""
         let answer = document.querySelector(`#projet_${id} [data-type="answer"]`).content
+        let quizzRound = document.querySelector('#quizz-round') 
+        if (result == false) quizzRound.outerHTML = '<circle id="quizz-round" cx="348.662" cy="348.662" r="390" transform="translate(1309.424 980.356) rotate(180)" fill="#E20119" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>'
+        
       
         title = (result == true) ?  "Bonne réponse" :  "Faux"
         text.innerHTML = `<h2>${title}</h2> ${answer}`
         propContainer.innerHTML = `<div data-target="#modal_${id}" class="prop"> En savoir plus </div> <div id="next" class="prop">Suivant</div>`
 
-        const toggleBtn = document.querySelectorAll('[data-target]')
+        const toggleBtn = document.querySelectorAll('.prop[data-target]')
         const blurBtn = document.querySelector('.background-modal')
         const modals = document.querySelectorAll('.modal-container')
 
