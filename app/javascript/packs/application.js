@@ -34,6 +34,7 @@ import initQuizz from "../channels/quizz";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  console.log('heyr 2')
   initModal()
   initFilter()
   initQuizz()

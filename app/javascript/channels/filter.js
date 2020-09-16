@@ -7,6 +7,9 @@ const initFilter =  () => {
             console.log('go')
         })
     })
+
+    const reset = document.querySelector('#reboot')
+
 } 
 
 
