@@ -2,7 +2,12 @@
 require 'csv'
 def test_in(word, array) array.index(word) end
 
+images = []
+Dir.entries("app/assets/images").each do |name|
+    images << name if name.start_with?('0')
+end
 
+images = images.sort
 
 ProjetTheme.destroy_all
 ProjetTarget.destroy_all
@@ -57,7 +62,7 @@ i = 0
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
 CSV.foreach("db/data.csv", csv_options) do |item|
 
-i +=1
+
 date = nil
 year = 0; month = 0; min = 0; day = 0; 
 if item['date']
@@ -77,9 +82,11 @@ double = false
 
 
 double = true if "#{last_question}" == "#{item['question']}"
-puts  "#{i} - " + last_question.first(50) + " == " + item['question'].first(50) 
-puts double
-
+i +=1 if double == false
+#puts  "#{i} - " + last_question.first(50) + " == " + item['question'].first(50) 
+#puts double
+duration = nil
+duration = item['duration'][1..] if item['duration']
 
 arg_projet = {
     name_structure:         item["name_structure"],
@@ -91,8 +98,8 @@ arg_projet = {
     synopsis:               item['synopsis'],
     difficulty:             test_in(item['difficulty'], difficulty_array),
     territory:              test_in(item['territory'], territory_array),
-    duration:               item['duration'][1..],
-    image:                  item['image'],
+    duration:               duration,
+    image:                  images[i],
     question:               item['question'],
     good_answer:            item['good_answer'],
     prop_1:                 item['prop_1'],
@@ -128,9 +135,13 @@ id_theme.each { |id| ProjetTheme.create!({projet: projet, theme: Theme.find(id)}
 end
 
 
-Projet.all.each do |projet|
+y = 0 
 
-    puts "name:         \t#{projet.title} "
+Projet.all.order(:id).each do |projet|
+    y +=1 
+
+    puts "#{y} - name: \t#{projet.title.first(20)} | image:        \t#{projet.image} "
+  
     # puts "structure:    \t#{projet.name_structure}"
     # puts "url:          \t#{projet.url}"
     # puts "keywords:     \t#{projet.keywords}"

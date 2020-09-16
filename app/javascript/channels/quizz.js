@@ -29,7 +29,7 @@ const initQuizz = () => {
         let prop_1 = document.querySelector(`#projet_${id} [data-type="prop_1"]`)
         let prop_2 = document.querySelector(`#projet_${id} [data-type="prop_2"]`)
         let quizzRound = document.querySelector('#quizz-round') 
-        quizzRound.outerHTML = '<circle id="quizz-round" cx="348.662" cy="348.662" r="390" transform="translate(1309.424 980.356) rotate(180)" fill="#039F3A" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>'
+        quizzRound.outerHTML = '<circle id="quizz-round" cx="348.662" cy="348.662" r="400" transform="translate(1309.424 980.356) rotate(180)" fill="#5771BE" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>'
         Ellipse_64
         let point = document.querySelector('#Ellipse_64') 
         point.outerHTML = `<ellipse id="Ellipse_64" data-name="Ellipse 64" cx="10.164" cy="10.164" rx="10.164" ry="10.164" fill="#FFF"></ellipse>`
@@ -64,14 +64,16 @@ const initQuizz = () => {
     const go_answer = (result, id) => {
         text.classList.remove('active')
         let title = ""
+        let color = ""
         let answer = document.querySelector(`#projet_${id} [data-type="answer"]`).content
         let quizzRound = document.querySelector('#quizz-round') 
-        if (result == false) quizzRound.outerHTML = '<circle id="quizz-round" cx="348.662" cy="348.662" r="390" transform="translate(1309.424 980.356) rotate(180)" fill="#E20119" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>'
+        quizzRound.outerHTML = '<circle id="quizz-round" cx="348.662" cy="348.662" r="400" transform="translate(1309.424 980.356) rotate(180)" fill="#EFEFEF" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>'
         
       
-        title = (result == true) ?  "Bonne réponse" :  "Faux"
-        text.innerHTML = `<h2>${title}</h2> ${answer}`
-        propContainer.innerHTML = `<div data-target="#modal_${id}" class="prop"> En savoir plus </div> <div id="next" class="prop">Suivant</div>`
+        title = (result == true) ?  "Bonne réponse !" :  "Faux"
+        color = (result == true) ? "#039F3A" : "#FF010E"
+        text.innerHTML = `<h2 style="color:${color}">${title}</h2> ${answer}`
+        propContainer.innerHTML = `<div data-target="#modal_${id}" class="prop green"> En savoir plus </div> <div id="next" class="prop green">Question suivante</div>`
 
         const toggleBtn = document.querySelectorAll('.prop[data-target]')
         const blurBtn = document.querySelector('.background-modal')

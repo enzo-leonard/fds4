@@ -9,14 +9,15 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%= favicon_link_tag asset_path('logo_fds.svg') %>
   </head>
 
   <body>
       <nav>
         <div class="container">
-          <%= image_tag "logo_fds.svg" %>
-          <%= image_tag "logo_region.svg"%>
-          <%= image_tag "menu.svg" %>
+          <a id="logo_fds" href="/"><%= image_tag "logo_fds.svg" %></a>
+          <%= image_tag "logo_region.svg", id:"logo_region" %>
+          <%= image_tag "menu.svg", id: "menu_logo" %>
           <%= image_tag "menu_logo.svg" %>
         </div>
       </nav>

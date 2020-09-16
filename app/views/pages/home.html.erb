@@ -1,7 +1,7 @@
 <% 
 difficulty_array = ["Curieux","Amateur","Averti"]
 territory_array = ["Ain", "Ardèche", "Auvergne", "Drôme", "Isère", "Loire", "Rhône", "Savoie", "Haute-Savoie"]
-duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "Plus d'une heure"]
+duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "Plus d'une heure"]
 
 %>
 <div class="background-modal hidden"></div>
@@ -11,9 +11,9 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
 
 
 <div class="menu-btn-container">
-    <div id="item1" ><div class="menu-btn">A la une </div></div>
-    <div id="item2" ><div class="menu-btn">Tout les projets</div></div>
-    <div id="item3" ><a href="/quizz" class="menu-btn">Quizz</a></div>
+    <div id="item1" ><div class="menu-btn">À la Une </div></div>
+    <div id="item2" ><a href="#form" class="menu-btn">Tous les projets</a></div>
+    <div id="item3" ><a href="/quizz" class="menu-btn">Quiz</a></div>
 </div>
 <%= image_tag "hero_desktop.svg", class: "banner-desktop" %>
 
@@ -21,12 +21,12 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
 <div class="container mt-5 mb-5">
 
 <section id="une">
-<h2>Les projets à la une</h2>
+<h2>Les projets à la Une</h2>
 <br><br>
 <div class="card-container stars">
 <% @projets.first(3).each do |projet| %>
-    <div class="card-stars">
-            <img src="https://picsum.photos/500/500?random=<%=projet.id%>">
+    <div data-target="#modal_<%=projet.id%>"  class="card-stars">
+            <img src="<%=projet.image%>">
             <h3><mark><%= projet.title%></mark></h3>
             <div class> <%= projet.synopsis%> </div>
     </div>
@@ -38,9 +38,9 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
 
 
 
-<section id=form>
+<section name="form" id=form>
 
-<h2><%= @title_search %></h2>
+<h2 id="test"><%= @title_search %></h2>
 <br>
 <form action="/home#form">
 <input id="searchInput" name="title" placeholder="Rechercher un événement  |" type=text value="<%=params[:title]%>"><br><br>
@@ -93,10 +93,10 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
     </select>
     <select name="duration">
         <option value>Durée</option>
-        <option value="0" <%="selected" if params[:duration] == "0" %>>Moins de 5 minutes</option>
-        <option value="1" <%="selected" if params[:duration] == "1" %>>5 à 15 minutes</option>
-        <option value="2" <%="selected" if params[:duration] == "2" %>>15 à 60 minutes</option>
-        <option value="3" <%="selected" if params[:duration] == "3" %>>Plus d'une heure</option>
+        <option value="1" <%="selected" if params[:duration] == "1" %>>Moins de 5 minutes</option>
+        <option value="2" <%="selected" if params[:duration] == "2" %>>5 à 15 minutes</option>
+        <option value="3" <%="selected" if params[:duration] == "3" %>>15 à 60 minutes</option>
+        <option value="4" <%="selected" if params[:duration] == "4" %>>Plus d'une heure</option>
     </select>
     <select name="territory">
         <option value>Territoire</option>
@@ -113,9 +113,10 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
     
 
     <div data-target="#modal_<%=projet.id%>" class="card">
-        <header style="background-image: url(https://picsum.photos/200/200?random=<%=projet.id%>)">
+        <header style='background-image: url("<%= asset_url("#{projet.image}") if projet.image%>")'>
+       
         
-            <h3><mark><%= projet.title%> </mark></h3>
+            <h3><mark><%= projet.title%><%= projet.territory%></mark></h3>
         </header>
         <main>
             <h4><%= projet.name_structure%></h4>
@@ -125,7 +126,7 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
         </main>
         <footer>
             <div class=line><%= image_tag "target_logo.svg", class: "logo" %> <%=projet.show_target%> </div>
-            <%if projet.live %><%= image_tag "live_logo.svg", class:"logo" %><%end%>
+            <%if projet.live %><div class="line2"><b>En live</b><%= image_tag "live_logo.svg", class:"logo" %><%end%>
            
         </footer>
     </div>
@@ -171,7 +172,7 @@ duration_array = ["Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "
                 <%= projet.synopsis%>
             
             </div>
-        <a href="<%=projet.url%>" class="btn-modal">Accéder au projet</a>
+        <a href="<%=projet.url%>" target="_blank" class="btn-modal">Accéder au projet</a>
         </div>
         
     </div>
