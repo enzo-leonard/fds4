@@ -23,6 +23,9 @@ body{
     height: 10vh;
     display: flex;
     align-items: center;
+   
+    width: 100%;
+    bottom: 0px;
     
 
     .container{
@@ -132,7 +135,7 @@ a:hover{
     bottom: 7vh;
     left: 28vw;
     right: 36vw;
-    border: 1px solid blue; 
+    
    
 
     h2 {
@@ -422,8 +425,8 @@ select{
     position: fixed;
     top: 17vh;
     bottom: 17vh;
-    left: 18vw;
-    right: 18vw;
+    left: 16vw;
+    right: 16vw;
     background-color: white;
     display: flex;
     z-index: 3;
@@ -479,8 +482,8 @@ select{
            
 
             .content{
-                padding: 20px;
-                font-size: 0.9rem;
+                padding: 14px;
+                font-size: 0.8rem;
                 height: 88%;
 
             }

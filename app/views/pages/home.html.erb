@@ -14,7 +14,7 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
     <div id="item1" ><div class="menu-btn">À la Une </div></div>
     <div id="item2" ><a href="#form" class="menu-btn">Tous les projets</a></div>
     <div id="item3" ><a href="/quizz" class="menu-btn">Quiz</a></div>
-    <div id="item4" ><a href="https://www.fetedelascience-aura.com" class="menu-btn ">Voir la programmation en présentiel</a></div>
+    <div id="item4" ><a href="https://www.fetedelascience-aura.com" class="menu-btn ">Programmation présentielle</a></div>
 </div>
 <%= image_tag "hero_desktop.svg", class: "banner-desktop" %>
 
@@ -117,7 +117,7 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
         <header style='background-image: url("<%= asset_url("#{projet.image}") if projet.image%>")'>
        
         
-            <h3><mark><%= projet.title%><%= projet.territory%></mark></h3>
+            <h3><mark><%= projet.title%></mark></h3>
         </header>
         <main>
             <h4><%= projet.name_structure%></h4>
