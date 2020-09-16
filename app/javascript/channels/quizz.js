@@ -24,7 +24,7 @@ const initQuizz = () => {
         text = document.querySelector('#question')
         let random = Math.floor(Math.random() * questions.length); 
         let id = questions[random]
-        console.log(questions)
+        
         text.classList.add('active')
         let good_answer = document.querySelector(`#projet_${id} [data-type="good"]`)
         let prop_1 = document.querySelector(`#projet_${id} [data-type="prop_1"]`)
@@ -40,10 +40,13 @@ const initQuizz = () => {
 
 
         h2.classList.add('hidden')
-        console.log(id)
+       
         text.innerHTML = document.querySelector(`#projet_${id} [data-type="question"]`).content
         propContainer.innerHTML = ""
         let randomOrder = Math.floor(Math.random() * 3); 
+        console.log(good_answer.content)
+        if (good_answer.content == "Les deux, à la fois parc d'activités ludiques et laboratoire d'innovation et de découverte") console.log('IIIIIIII')
+        if (good_answer.content == "Les deux, à la fois parc d'activités ludiques et laboratoire d'innovation et de découverte") randomOrder = 2 
         if (randomOrder == 0) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop large">${good_answer.content}</div>`)
         propContainer.insertAdjacentHTML('beforeend', `<div id="bad_1" class="prop large">${prop_1.content}</div>`)
         if (randomOrder == 1) propContainer.insertAdjacentHTML('beforeend', `<div id="good" class="prop large">${good_answer.content}</div>`)
