@@ -5,12 +5,13 @@
 body{
     background-color: white;
     font-family: 'Roboto', sans-serif;
-    min-height: 75vh;
+    min-height: 90vh;
 }
 
 .raw{
     h3{
-        background-color: none;
+        background: none !important;
+        padding-left: 0px !important;
     }
 }
 
