@@ -1,10 +1,11 @@
 const initModal = () => {
 
     const toggleBtn = document.querySelectorAll('[data-target]')
-    const blurBtn = document.querySelector('.background-modal')
+    const blurBtn = document.querySelectorAll('.background-modal, .close-btn')
     const modals = document.querySelectorAll('.modal-container')
     const navBar = document.querySelector('nav')
     const underBar = document.querySelector('.under-bar')
+ 
 
     navBar.addEventListener('click', () => { underBar.classList.toggle('active')})
 
@@ -15,14 +16,17 @@ const initModal = () => {
             const target = btn.dataset.target 
             console.log(target)
             document.querySelector(`${target}`).classList.toggle('hidden')
-            blurBtn.classList.toggle("hidden")
+            blurBtn[0].classList.remove("hidden")
         })
     })
 
     
-    blurBtn.addEventListener('click', () => {
+    blurBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
         modals.forEach((modal) => {modal.classList.add('hidden')})
-        blurBtn.classList.add("hidden")
+        blurBtn[0].classList.add("hidden")
+        })
+
     })
 
 }

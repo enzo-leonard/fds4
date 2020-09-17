@@ -49,12 +49,12 @@ Form.create!({id:16, name: "Stories Instagram"} )
 Form.create!({id:17, name: "Twitch"} )
 
 
-Target.create!({id:1, name: "3 - 6 ans | Maternelle"})
-Target.create!({id:2, name: "6 - 11 ans | Primaire"})
-Target.create!({id:3, name: "11 - 15 ans | Collège"})
-Target.create!({id:4, name: "15 - 18 ans | Lycée"})
-Target.create!({id:5, name: "18 - 25 ans | Étudiant"})
-Target.create!({id:6, name: "25 ans et +"} )#6
+Target.create!({id:1, name: "À partir de 3 ans"})
+Target.create!({id:2, name: "À partir de 6 ans"})
+Target.create!({id:3, name: "À partir de 11 ans"})
+Target.create!({id:4, name: "À partir de 15 ans"})
+Target.create!({id:5, name: "À partir de 18 ans"})
+Target.create!({id:6, name: "25 ans et plus"} )#6
 
 
 last_question = "nothing"

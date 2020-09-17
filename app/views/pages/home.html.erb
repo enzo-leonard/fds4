@@ -12,7 +12,7 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
 
 <div class="menu-btn-container">
     <div id="item1" ><div class="menu-btn">À la Une </div></div>
-    <div id="item2" ><a href="#form" class="menu-btn">Tous les projets</a></div>
+    <div id="item2" ><a href="#form" class="menu-btn">Tous les projets numériques</a></div>
     <div id="item3" ><a href="/quizz" class="menu-btn">Quiz</a></div>
     <div id="item4" ><a href="https://www.fetedelascience-aura.com" class="menu-btn ">Programmation présentielle</a></div>
 </div>
@@ -109,11 +109,16 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
 
 <div class=card-container>
 
+    <% 
+    x = 0
+    %> 
+
     <% @projets.each do |projet|%>
+    <% x = x+1 %>
 
     
 
-    <div data-target="#modal_<%=projet.id%>" class="card">
+    <div data-target="#modal_<%=x%>" class="card">
         <header style='background-image: url("<%= asset_url("#{projet.image}") if projet.image%>")'>
        
         
@@ -135,8 +140,10 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
 
 
 
-    <div id="modal_<%=projet.id%>" class="modal-container hidden">
-    <div data-target="#modal_<%=projet.id%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
+    <div id="modal_<%=x%>" class="modal-container hidden">
+    <div id="modal_next_<%=x%>" data-target="#modal_<%=x+1%>" class="arrow-right <%="hidden" if x == @projets.count.count%>"> <i class="fas fa-arrow-right"></i> </div>
+    <div id="modal_prev_<%=x%>" data-target="#modal_<%=x-1%>" class="arrow-left <%="hidden" if x == 1%>""> <i class="fas fa-arrow-left"></i> </div>
+    <div data-target="#modal_<%=x%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
     <div class="right">
         <img src="<%=asset_url("#{projet.image.to_s}")%>">
         <h3><mark><%= projet.title%></mark></h3>
@@ -193,41 +200,6 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
 
 
 <div>
-
-
-<div id="modal_new" class="modal-container hidden">
-    <div data-target="#modal_new" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
-    <div class="right">
-        <img src="https://picsum.photos/500/500?random=2">
-        <h3><mark>Lyon, épicentre de la recherche en infectiologie</mark></h3>
-       
-    </div>
-    <div class="left">
-        <header><h4>Planétarium</h4></header>
-        <div class="left2">
-            <div class="domain">    
-                Domaine 1 ● Domaine 2 ● Domaine 3 ● Domaine 4 ● Domaine 5
-            </div>
-            <div class="other">
-                <i class="icon fas fa-info-circle"></i><b>Description</b>
-                <i class="icon fas fa-info-circle"></i><b>Description</b>
-                <i class="icon fas fa-info-circle"></i><b>Description</b>
-                <i class="icon fas fa-info-circle"></i><b>Description</b>
-                <i class="icon fas fa-info-circle"></i><b>Description</b>
-            </div>
-
-        </div>
-        <div class="right2">
-            <div class=content>
-                <b>Spectacle, Interview</b>
-            
-                Pas d’électricité les jours sans soleil. C’est trop cher. Les panneaux ne se recyclent pas. S’il vous reste quelques idées reçues sur l’énergie photovoltaïque, participez à l’atelier pratique sur le sujet avec l’Hespul. Et, surtout, amusez-vous bien !
-            </div>
-        <div class="btn-modal">Accéder au projet</div>
-        </div>
-        
-    </div>
-</div>
 
 </section>
 
