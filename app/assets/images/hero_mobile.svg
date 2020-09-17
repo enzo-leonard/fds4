@@ -1,0 +1,411 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="449.531" height="486.276" viewBox="0 0 449.531 486.276">
+  <g id="Composant_32_1" data-name="Composant 32 – 1" transform="translate(0.5 0.5)">
+    <ellipse id="Ellipse_60" data-name="Ellipse 60" cx="224.266" cy="224.265" rx="224.266" ry="224.265" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <ellipse id="Ellipse_61" data-name="Ellipse 61" cx="141.405" cy="141.405" rx="141.405" ry="141.405" transform="translate(82.861 82.86)" fill="none" stroke="#009f3b" stroke-width="10" stroke-dasharray="1 3"/>
+    <circle id="Ellipse_62" data-name="Ellipse 62" cx="85" cy="85" r="85" transform="matrix(-0.966, -0.259, 0.259, -0.966, 283.226, 327.225)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="10" stroke-dasharray="2 6"/>
+    <g id="Groupe_24" data-name="Groupe 24" transform="translate(116.957 117.12)">
+      <line id="Ligne_364" data-name="Ligne 364" x2="3.335" y2="9.164" transform="translate(105.7 0)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_365" data-name="Ligne 365" x2="3.653" y2="9.042" transform="translate(101.959 0.118)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_366" data-name="Ligne 366" x2="3.967" y2="8.909" transform="translate(98.224 0.367)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_367" data-name="Ligne 367" x2="4.275" y2="8.765" transform="translate(94.5 0.746)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_368" data-name="Ligne 368" x2="4.578" y2="8.611" transform="translate(90.792 1.255)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_369" data-name="Ligne 369" x2="4.876" y2="8.446" transform="translate(87.104 1.893)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_370" data-name="Ligne 370" x2="5.168" y2="8.27" transform="translate(83.44 2.659)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_371" data-name="Ligne 371" x2="5.453" y2="8.085" transform="translate(79.806 3.553)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_372" data-name="Ligne 372" x2="5.732" y2="7.89" transform="translate(76.204 4.573)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_373" data-name="Ligne 373" x2="6.004" y2="7.685" transform="translate(72.641 5.718)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_374" data-name="Ligne 374" x2="6.269" y2="7.47" transform="translate(69.12 6.986)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_375" data-name="Ligne 375" x2="6.525" y2="7.247" transform="translate(65.645 8.377)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_376" data-name="Ligne 376" x2="6.774" y2="7.015" transform="translate(62.22 9.888)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_377" data-name="Ligne 377" x2="7.015" y2="6.774" transform="translate(58.851 11.518)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_378" data-name="Ligne 378" x2="7.247" y2="6.525" transform="translate(55.54 13.265)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_379" data-name="Ligne 379" x2="7.471" y2="6.268" transform="translate(52.293 15.126)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_380" data-name="Ligne 380" x2="7.685" y2="6.004" transform="translate(49.112 17.099)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_381" data-name="Ligne 381" x2="7.89" y2="5.732" transform="translate(46.002 19.182)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_382" data-name="Ligne 382" x2="8.085" y2="5.453" transform="translate(42.967 21.372)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_383" data-name="Ligne 383" x2="8.27" y2="5.168" transform="translate(40.01 23.666)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_384" data-name="Ligne 384" x2="8.446" y2="4.876" transform="translate(37.135 26.063)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_385" data-name="Ligne 385" x2="8.611" y2="4.578" transform="translate(34.345 28.558)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_386" data-name="Ligne 386" x2="8.765" y2="4.275" transform="translate(31.645 31.15)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_387" data-name="Ligne 387" x2="8.909" y2="3.967" transform="translate(29.036 33.834)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_388" data-name="Ligne 388" x2="9.042" y2="3.653" transform="translate(26.522 36.607)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_389" data-name="Ligne 389" x2="9.164" y2="3.335" transform="translate(24.107 39.466)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_390" data-name="Ligne 390" x2="9.275" y2="3.014" transform="translate(21.793 42.408)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_391" data-name="Ligne 391" x2="9.374" y2="2.688" transform="translate(19.583 45.429)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_392" data-name="Ligne 392" x2="9.462" y2="2.359" transform="translate(17.48 48.525)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_393" data-name="Ligne 393" x2="9.539" y2="2.028" transform="translate(15.486 51.693)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_394" data-name="Ligne 394" x2="9.604" y2="1.693" transform="translate(13.604 54.928)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_395" data-name="Ligne 395" x2="9.657" y2="1.357" transform="translate(11.836 58.227)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_396" data-name="Ligne 396" x2="9.699" y2="1.019" transform="translate(10.184 61.586)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_397" data-name="Ligne 397" x2="9.728" y2="0.68" transform="translate(8.651 65)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_398" data-name="Ligne 398" x2="9.746" y2="0.34" transform="translate(7.237 68.466)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_399" data-name="Ligne 399" x2="9.752" transform="translate(5.946 71.979)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_400" data-name="Ligne 400" y1="0.34" x2="9.746" transform="translate(4.778 75.195)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_401" data-name="Ligne 401" y1="0.68" x2="9.728" transform="translate(3.734 78.449)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_402" data-name="Ligne 402" y1="1.019" x2="9.699" transform="translate(2.817 81.739)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_403" data-name="Ligne 403" y1="1.357" x2="9.657" transform="translate(2.027 85.06)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_404" data-name="Ligne 404" y1="1.693" x2="9.604" transform="translate(1.365 88.407)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_405" data-name="Ligne 405" y1="2.028" x2="9.539" transform="translate(0.832 91.778)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_406" data-name="Ligne 406" y1="2.359" x2="9.462" transform="translate(0.428 95.168)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_407" data-name="Ligne 407" y1="2.688" x2="9.374" transform="translate(0.155 98.572)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_408" data-name="Ligne 408" y1="3.014" x2="9.275" transform="translate(0.012 101.986)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_409" data-name="Ligne 409" y1="3.335" x2="9.164" transform="translate(0 105.407)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_410" data-name="Ligne 410" y1="3.653" x2="9.042" transform="translate(0.118 108.831)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_411" data-name="Ligne 411" y1="3.967" x2="8.909" transform="translate(0.367 112.252)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_412" data-name="Ligne 412" y1="4.275" x2="8.765" transform="translate(0.746 115.667)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_413" data-name="Ligne 413" y1="4.578" x2="8.611" transform="translate(1.255 119.072)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_414" data-name="Ligne 414" y1="4.876" x2="8.446" transform="translate(1.893 122.462)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_415" data-name="Ligne 415" y1="5.168" x2="8.27" transform="translate(2.659 125.834)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_416" data-name="Ligne 416" y1="5.453" x2="8.085" transform="translate(3.553 129.183)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_417" data-name="Ligne 417" y1="5.732" x2="7.89" transform="translate(4.573 132.506)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_418" data-name="Ligne 418" y1="6.004" x2="7.685" transform="translate(5.718 135.798)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_419" data-name="Ligne 419" y1="6.268" x2="7.471" transform="translate(6.987 139.054)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_420" data-name="Ligne 420" y1="6.525" x2="7.247" transform="translate(8.377 142.272)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_421" data-name="Ligne 421" y1="6.774" x2="7.015" transform="translate(9.889 145.448)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_422" data-name="Ligne 422" y1="7.015" x2="6.774" transform="translate(11.519 148.576)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_423" data-name="Ligne 423" y1="7.247" x2="6.525" transform="translate(13.265 151.655)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_424" data-name="Ligne 424" y1="7.47" x2="6.269" transform="translate(15.126 154.679)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_425" data-name="Ligne 425" y1="7.685" x2="6.004" transform="translate(17.099 157.645)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_426" data-name="Ligne 426" y1="7.89" x2="5.732" transform="translate(19.182 160.55)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_427" data-name="Ligne 427" y1="8.085" x2="5.453" transform="translate(21.372 163.39)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_428" data-name="Ligne 428" y1="8.27" x2="5.168" transform="translate(23.667 166.162)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_429" data-name="Ligne 429" y1="8.446" x2="4.876" transform="translate(26.063 168.862)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_430" data-name="Ligne 430" y1="8.611" x2="4.578" transform="translate(28.559 171.486)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_431" data-name="Ligne 431" y1="8.765" x2="4.275" transform="translate(31.15 174.033)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_432" data-name="Ligne 432" y1="8.909" x2="3.967" transform="translate(33.834 176.498)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_433" data-name="Ligne 433" y1="9.042" x2="3.653" transform="translate(36.607 178.878)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_434" data-name="Ligne 434" y1="9.164" x2="3.335" transform="translate(39.467 181.172)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_435" data-name="Ligne 435" y1="9.275" x2="3.014" transform="translate(42.408 183.375)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_436" data-name="Ligne 436" y1="9.374" x2="2.688" transform="translate(45.429 185.485)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_437" data-name="Ligne 437" y1="9.462" x2="2.359" transform="translate(48.526 187.5)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_438" data-name="Ligne 438" y1="9.539" x2="2.028" transform="translate(51.693 189.417)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_439" data-name="Ligne 439" y1="9.604" x2="1.693" transform="translate(54.929 191.234)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_440" data-name="Ligne 440" y1="9.657" x2="1.357" transform="translate(58.228 192.949)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_441" data-name="Ligne 441" y1="9.699" x2="1.019" transform="translate(61.586 194.559)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_442" data-name="Ligne 442" y1="9.728" x2="0.68" transform="translate(65.001 196.063)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_443" data-name="Ligne 443" y1="9.746" x2="0.34" transform="translate(68.467 197.459)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_444" data-name="Ligne 444" y1="9.752" transform="translate(71.98 198.744)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_445" data-name="Ligne 445" x1="0.34" y1="9.746" transform="translate(75.195 199.919)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_446" data-name="Ligne 446" x1="0.68" y1="9.728" transform="translate(78.45 200.98)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_447" data-name="Ligne 447" x1="1.019" y1="9.699" transform="translate(81.739 201.927)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_448" data-name="Ligne 448" x1="1.357" y1="9.657" transform="translate(85.06 202.758)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_449" data-name="Ligne 449" x1="1.693" y1="9.604" transform="translate(88.408 203.474)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_450" data-name="Ligne 450" x1="2.028" y1="9.539" transform="translate(91.778 204.072)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_451" data-name="Ligne 451" x1="2.359" y1="9.462" transform="translate(95.168 204.552)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_452" data-name="Ligne 452" x1="2.688" y1="9.374" transform="translate(98.572 204.913)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_453" data-name="Ligne 453" x1="3.014" y1="9.275" transform="translate(101.987 205.155)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_454" data-name="Ligne 454" x1="3.335" y1="9.164" transform="translate(105.408 205.278)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_455" data-name="Ligne 455" x1="3.653" y1="9.042" transform="translate(108.831 205.282)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_456" data-name="Ligne 456" x1="3.967" y1="8.909" transform="translate(112.252 205.166)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_457" data-name="Ligne 457" x1="4.275" y1="8.765" transform="translate(115.668 204.931)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_458" data-name="Ligne 458" x1="4.578" y1="8.611" transform="translate(119.072 204.576)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_459" data-name="Ligne 459" x1="4.876" y1="8.446" transform="translate(122.463 204.104)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_460" data-name="Ligne 460" x1="5.168" y1="8.27" transform="translate(125.835 203.513)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_461" data-name="Ligne 461" x1="5.453" y1="8.085" transform="translate(129.184 202.804)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_462" data-name="Ligne 462" x1="5.732" y1="7.89" transform="translate(132.506 201.98)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_463" data-name="Ligne 463" x1="6.004" y1="7.685" transform="translate(135.798 201.04)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_464" data-name="Ligne 464" x1="6.269" y1="7.47" transform="translate(139.055 199.985)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_465" data-name="Ligne 465" x1="6.525" y1="7.247" transform="translate(142.273 198.818)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_466" data-name="Ligne 466" x1="6.774" y1="7.015" transform="translate(145.448 197.539)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_467" data-name="Ligne 467" x1="7.015" y1="6.774" transform="translate(148.577 196.149)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_468" data-name="Ligne 468" x1="7.247" y1="6.525" transform="translate(151.655 194.652)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_469" data-name="Ligne 469" x1="7.471" y1="6.268" transform="translate(154.68 193.048)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_470" data-name="Ligne 470" x1="7.685" y1="6.004" transform="translate(157.646 191.339)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_471" data-name="Ligne 471" x1="7.89" y1="5.732" transform="translate(160.551 189.528)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_472" data-name="Ligne 472" x1="8.085" y1="5.453" transform="translate(163.391 187.617)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_473" data-name="Ligne 473" x1="8.27" y1="5.168" transform="translate(166.163 185.608)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_474" data-name="Ligne 474" x1="8.446" y1="4.876" transform="translate(168.862 183.503)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_475" data-name="Ligne 475" x1="8.611" y1="4.578" transform="translate(171.487 181.305)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_476" data-name="Ligne 476" x1="8.765" y1="4.275" transform="translate(174.033 179.017)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_477" data-name="Ligne 477" x1="8.909" y1="3.967" transform="translate(176.498 176.642)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_478" data-name="Ligne 478" x1="9.042" y1="3.653" transform="translate(178.879 174.182)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_479" data-name="Ligne 479" x1="9.164" y1="3.335" transform="translate(181.172 171.64)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_480" data-name="Ligne 480" x1="9.275" y1="3.014" transform="translate(183.375 169.02)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_481" data-name="Ligne 481" x1="9.374" y1="2.688" transform="translate(185.486 166.325)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_482" data-name="Ligne 482" x1="9.462" y1="2.359" transform="translate(187.501 163.558)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_483" data-name="Ligne 483" x1="9.539" y1="2.028" transform="translate(189.418 160.722)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_484" data-name="Ligne 484" x1="9.604" y1="1.693" transform="translate(191.235 157.82)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_485" data-name="Ligne 485" x1="9.657" y1="1.357" transform="translate(192.95 154.857)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_486" data-name="Ligne 486" x1="9.699" y1="1.019" transform="translate(194.56 151.837)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_487" data-name="Ligne 487" x1="9.728" y1="0.68" transform="translate(196.064 148.761)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_488" data-name="Ligne 488" x1="9.746" y1="0.34" transform="translate(197.459 145.635)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_489" data-name="Ligne 489" x1="9.752" transform="translate(198.745 142.463)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_490" data-name="Ligne 490" x1="9.746" y2="0.34" transform="translate(199.919 138.907)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_491" data-name="Ligne 491" x1="9.728" y2="0.68" transform="translate(200.98 135.312)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_492" data-name="Ligne 492" x1="9.699" y2="1.019" transform="translate(201.927 131.684)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_493" data-name="Ligne 493" x1="9.657" y2="1.357" transform="translate(202.759 128.025)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_494" data-name="Ligne 494" x1="9.604" y2="1.693" transform="translate(203.474 124.341)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_495" data-name="Ligne 495" x1="9.539" y2="2.028" transform="translate(204.072 120.636)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_496" data-name="Ligne 496" x1="9.462" y2="2.359" transform="translate(204.552 116.915)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_497" data-name="Ligne 497" x1="9.374" y2="2.688" transform="translate(204.914 113.182)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_498" data-name="Ligne 498" x1="9.275" y2="3.014" transform="translate(205.156 109.442)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_499" data-name="Ligne 499" x1="9.164" y2="3.335" transform="translate(205.279 105.699)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_500" data-name="Ligne 500" x1="9.042" y2="3.653" transform="translate(205.283 101.958)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_501" data-name="Ligne 501" x1="8.909" y2="3.967" transform="translate(205.167 98.224)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_502" data-name="Ligne 502" x1="8.765" y2="4.275" transform="translate(204.931 94.5)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_503" data-name="Ligne 503" x1="8.611" y2="4.578" transform="translate(204.577 90.792)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_504" data-name="Ligne 504" x1="8.446" y2="4.876" transform="translate(204.104 87.104)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_505" data-name="Ligne 505" x1="8.27" y2="5.168" transform="translate(203.513 83.44)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_506" data-name="Ligne 506" x1="8.085" y2="5.453" transform="translate(202.805 79.805)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_507" data-name="Ligne 507" x1="7.89" y2="5.732" transform="translate(201.98 76.204)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_508" data-name="Ligne 508" x1="7.685" y2="6.004" transform="translate(201.04 72.641)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_509" data-name="Ligne 509" x1="7.471" y2="6.268" transform="translate(199.986 69.119)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_510" data-name="Ligne 510" x1="7.247" y2="6.525" transform="translate(198.818 65.644)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_511" data-name="Ligne 511" x1="7.015" y2="6.774" transform="translate(197.539 62.22)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_512" data-name="Ligne 512" x1="6.774" y2="7.015" transform="translate(196.15 58.851)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_513" data-name="Ligne 513" x1="6.525" y2="7.247" transform="translate(194.653 55.54)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_514" data-name="Ligne 514" x1="6.269" y2="7.47" transform="translate(193.049 52.293)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_515" data-name="Ligne 515" x1="6.004" y2="7.685" transform="translate(191.34 49.112)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_516" data-name="Ligne 516" x1="5.732" y2="7.89" transform="translate(189.529 46.002)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_517" data-name="Ligne 517" x1="5.453" y2="8.085" transform="translate(187.618 42.967)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_518" data-name="Ligne 518" x1="5.168" y2="8.27" transform="translate(185.608 40.01)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_519" data-name="Ligne 519" x1="4.876" y2="8.446" transform="translate(183.504 37.135)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_520" data-name="Ligne 520" x1="4.578" y2="8.611" transform="translate(181.306 34.345)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_521" data-name="Ligne 521" x1="4.275" y2="8.765" transform="translate(179.018 31.644)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_522" data-name="Ligne 522" x1="3.967" y2="8.909" transform="translate(176.643 29.035)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_523" data-name="Ligne 523" x1="3.653" y2="9.042" transform="translate(174.183 26.522)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_524" data-name="Ligne 524" x1="3.335" y2="9.164" transform="translate(171.641 24.107)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_525" data-name="Ligne 525" x1="3.014" y2="9.275" transform="translate(169.021 21.793)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_526" data-name="Ligne 526" x1="2.688" y2="9.374" transform="translate(166.325 19.583)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_527" data-name="Ligne 527" x1="2.359" y2="9.462" transform="translate(163.558 17.48)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_528" data-name="Ligne 528" x1="2.028" y2="9.539" transform="translate(160.722 15.486)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_529" data-name="Ligne 529" x1="1.693" y2="9.604" transform="translate(157.821 13.604)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_530" data-name="Ligne 530" x1="1.357" y2="9.657" transform="translate(154.858 11.836)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_531" data-name="Ligne 531" x1="1.019" y2="9.699" transform="translate(151.837 10.184)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_532" data-name="Ligne 532" x1="0.68" y2="9.728" transform="translate(148.762 8.651)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_533" data-name="Ligne 533" x1="0.34" y2="9.746" transform="translate(145.636 7.237)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_534" data-name="Ligne 534" y2="9.752" transform="translate(142.463 5.946)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_535" data-name="Ligne 535" x2="0.34" y2="9.746" transform="translate(138.907 4.777)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_536" data-name="Ligne 536" x2="0.68" y2="9.728" transform="translate(135.313 3.734)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_537" data-name="Ligne 537" x2="1.019" y2="9.699" transform="translate(131.684 2.817)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_538" data-name="Ligne 538" x2="1.357" y2="9.657" transform="translate(128.026 2.026)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_539" data-name="Ligne 539" x2="1.693" y2="9.604" transform="translate(124.342 1.364)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_540" data-name="Ligne 540" x2="2.028" y2="9.539" transform="translate(120.637 0.831)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_541" data-name="Ligne 541" x2="2.359" y2="9.462" transform="translate(116.916 0.428)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_542" data-name="Ligne 542" x2="2.688" y2="9.374" transform="translate(113.183 0.155)" fill="none" stroke="#315ca4" stroke-width="1"/>
+      <line id="Ligne_543" data-name="Ligne 543" x2="3.014" y2="9.275" transform="translate(109.443 0.012)" fill="none" stroke="#315ca4" stroke-width="1"/>
+    </g>
+    <g id="Groupe_25" data-name="Groupe 25" transform="translate(97.103 97.052)">
+      <line id="Ligne_544" data-name="Ligne 544" x1="4.66" y1="4.788" transform="translate(124.713 0.007)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_545" data-name="Ligne 545" x1="4.825" y1="4.622" transform="translate(120.278 0.168)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_546" data-name="Ligne 546" x1="4.983" y1="4.451" transform="translate(115.852 0.484)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_547" data-name="Ligne 547" x1="5.135" y1="4.275" transform="translate(111.439 0.955)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_548" data-name="Ligne 548" x1="5.281" y1="4.093" transform="translate(107.045 1.579)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_549" data-name="Ligne 549" x1="5.421" y1="3.906" transform="translate(102.676 2.356)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_550" data-name="Ligne 550" x1="5.554" y1="3.714" transform="translate(98.337 3.285)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_551" data-name="Ligne 551" x1="5.68" y1="3.518" transform="translate(94.033 4.365)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_552" data-name="Ligne 552" x1="5.8" y1="3.318" transform="translate(89.769 5.595)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_553" data-name="Ligne 553" x1="5.912" y1="3.114" transform="translate(85.55 6.973)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_554" data-name="Ligne 554" x1="6.017" y1="2.905" transform="translate(81.382 8.497)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_555" data-name="Ligne 555" x1="6.115" y1="2.694" transform="translate(77.27 10.165)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_556" data-name="Ligne 556" x1="6.205" y1="2.479" transform="translate(73.219 11.976)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_557" data-name="Ligne 557" x1="6.288" y1="2.26" transform="translate(69.233 13.928)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_558" data-name="Ligne 558" x1="6.363" y1="2.04" transform="translate(65.318 16.017)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_559" data-name="Ligne 559" x1="6.43" y1="1.816" transform="translate(61.478 18.241)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_560" data-name="Ligne 560" x1="6.49" y1="1.591" transform="translate(57.718 20.599)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_561" data-name="Ligne 561" x1="6.541" y1="1.363" transform="translate(54.043 23.086)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_562" data-name="Ligne 562" x1="6.585" y1="1.134" transform="translate(50.456 25.7)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_563" data-name="Ligne 563" x1="6.62" y1="0.904" transform="translate(46.964 28.437)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_564" data-name="Ligne 564" x1="6.648" y1="0.672" transform="translate(43.568 31.295)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_565" data-name="Ligne 565" x1="6.667" y1="0.44" transform="translate(40.275 34.269)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_566" data-name="Ligne 566" x1="6.678" y1="0.207" transform="translate(37.087 37.356)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_567" data-name="Ligne 567" x1="6.682" y2="0.026" transform="translate(34.009 40.527)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_568" data-name="Ligne 568" x1="6.677" y2="0.26" transform="translate(31.045 43.596)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_569" data-name="Ligne 569" x1="6.664" y2="0.492" transform="translate(28.197 46.767)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_570" data-name="Ligne 570" x1="6.642" y2="0.725" transform="translate(25.471 50.036)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_571" data-name="Ligne 571" x1="6.613" y2="0.956" transform="translate(22.867 53.399)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_572" data-name="Ligne 572" x1="6.576" y2="1.186" transform="translate(20.391 56.851)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_573" data-name="Ligne 573" x1="6.53" y2="1.415" transform="translate(18.045 60.389)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_574" data-name="Ligne 574" x1="6.477" y2="1.642" transform="translate(15.832 64.009)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_575" data-name="Ligne 575" x1="6.416" y2="1.867" transform="translate(13.755 67.705)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_576" data-name="Ligne 576" x1="6.346" y2="2.09" transform="translate(11.815 71.474)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_577" data-name="Ligne 577" x1="6.27" y2="2.31" transform="translate(10.016 75.31)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_578" data-name="Ligne 578" x1="6.185" y2="2.527" transform="translate(8.36 79.21)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_579" data-name="Ligne 579" x1="6.093" y2="2.742" transform="translate(6.849 83.168)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_580" data-name="Ligne 580" x1="5.994" y2="2.953" transform="translate(5.484 87.18)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_581" data-name="Ligne 581" x1="5.887" y2="3.16" transform="translate(4.267 91.24)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_582" data-name="Ligne 582" x1="5.773" y2="3.364" transform="translate(3.2 95.344)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_583" data-name="Ligne 583" x1="5.652" y2="3.563" transform="translate(2.284 99.487)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_584" data-name="Ligne 584" x1="5.525" y2="3.758" transform="translate(1.519 103.663)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_585" data-name="Ligne 585" x1="5.39" y2="3.949" transform="translate(0.908 107.868)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_586" data-name="Ligne 586" x1="5.249" y2="4.134" transform="translate(0.451 112.096)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_587" data-name="Ligne 587" x1="5.101" y2="4.315" transform="translate(0.148 116.343)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_588" data-name="Ligne 588" x1="4.948" y2="4.49" transform="translate(0 120.603)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_589" data-name="Ligne 589" x1="4.788" y2="4.66" transform="translate(0.007 124.871)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_590" data-name="Ligne 590" x1="4.622" y2="4.825" transform="translate(0.168 129.141)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_591" data-name="Ligne 591" x1="4.451" y2="4.983" transform="translate(0.484 133.409)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_592" data-name="Ligne 592" x1="4.275" y2="5.135" transform="translate(0.955 137.67)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_593" data-name="Ligne 593" x1="4.093" y2="5.281" transform="translate(1.579 141.917)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_594" data-name="Ligne 594" x1="3.906" y2="5.421" transform="translate(2.356 146.147)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_595" data-name="Ligne 595" x1="3.714" y2="5.554" transform="translate(3.285 150.353)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_596" data-name="Ligne 596" x1="3.518" y2="5.68" transform="translate(4.365 154.531)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_597" data-name="Ligne 597" x1="3.318" y2="5.8" transform="translate(5.595 158.676)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_598" data-name="Ligne 598" x1="3.114" y2="5.912" transform="translate(6.973 162.782)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_599" data-name="Ligne 599" x1="2.905" y2="6.017" transform="translate(8.497 166.845)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_600" data-name="Ligne 600" x1="2.694" y2="6.115" transform="translate(10.165 170.859)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_601" data-name="Ligne 601" x1="2.479" y2="6.205" transform="translate(11.976 174.82)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_602" data-name="Ligne 602" x1="2.26" y2="6.288" transform="translate(13.928 178.723)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_603" data-name="Ligne 603" x1="2.04" y2="6.363" transform="translate(16.017 182.564)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_604" data-name="Ligne 604" x1="1.816" y2="6.43" transform="translate(18.242 186.336)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_605" data-name="Ligne 605" x1="1.591" y2="6.49" transform="translate(20.599 190.037)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_606" data-name="Ligne 606" x1="1.363" y2="6.541" transform="translate(23.086 193.66)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_607" data-name="Ligne 607" x1="1.134" y2="6.585" transform="translate(25.7 197.203)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_608" data-name="Ligne 608" x1="0.904" y2="6.62" transform="translate(28.437 200.66)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_609" data-name="Ligne 609" x1="0.672" y2="6.648" transform="translate(31.295 204.028)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_610" data-name="Ligne 610" x1="0.44" y2="6.667" transform="translate(34.269 207.302)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_611" data-name="Ligne 611" x1="0.207" y2="6.678" transform="translate(37.357 210.478)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_612" data-name="Ligne 612" x2="0.026" y2="6.682" transform="translate(40.527 213.553)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_613" data-name="Ligne 613" x2="0.26" y2="6.677" transform="translate(43.596 216.523)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_614" data-name="Ligne 614" x2="0.492" y2="6.663" transform="translate(46.767 219.383)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_615" data-name="Ligne 615" x2="0.725" y2="6.642" transform="translate(50.036 222.131)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_616" data-name="Ligne 616" x2="0.956" y2="6.613" transform="translate(53.399 224.764)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_617" data-name="Ligne 617" x2="1.186" y2="6.576" transform="translate(56.851 227.277)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_618" data-name="Ligne 618" x2="1.415" y2="6.53" transform="translate(60.389 229.669)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_619" data-name="Ligne 619" x2="1.642" y2="6.477" transform="translate(64.009 231.935)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_620" data-name="Ligne 620" x2="1.867" y2="6.416" transform="translate(67.705 234.074)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_621" data-name="Ligne 621" x2="2.09" y2="6.346" transform="translate(71.474 236.082)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_622" data-name="Ligne 622" x2="2.31" y2="6.27" transform="translate(75.311 237.958)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_623" data-name="Ligne 623" x2="2.527" y2="6.185" transform="translate(79.21 239.699)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_624" data-name="Ligne 624" x2="2.742" y2="6.093" transform="translate(83.168 241.302)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_625" data-name="Ligne 625" x2="2.953" y2="5.994" transform="translate(87.18 242.767)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_626" data-name="Ligne 626" x2="3.16" y2="5.887" transform="translate(91.24 244.09)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_627" data-name="Ligne 627" x2="3.364" y2="5.773" transform="translate(95.344 245.271)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_628" data-name="Ligne 628" x2="3.563" y2="5.652" transform="translate(99.487 246.308)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_629" data-name="Ligne 629" x2="3.758" y2="5.525" transform="translate(103.663 247.2)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_630" data-name="Ligne 630" x2="3.949" y2="5.39" transform="translate(107.868 247.946)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_631" data-name="Ligne 631" x2="4.134" y2="5.249" transform="translate(112.097 248.544)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_632" data-name="Ligne 632" x2="4.315" y2="5.101" transform="translate(116.343 248.994)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_633" data-name="Ligne 633" x2="4.49" y2="4.948" transform="translate(120.603 249.296)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_634" data-name="Ligne 634" x2="4.66" y2="4.788" transform="translate(124.871 249.449)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_635" data-name="Ligne 635" x2="4.825" y2="4.622" transform="translate(129.142 249.453)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_636" data-name="Ligne 636" x2="4.983" y2="4.451" transform="translate(133.41 249.308)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_637" data-name="Ligne 637" x2="5.135" y2="4.275" transform="translate(137.67 249.015)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_638" data-name="Ligne 638" x2="5.281" y2="4.093" transform="translate(141.918 248.572)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_639" data-name="Ligne 639" x2="5.421" y2="3.906" transform="translate(146.147 247.982)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_640" data-name="Ligne 640" x2="5.554" y2="3.714" transform="translate(150.354 247.244)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_641" data-name="Ligne 641" x2="5.68" y2="3.518" transform="translate(154.532 246.36)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_642" data-name="Ligne 642" x2="5.8" y2="3.318" transform="translate(158.676 245.331)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_643" data-name="Ligne 643" x2="5.912" y2="3.114" transform="translate(162.783 244.158)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_644" data-name="Ligne 644" x2="6.017" y2="2.905" transform="translate(166.845 242.842)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_645" data-name="Ligne 645" x2="6.115" y2="2.694" transform="translate(170.86 241.385)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_646" data-name="Ligne 646" x2="6.205" y2="2.479" transform="translate(174.821 239.789)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_647" data-name="Ligne 647" x2="6.288" y2="2.26" transform="translate(178.724 238.056)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_648" data-name="Ligne 648" x2="6.363" y2="2.04" transform="translate(182.564 236.188)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_649" data-name="Ligne 649" x2="6.43" y2="1.816" transform="translate(186.337 234.186)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_650" data-name="Ligne 650" x2="6.49" y2="1.591" transform="translate(190.037 232.054)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_651" data-name="Ligne 651" x2="6.541" y2="1.363" transform="translate(193.661 229.795)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_652" data-name="Ligne 652" x2="6.585" y2="1.134" transform="translate(197.203 227.41)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_653" data-name="Ligne 653" x2="6.62" y2="0.904" transform="translate(200.661 224.903)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_654" data-name="Ligne 654" x2="6.648" y2="0.672" transform="translate(204.028 222.277)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_655" data-name="Ligne 655" x2="6.667" y2="0.44" transform="translate(207.302 219.535)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_656" data-name="Ligne 656" x2="6.678" y2="0.207" transform="translate(210.479 216.681)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_657" data-name="Ligne 657" y1="0.026" x2="6.682" transform="translate(213.554 213.691)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_658" data-name="Ligne 658" y1="0.26" x2="6.677" transform="translate(216.523 210.388)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_659" data-name="Ligne 659" y1="0.492" x2="6.664" transform="translate(219.384 206.985)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_660" data-name="Ligne 660" y1="0.725" x2="6.642" transform="translate(222.132 203.484)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_661" data-name="Ligne 661" y1="0.956" x2="6.613" transform="translate(224.764 199.889)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_662" data-name="Ligne 662" y1="1.186" x2="6.576" transform="translate(227.278 196.207)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_663" data-name="Ligne 663" y1="1.415" x2="6.53" transform="translate(229.669 192.44)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_664" data-name="Ligne 664" y1="1.642" x2="6.477" transform="translate(231.936 188.593)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_665" data-name="Ligne 665" y1="1.867" x2="6.416" transform="translate(234.074 184.672)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_666" data-name="Ligne 666" y1="2.09" x2="6.346" transform="translate(236.083 180.68)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_667" data-name="Ligne 667" y1="2.31" x2="6.27" transform="translate(237.958 176.624)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_668" data-name="Ligne 668" y1="2.527" x2="6.185" transform="translate(239.699 172.506)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_669" data-name="Ligne 669" y1="2.742" x2="6.093" transform="translate(241.303 168.334)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_670" data-name="Ligne 670" y1="2.953" x2="5.994" transform="translate(242.767 164.111)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_671" data-name="Ligne 671" y1="3.16" x2="5.887" transform="translate(244.091 159.844)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_672" data-name="Ligne 672" y1="3.364" x2="5.773" transform="translate(245.272 155.536)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_673" data-name="Ligne 673" y1="3.563" x2="5.652" transform="translate(246.309 151.194)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_674" data-name="Ligne 674" y1="3.758" x2="5.525" transform="translate(247.201 146.823)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_675" data-name="Ligne 675" y1="3.949" x2="5.39" transform="translate(247.946 142.427)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_676" data-name="Ligne 676" y1="4.134" x2="5.249" transform="translate(248.544 138.013)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_677" data-name="Ligne 677" y1="4.315" x2="5.101" transform="translate(248.995 133.586)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_678" data-name="Ligne 678" y1="4.49" x2="4.948" transform="translate(249.297 129.15)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_679" data-name="Ligne 679" y1="4.66" x2="4.788" transform="translate(249.45 124.713)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_680" data-name="Ligne 680" y1="4.825" x2="4.622" transform="translate(249.454 120.278)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_681" data-name="Ligne 681" y1="4.983" x2="4.451" transform="translate(249.309 115.852)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_682" data-name="Ligne 682" y1="5.135" x2="4.275" transform="translate(249.015 111.439)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_683" data-name="Ligne 683" y1="5.281" x2="4.093" transform="translate(248.573 107.045)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_684" data-name="Ligne 684" y1="5.421" x2="3.906" transform="translate(247.982 102.676)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_685" data-name="Ligne 685" y1="5.554" x2="3.714" transform="translate(247.245 98.337)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_686" data-name="Ligne 686" y1="5.68" x2="3.518" transform="translate(246.361 94.032)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_687" data-name="Ligne 687" y1="5.8" x2="3.318" transform="translate(245.332 89.768)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_688" data-name="Ligne 688" y1="5.912" x2="3.114" transform="translate(244.158 85.55)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_689" data-name="Ligne 689" y1="6.017" x2="2.905" transform="translate(242.843 81.382)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_690" data-name="Ligne 690" y1="6.115" x2="2.694" transform="translate(241.386 77.27)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_691" data-name="Ligne 691" y1="6.205" x2="2.479" transform="translate(239.79 73.219)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_692" data-name="Ligne 692" y1="6.288" x2="2.26" transform="translate(238.056 69.233)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_693" data-name="Ligne 693" y1="6.363" x2="2.04" transform="translate(236.188 65.318)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_694" data-name="Ligne 694" y1="6.43" x2="1.816" transform="translate(234.187 61.478)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_695" data-name="Ligne 695" y1="6.49" x2="1.591" transform="translate(232.055 57.718)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_696" data-name="Ligne 696" y1="6.541" x2="1.363" transform="translate(229.795 54.043)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_697" data-name="Ligne 697" y1="6.585" x2="1.134" transform="translate(227.411 50.456)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_698" data-name="Ligne 698" y1="6.62" x2="0.904" transform="translate(224.904 46.963)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_699" data-name="Ligne 699" y1="6.648" x2="0.672" transform="translate(222.278 43.568)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_700" data-name="Ligne 700" y1="6.667" x2="0.44" transform="translate(219.536 40.275)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_701" data-name="Ligne 701" y1="6.678" x2="0.207" transform="translate(216.681 37.087)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_702" data-name="Ligne 702" x1="0.026" y1="6.682" transform="translate(213.691 34.009)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_703" data-name="Ligne 703" x1="0.26" y1="6.677" transform="translate(210.389 31.045)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_704" data-name="Ligne 704" x1="0.492" y1="6.663" transform="translate(206.985 28.197)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_705" data-name="Ligne 705" x1="0.725" y1="6.642" transform="translate(203.484 25.47)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_706" data-name="Ligne 706" x1="0.956" y1="6.613" transform="translate(199.89 22.867)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_707" data-name="Ligne 707" x1="1.186" y1="6.576" transform="translate(196.207 20.391)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_708" data-name="Ligne 708" x1="1.415" y1="6.53" transform="translate(192.44 18.045)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_709" data-name="Ligne 709" x1="1.642" y1="6.477" transform="translate(188.594 15.832)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_710" data-name="Ligne 710" x1="1.867" y1="6.416" transform="translate(184.672 13.755)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_711" data-name="Ligne 711" x1="2.09" y1="6.346" transform="translate(180.681 11.815)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_712" data-name="Ligne 712" x1="2.31" y1="6.27" transform="translate(176.624 10.016)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_713" data-name="Ligne 713" x1="2.527" y1="6.185" transform="translate(172.507 8.36)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_714" data-name="Ligne 714" x1="2.742" y1="6.093" transform="translate(168.334 6.849)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_715" data-name="Ligne 715" x1="2.953" y1="5.994" transform="translate(164.112 5.484)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_716" data-name="Ligne 716" x1="3.16" y1="5.887" transform="translate(159.844 4.267)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_717" data-name="Ligne 717" x1="3.364" y1="5.773" transform="translate(155.537 3.2)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_718" data-name="Ligne 718" x1="3.563" y1="5.652" transform="translate(151.194 2.283)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_719" data-name="Ligne 719" x1="3.758" y1="5.525" transform="translate(146.823 1.519)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_720" data-name="Ligne 720" x1="3.949" y1="5.39" transform="translate(142.428 0.908)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_721" data-name="Ligne 721" x1="4.134" y1="5.249" transform="translate(138.013 0.451)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_722" data-name="Ligne 722" x1="4.315" y1="5.101" transform="translate(133.586 0.148)" fill="none" stroke="#e2001a" stroke-width="1"/>
+      <line id="Ligne_723" data-name="Ligne 723" x1="4.49" y1="4.948" transform="translate(129.151 0)" fill="none" stroke="#e2001a" stroke-width="1"/>
+    </g>
+    <g id="Groupe_32" data-name="Groupe 32" transform="translate(70.886 242.729)">
+      <path id="Tracé_39" data-name="Tracé 39" d="M488.274-870.7l11.418-1.113q1.031,5.752,4.182,8.447t8.506,2.7q5.664,0,8.538-2.4a7.13,7.13,0,0,0,2.878-5.611,5.312,5.312,0,0,0-1.209-3.508,9.7,9.7,0,0,0-4.223-2.515q-2.058-.713-9.4-2.537-9.434-2.343-13.239-5.75a15.11,15.11,0,0,1-5.354-11.695,14.939,14.939,0,0,1,2.52-8.3,15.8,15.8,0,0,1,7.251-5.888,29.124,29.124,0,0,1,11.438-2.02q10.942,0,16.47,4.8A16.93,16.93,0,0,1,533.86-893.3l-11.734.517q-.752-4.48-3.231-6.442t-7.43-1.966q-5.118,0-8.01,2.1a4.245,4.245,0,0,0-1.863,3.61,4.465,4.465,0,0,0,1.745,3.525q2.222,1.869,10.785,3.885a57.254,57.254,0,0,1,12.663,4.182,16.354,16.354,0,0,1,6.422,5.905,17.264,17.264,0,0,1,2.321,9.258,17.114,17.114,0,0,1-2.777,9.356,16.637,16.637,0,0,1-7.849,6.483,32.959,32.959,0,0,1-12.644,2.118q-11.021,0-16.928-5.094T488.274-870.7" transform="translate(-488.274 970.645)"/>
+      <path id="Tracé_40" data-name="Tracé 40" d="M552.462-890.137l-10.979,1.981a7.963,7.963,0,0,0-2.522-4.954,7.6,7.6,0,0,0-5.091-1.664,8.329,8.329,0,0,0-6.643,2.873q-2.474,2.88-2.474,9.616,0,7.493,2.515,10.583a8.27,8.27,0,0,0,6.76,3.093,7.509,7.509,0,0,0,5.194-1.8q2.019-1.8,2.851-6.207l10.945,1.863q-1.708,7.533-6.54,11.376t-12.967,3.848q-9.234,0-14.725-5.829T513.3-881.5q0-10.425,5.508-16.23t14.906-5.809q7.693,0,12.229,3.311t6.523,10.087" transform="translate(-458.711 979.342)"/>
+      <rect id="Rectangle_588" data-name="Rectangle 588" width="11.138" height="42.1" transform="translate(102.108 76.756)"/>
+      <path id="Tracé_41" data-name="Tracé 41" d="M572.235-885.142q-.121-4.839-2.5-7.356a7.664,7.664,0,0,0-5.79-2.515,7.733,7.733,0,0,0-6.025,2.657,10.278,10.278,0,0,0-2.339,7.214Zm-.635,11.259,11.1,1.861a18.216,18.216,0,0,1-6.756,9.3,19.866,19.866,0,0,1-11.557,3.19q-10.982,0-16.252-7.175-4.165-5.746-4.162-14.511,0-10.465,5.467-16.389a18.033,18.033,0,0,1,13.835-5.927q9.4,0,14.828,6.206t5.194,19H555.386q.121,4.954,2.7,7.712a8.433,8.433,0,0,0,6.422,2.753,6.81,6.81,0,0,0,4.4-1.427,8.817,8.817,0,0,0,2.7-4.6" transform="translate(-422.471 979.342)"/>
+      <path id="Tracé_42" data-name="Tracé 42" d="M604.5-860.487H593.357v-21.485q0-6.819-.715-8.818a6.213,6.213,0,0,0-2.317-3.117,6.673,6.673,0,0,0-3.865-1.106,8.94,8.94,0,0,0-5.194,1.584,8.01,8.01,0,0,0-3.152,4.2q-.851,2.621-.851,9.673v19.068H566.123v-42.1h10.345v6.189q5.507-7.137,13.874-7.138a16.709,16.709,0,0,1,6.739,1.328,11.269,11.269,0,0,1,4.62,3.39,12.266,12.266,0,0,1,2.179,4.677,34.59,34.59,0,0,1,.615,7.489Z" transform="translate(-396.298 979.342)"/>
+      <path id="Tracé_43" data-name="Tracé 43" d="M626.929-890.137l-10.979,1.981a7.958,7.958,0,0,0-2.519-4.954,7.605,7.605,0,0,0-5.092-1.664A8.327,8.327,0,0,0,601.7-891.9q-2.477,2.88-2.476,9.616,0,7.493,2.516,10.583a8.275,8.275,0,0,0,6.76,3.093,7.508,7.508,0,0,0,5.194-1.8q2.019-1.8,2.851-6.207l10.944,1.863q-1.708,7.533-6.54,11.376t-12.964,3.848q-9.234,0-14.727-5.829T587.765-881.5q0-10.425,5.506-16.23t14.908-5.809q7.69,0,12.227,3.311t6.523,10.087" transform="translate(-370.729 979.342)"/>
+      <path id="Tracé_44" data-name="Tracé 44" d="M636.364-885.142q-.118-4.839-2.5-7.356a7.664,7.664,0,0,0-5.789-2.515,7.727,7.727,0,0,0-6.023,2.657,10.27,10.27,0,0,0-2.338,7.214Zm-.635,11.259,11.1,1.861a18.232,18.232,0,0,1-6.758,9.3,19.865,19.865,0,0,1-11.557,3.19q-10.981,0-16.252-7.175-4.166-5.746-4.162-14.511,0-10.465,5.469-16.389a18.036,18.036,0,0,1,13.839-5.927q9.391,0,14.823,6.206t5.194,19H619.517q.118,4.954,2.7,7.712a8.433,8.433,0,0,0,6.42,2.753,6.806,6.806,0,0,0,4.4-1.427,8.8,8.8,0,0,0,2.7-4.6" transform="translate(-346.705 979.342)"/>
+      <path id="Tracé_45" data-name="Tracé 45" d="M503.8-921.277h6.185v-3.174a21.163,21.163,0,0,1,1.128-7.925,8.944,8.944,0,0,1,4.162-4.262,16.013,16.013,0,0,1,7.674-1.647,30.951,30.951,0,0,1,9.315,1.431l-1.51,7.77a21.957,21.957,0,0,0-5.109-.635,4.547,4.547,0,0,0-3.469,1.13q-1.054,1.126-1.051,4.337v2.976h8.325v8.759h-8.325v33.342H509.989v-33.342H503.8Z" transform="translate(-469.926 938.286)"/>
+      <path id="Tracé_46" data-name="Tracé 46" d="M546.139-903.836q-.121-4.837-2.5-7.352a7.653,7.653,0,0,0-5.79-2.519,7.74,7.74,0,0,0-6.025,2.657,10.284,10.284,0,0,0-2.339,7.214Zm-22-22.753,8.327-11.695h10.3l8.209,11.695h-8.959l-4.6-5.91-4.282,5.91ZM545.5-892.578l11.1,1.863a18.212,18.212,0,0,1-6.756,9.3,19.87,19.87,0,0,1-11.557,3.192q-10.982,0-16.252-7.177-4.165-5.746-4.162-14.509,0-10.465,5.467-16.389a18.025,18.025,0,0,1,13.835-5.927q9.4,0,14.827,6.2t5.194,19.007H529.289q.121,4.957,2.7,7.709a8.425,8.425,0,0,0,6.422,2.753,6.809,6.809,0,0,0,4.4-1.424,8.83,8.83,0,0,0,2.7-4.6" transform="translate(-453.302 938.288)"/>
+      <path id="Tracé_47" data-name="Tracé 47" d="M562.789-922.436v8.878h-7.614v16.967a41.893,41.893,0,0,0,.221,6.006,2.434,2.434,0,0,0,.988,1.409,3.143,3.143,0,0,0,1.885.552,14.318,14.318,0,0,0,4.479-1.069l.953,8.641a22.1,22.1,0,0,1-8.8,1.664,13.907,13.907,0,0,1-5.428-1.012,7.885,7.885,0,0,1-3.547-2.611,10.32,10.32,0,0,1-1.566-4.343A53.6,53.6,0,0,1,544-895.2v-18.353h-5.116v-8.878H544V-930.8l11.178-6.505v14.869Z" transform="translate(-428.482 939.445)"/>
+      <path id="Tracé_48" data-name="Tracé 48" d="M581.089-912.532q-.118-4.836-2.5-7.352a7.653,7.653,0,0,0-5.79-2.52,7.736,7.736,0,0,0-6.023,2.657,10.286,10.286,0,0,0-2.339,7.214Zm-.635,11.258,11.1,1.863a18.224,18.224,0,0,1-6.756,9.3,19.874,19.874,0,0,1-11.56,3.191q-10.982,0-16.252-7.177-4.162-5.746-4.162-14.509,0-10.464,5.469-16.389a18.026,18.026,0,0,1,13.835-5.927q9.4,0,14.827,6.2t5.194,19.007H564.242q.118,4.958,2.7,7.709a8.423,8.423,0,0,0,6.42,2.753,6.805,6.805,0,0,0,4.4-1.424,8.817,8.817,0,0,0,2.7-4.6" transform="translate(-412.01 946.984)"/>
+      <path id="Tracé_49" data-name="Tracé 49" d="M584.588-905.3q0,3.9,1.078,5.648a4.876,4.876,0,0,0,4.363,2.524,4.746,4.746,0,0,0,3.787-1.894q1.564-1.891,1.562-5.656,0-4.2-1.518-6.049a4.8,4.8,0,0,0-3.879-1.85,4.839,4.839,0,0,0-3.844,1.828,8.251,8.251,0,0,0-1.549,5.449M601.8-892.582H595.81v-3.584a9.674,9.674,0,0,1-3.521,3.117,9.078,9.078,0,0,1-4.1,1.019A9.287,9.287,0,0,1,581-895.415q-3-3.387-3-9.448,0-6.194,2.917-9.422a9.5,9.5,0,0,1,7.365-3.226,9.127,9.127,0,0,1,7.07,3.4v-12.122H601.8Z" transform="translate(-382.266 952.524)"/>
+      <path id="Tracé_50" data-name="Tracé 50" d="M607.324-911.582a6.2,6.2,0,0,0-1.444-4.258,4.442,4.442,0,0,0-3.353-1.457,4.481,4.481,0,0,0-3.486,1.536,5.963,5.963,0,0,0-1.354,4.18Zm-.366,6.518,6.424,1.075a10.517,10.517,0,0,1-3.914,5.384,11.453,11.453,0,0,1-6.686,1.85q-6.361,0-9.413-4.154a13.968,13.968,0,0,1-2.408-8.4q0-6.063,3.167-9.494a10.431,10.431,0,0,1,8.01-3.434,10.83,10.83,0,0,1,8.584,3.593q3.141,3.593,3,11.01H597.571a6.518,6.518,0,0,0,1.562,4.461,4.881,4.881,0,0,0,3.717,1.6,3.943,3.943,0,0,0,2.546-.831,5.1,5.1,0,0,0,1.562-2.659" transform="translate(-366.953 957.249)"/>
+      <rect id="Rectangle_589" data-name="Rectangle 589" width="6.452" height="33.653" transform="translate(265.102 26.289)"/>
+      <path id="Tracé_51" data-name="Tracé 51" d="M630.156-909.014q-1.237.412-3.927.988a11.818,11.818,0,0,0-3.508,1.125,2.683,2.683,0,0,0-1.267,2.273,3.173,3.173,0,0,0,1.01,2.339,3.542,3.542,0,0,0,2.574.988,5.6,5.6,0,0,0,3.327-1.147,4.048,4.048,0,0,0,1.54-2.136,12.758,12.758,0,0,0,.251-3.146Zm-8.632-5.233-5.851-1.056a9.11,9.11,0,0,1,3.395-5.233q2.408-1.7,7.161-1.7a15.445,15.445,0,0,1,6.429,1.021,6.461,6.461,0,0,1,2.976,2.594q.854,1.577.859,5.772l-.07,7.533a26.143,26.143,0,0,0,.308,4.74,14,14,0,0,0,1.16,3.27H631.51c-.168-.428-.375-1.065-.621-1.907-.105-.384-.181-.635-.229-.755a11.725,11.725,0,0,1-3.534,2.411,10.191,10.191,0,0,1-4.016.8,8.305,8.305,0,0,1-5.936-2.044,6.8,6.8,0,0,1-2.166-5.168,6.933,6.933,0,0,1,.984-3.684,6.452,6.452,0,0,1,2.766-2.476,21.662,21.662,0,0,1,5.133-1.505,34.826,34.826,0,0,0,6.265-1.584v-.643a3.348,3.348,0,0,0-.917-2.648,5.5,5.5,0,0,0-3.47-.794,4.576,4.576,0,0,0-2.683.681,4.671,4.671,0,0,0-1.562,2.373" transform="translate(-338.542 957.249)"/>
+      <path id="Tracé_52" data-name="Tracé 52" d="M533.623-903.6a8.754,8.754,0,0,1,8.754-8.756,8.756,8.756,0,0,1,8.756,8.756,8.754,8.754,0,0,1-8.756,8.754,8.752,8.752,0,0,1-8.754-8.754" transform="translate(-434.696 968.924)" fill="#009f3b"/>
+      <path id="Tracé_53" data-name="Tracé 53" d="M510-887.974a5.289,5.289,0,0,0-1.208-3.508,9.745,9.745,0,0,0-4.223-2.52c-.438-.15-1.056-.34-1.845-.565a9.967,9.967,0,0,0-2.77,6.911,9.979,9.979,0,0,0,3.08,7.216,9.975,9.975,0,0,0,4.095-1.924A7.137,7.137,0,0,0,510-887.974" transform="translate(-474.481 989.94)" fill="#009f3b"/>
+      <path id="Tracé_54" data-name="Tracé 54" d="M595.531-878.5c.081.1.168.181.249.273a10,10,0,0,0,7.448-9.673,10.01,10.01,0,0,0-8.4-9.875q-1.81,2.938-1.811,8.689,0,7.493,2.515,10.587" transform="translate(-364.525 986.143)" fill="#009f3b"/>
+    </g>
+    <path id="Tracé_19" data-name="Tracé 19" d="M868.4,1516.418a7.046,7.046,0,0,1,8.269-1,6.082,6.082,0,0,0,7.788-2.955,7.051,7.051,0,0,1,6.851-4.735c2.924.007,5.883-3.329,5.525-6.234a7.056,7.056,0,0,1,3.875-7.373c2.595-1.35,3.652-5.646,1.989-8.089a7.04,7.04,0,0,1,0-8.329c1.663-2.441.606-6.736-1.989-8.089a7.054,7.054,0,0,1-3.875-7.373c.358-2.9-2.568-6.205-5.525-6.232a7.053,7.053,0,0,1-6.851-4.737,6.084,6.084,0,0,0-7.788-2.955,7.042,7.042,0,0,1-8.269-1c-2.213-1.938-6.607-1.41-8.269,1a7.057,7.057,0,0,1-7.788,2.955c-2.839-.7-6.472,1.8-6.851,4.737a7.057,7.057,0,0,1-5.526,6.232c-2.866.73-4.92,4.639-3.875,7.373a7.061,7.061,0,0,1-1.989,8.089c-2.191,1.951-2.191,6.378,0,8.329a7.061,7.061,0,0,1,1.989,8.089c-1.045,2.734,1.009,6.645,3.875,7.373a7.055,7.055,0,0,1,5.526,6.234c.379,2.933,4.012,5.441,6.851,4.735a7.058,7.058,0,0,1,7.788,2.955c1.663,2.412,6.056,2.941,8.269,1" transform="translate(-656.004 -1032.504)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.339"/>
+    <path id="Tracé_20" data-name="Tracé 20" d="M977.853,1494.068a7.075,7.075,0,0,1,8.009-1.264c2.645,1.1,6.561-.9,7.222-3.685a7.067,7.067,0,0,1,5.732-5.732c2.784-.661,4.785-4.576,3.685-7.221a7.072,7.072,0,0,1,1.264-8.01c1.86-2.205,1.18-6.513-1.264-8.009a7.081,7.081,0,0,1-3.685-7.222c.226-2.854-2.878-5.96-5.732-5.732a7.081,7.081,0,0,1-7.222-3.685c-1.5-2.443-5.8-3.125-8.009-1.264a7.072,7.072,0,0,1-8.009,1.264c-2.645-1.1-6.561.9-7.222,3.685a7.065,7.065,0,0,1-5.732,5.732c-2.784.661-4.786,4.576-3.685,7.222a7.071,7.071,0,0,1-1.263,8.009c-1.86,2.205-1.18,6.513,1.263,8.01a7.081,7.081,0,0,1,3.685,7.221c-.226,2.854,2.878,5.96,5.732,5.732a7.082,7.082,0,0,1,7.222,3.685c1.5,2.444,5.8,3.126,8.009,1.264" transform="translate(-731.214 -1029.354)" fill="#e2001a" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.298"/>
+    <g id="Groupe_21" data-name="Groupe 21" transform="translate(388.534 205.448)">
+      <path id="Tracé_30" data-name="Tracé 30" d="M1391.808,1169.323a4.236,4.236,0,1,0-4.237-4.236,4.236,4.236,0,0,0,4.237,4.236" transform="translate(-1387.571 -1160.848)" fill="#f6a800"/>
+      <path id="Tracé_31" data-name="Tracé 31" d="M1416.707,1144.43a4.236,4.236,0,1,0-4.236-4.237,4.236,4.236,0,0,0,4.236,4.237" transform="translate(-1412.438 -1135.916)" fill="#f6a800"/>
+      <path id="Tracé_32" data-name="Tracé 32" d="M1442.813,1118.317a4.236,4.236,0,1,0-4.236-4.236,4.237,4.237,0,0,0,4.236,4.236" transform="translate(-1438.505 -1109.844)" fill="#f6a800"/>
+    </g>
+    <g id="Groupe_20" data-name="Groupe 20" transform="translate(72.347 418.146)">
+      <path id="Tracé_21" data-name="Tracé 21" d="M304.2,1143.746a4,4,0,1,0-4-4,4,4,0,0,0,4,4" transform="translate(-268.587 -1118.861)" fill="#e2001a"/>
+      <path id="Tracé_22" data-name="Tracé 22" d="M219.075,1228.868a4,4,0,1,0-4-4,4,4,0,0,0,4,4" transform="translate(-215.466 -1171.984)" fill="#009f3b"/>
+      <path id="Tracé_26" data-name="Tracé 26" d="M404.9,1043.013a4,4,0,1,0-4-4A4,4,0,0,0,404.9,1043.013Z" transform="translate(-333.287 -1050.128)" fill="none" stroke="#000" stroke-width="0.5"/>
+      <path id="Tracé_1158" data-name="Tracé 1158" d="M304.2,1143.746a4,4,0,1,0-4-4,4,4,0,0,0,4,4" transform="translate(-268.587 -1118.861)" fill="#e2001a"/>
+      <path id="Tracé_1159" data-name="Tracé 1159" d="M304.2,1143.746a4,4,0,1,0-4-4,4,4,0,0,0,4,4" transform="translate(-268.587 -1118.861)" fill="#e2001a"/>
+      <path id="Tracé_1160" data-name="Tracé 1160" d="M219.075,1228.868a4,4,0,1,0-4-4,4,4,0,0,0,4,4" transform="translate(-215.466 -1171.983)" fill="#009f3b"/>
+      <path id="Tracé_1161" data-name="Tracé 1161" d="M219.075,1228.868a4,4,0,1,0-4-4,4,4,0,0,0,4,4" transform="translate(-215.466 -1171.983)" fill="#009f3b"/>
+    </g>
+    <path id="Tracé_35" data-name="Tracé 35" d="M1657.83,756.318a13.819,13.819,0,1,0-13.818-13.818,13.817,13.817,0,0,0,13.818,13.818" transform="translate(-1316.14 -314.303)"/>
+    <path id="Tracé_34" data-name="Tracé 34" d="M1633.772,746.081a27.639,27.639,0,1,0-27.639-27.639,27.639,27.639,0,0,0,27.639,27.639" transform="translate(-1292.081 -290.246)" fill="#009f3b"/>
+    <path id="Tracé_36" data-name="Tracé 36" d="M1592.975,715.38a37.734,37.734,0,1,0-37.734-37.734,37.734,37.734,0,0,0,37.734,37.734" transform="translate(-1251.285 -249.45)" fill="none" stroke="#ffed00" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke-dasharray="0 10"/>
+    <path id="Tracé_1157" data-name="Tracé 1157" d="M1619.951,718.438a13.818,13.818,0,1,0-13.818-13.818,13.818,13.818,0,0,0,13.818,13.818" transform="translate(-1278.26 -276.424)"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="760" viewBox="0 0 760 760">
+  <g id="Groupe_106" data-name="Groupe 106" transform="translate(192)">
+    <circle id="Ellipse_65" data-name="Ellipse 65" cx="380" cy="380" r="380" transform="translate(-192)" fill="#efefef"/>
+    <text id="Quiz" transform="translate(87.08 198.607)" font-size="62" font-family="Arial-Black, Arial Black" font-weight="800"><tspan x="0" y="0">Quiz</tspan></text>
+    <g id="Groupe_102" data-name="Groupe 102" transform="translate(257.381 131.819)">
+      <path id="Tracé_885" data-name="Tracé 885" d="M442.714,173.04l19.116,6.5-4.993,14.676-13.724,28.23-11.822-4.02,6.429-30.714Z" transform="translate(-431.292 -173.04)"/>
+    </g>
+    <g id="Composant_24_5" data-name="Composant 24 – 5" transform="translate(248.245 185.483)">
+      <ellipse id="Ellipse_64" data-name="Ellipse 64" cx="10.164" cy="10.164" rx="10.164" ry="10.164" fill="#3bb267"/>
+    </g>
+  </g>
+</svg>
