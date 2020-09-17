@@ -83,8 +83,14 @@ double = false
 
 double = true if "#{last_question}" == "#{item['question']}"
 i +=1 if double == false
-#puts  "#{i} - " + last_question.first(50) + " == " + item['question'].first(50) 
-#puts double
+
+image = images[i]
+image = "031 HTE SAVOIE- Cosmos.jpg" if i == 31
+image = "035 AUVERGNE - Nuits de la Science.jpg" if i == 32
+image = "036 AUVERGNE - Nuits de la Science.jpg "if i == 33
+image = "037 AUVERGNE - Puy de Science.jpg" if i == 34
+
+
 duration = nil
 duration = item['duration'][1..] if item['duration']
 
@@ -99,7 +105,7 @@ arg_projet = {
     difficulty:             test_in(item['difficulty'], difficulty_array),
     territory:              test_in(item['territory'], territory_array),
     duration:               duration,
-    image:                  images[i],
+    image:                  image,
     question:               item['question'],
     good_answer:            item['good_answer'],
     prop_1:                 item['prop_1'],
