@@ -26,11 +26,55 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
 <br><br>
 <div class="card-container stars">
 <% @projets.first(3).each do |projet| %>
-    <div data-target="#modal_<%=projet.id%>"  class="card-stars">
+    <div data-target="#modal__<%=projet.id%>"  class="card-stars">
             <img src="<%= asset_url("#{projet.image}")%>">
             <h3><mark><%= projet.title%></mark></h3>
             <div class> <%= projet.synopsis%> </div>
     </div>
+
+    <div id="modal__<%=projet.id%>" class="modal-container hidden">
+    <div data-target="#modal__<%=projet.id%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
+    <div class="right">
+        <img src="<%=asset_url("#{projet.image.to_s}")%>">
+        <h3><mark><%= projet.title%></mark></h3>
+       
+    </div>
+    <div class="left">
+        <header><h4><%=projet.name_structure%></h4></header>
+        <div class="left2">
+            <div class="domain">    
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
+                <%end%>
+            </div>
+            <div class="other">
+
+                <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)] if projet.territory%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)]%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i><b> En live  <span id=date><%=  projet.date.strftime('%d/%m/%y - %H:%M')if projet.date%></span></b></div><%end%>
+            </div>
+
+        </div>
+        <div class="right2">
+            <div class=content>
+                <b>
+                <% i = 0; max = projet.form.count %>
+                <% projet.form.each do |form| i+=1%>
+                    <%= form.name %><%= "," if i != max%>
+                <%end%>
+                </b>
+
+                <%= projet.synopsis%>
+            
+            </div>
+        <a href="<%=projet.url%>" target="_blank" class="btn-modal">Accéder au projet</a>
+        </div>
+        
+    </div>
+</div>
 <%end%>
 </div>
 </section>
