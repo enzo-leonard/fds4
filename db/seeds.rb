@@ -87,7 +87,7 @@ i +=1 if double == false
 image = images[i]
 image = "031 HTE SAVOIE- Cosmos.jpg" if i == 31
 image = "035 AUVERGNE - Nuits de la Science.jpg" if i == 32
-image = "036 AUVERGNE - Nuits de la Science.jpg "if i == 33
+image = "036 AUVERGNE - Nuits de la Science.jpg"if i == 33
 image = "037 AUVERGNE - Puy de Science.jpg" if i == 34
 
 
