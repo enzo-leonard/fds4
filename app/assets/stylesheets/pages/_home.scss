@@ -357,7 +357,7 @@ nav{
     position: fixed;
     z-index: 1;
     width: 100%;
-    top: 0px;
+    top: -15px;
     transition: top 0.3s;
     a{
         display: inline-block;
@@ -1086,6 +1086,7 @@ select{
 
         
         .card {
+            width: 80% !important;
 
             margin-bottom: 60px;
      
