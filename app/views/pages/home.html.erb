@@ -4,7 +4,18 @@ territory_array = ["Ain", "Ardèche", "Auvergne", "Drôme", "Isère", "Loire", "
 duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "Plus d'une heure"]
 
 %>
-<div class="background-modal hidden"></div>
+<div class="background-modal desktop hidden"></div>
+
+<%
+def mobile_device?
+  if session[:mobile_param]
+    session[:mobile_param] == "1"
+  else
+    request.user_agent =~ /Mobile|webOS/
+  end
+end
+
+%>
 
 
 
@@ -26,23 +37,81 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
 <%= image_tag "100_numerique.svg", class: "num_100 mobile" %>
 
 <section id="une">
-<h2>Les projets à la Une</h2>
+<h2>Les projets à la Une  <%= "MOBILE" if mobile_device? %></h2>
 <i class="fas fa-arrow-down mobile"></i>
 <br>
 <br><br>
 <div class="card-container stars">
+
 <% @projets.first(3).each do |projet| %>
-    <div data-target="#modal__<%=projet.id%>"  class="card-stars">
+    <div data-type=open data-support="mobile" data-target="#modal__<%=projet.id%>"  class="card card-stars">
             <img src="<%= asset_url("#{projet.image}")%>">
             <h3><mark><%= projet.title%></mark></h3>
             <div class> <%= projet.synopsis%> </div>
     </div>
+
+    <%if mobile_device? %>
+    <div class="background-modal-mobile mobile hidden"></div>
+  
+    <div id="modal__<%=projet.id%>" class="modal-container-mobile hidden">
+    <div data-type=close data-target="#modal__<%=projet.id%>" class=close-btn-black>  <%= image_tag "close-btn-white.svg" %></div>
+
+    <div class="card hover card-modal">
+        <header style='background-image: url("<%= asset_url("#{projet.image}") if projet.image%>")'>
+       
+        
+            <h3><mark><%= projet.title%></mark></h3>
+        </header>
+        <main>
+        <div class="first">
+            <h4><%= projet.name_structure%></h4>
+            <%= projet.synopsis %>
+        </div>
+            <div class="form_hover">
+                <b>
+                <% i = 0; max = projet.form.count %>
+                <% projet.form.each do |form| i+=1%>
+                    <%= form.name %><%= "," if i != max%>
+                <%end%>
+                </b>
+            </div>
+
+            <div class="domain_hover">    
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
+                <%end%>
+            </div>
+
+             <div class="other_hover">
+
+                <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)] if projet.territory%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)]%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i><b> En live  <span id=date><%=  projet.date.strftime('%d/%m/%y - %H:%M')if projet.date%></span></b></div><%end%>
+            </div>
+            
+            
+        </main>
+        <footer>
+            <div class=line><%= image_tag "target_logo.svg", class: "logo" %> <%=projet.show_target%> </div>
+            <%if projet.live %><div class="line2"><b>En live</b><%= image_tag "live_logo.svg", class:"logo" %><%end%>
+            
+           
+        </footer>
+        <div id="plus" class="mobile under-card">Voir + d'infos</div>
+        <a id="link" href="<%=projet.url%>" target="_blank" class="mobile under-card">Accéder au projet</a>
+    </div>
+    </div>
+    <%else%>
 
     <div id="modal__<%=projet.id%>" class="modal-container hidden">
     <div data-target="#modal__<%=projet.id%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
     <div class="right">
         <img src="<%=asset_url("#{projet.image.to_s}")%>">
         <h3><mark><%= projet.title%></mark></h3>
+       
        
     </div>
     <div class="left">
@@ -81,6 +150,7 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
         
     </div>
 </div>
+<%end%>
 <%end%>
 </div>
 </section>
@@ -168,7 +238,9 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
 
     <% @projets.each do |projet|%>
     <% x = x+1 %>
+ 
 
+    <!-- CARD -->
     
 
     <div data-target="#modal_<%=x%>" class="card">
@@ -178,10 +250,36 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
             <h3><mark><%= projet.title%></mark></h3>
         </header>
         <main>
+        <div class="first">
             <h4><%= projet.name_structure%></h4>
-           
-            
             <%= projet.synopsis %>
+        </div>
+            <div class="form_hover">
+                <b>
+                <% i = 0; max = projet.form.count %>
+                <% projet.form.each do |form| i+=1%>
+                    <%= form.name %><%= "," if i != max%>
+                <%end%>
+                </b>
+            </div>
+
+            <div class="domain_hover">    
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
+                <%end%>
+            </div>
+
+             <div class="other_hover">
+
+                <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)] if projet.territory%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)]%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i><b> En live  <span id=date><%=  projet.date.strftime('%d/%m/%y - %H:%M')if projet.date%></span></b></div><%end%>
+            </div>
+            
+            
         </main>
         <footer>
             <div class=line><%= image_tag "target_logo.svg", class: "logo" %> <%=projet.show_target%> </div>
@@ -189,11 +287,16 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
             
            
         </footer>
-        <div  class="mobile under-card">Voir + d'infos</div>
+        <div id="plus" class="mobile under-card">Voir + d'infos</div>
+        <a id="link" href="<%=projet.url%>" target="_blank" class="mobile under-card">Accéder au projet</a>
     </div>
+
+
+
+
     
 
-
+    <!-- MODALE -->
 
 
     <div id="modal_<%=x%>" class="modal-container hidden">
@@ -203,6 +306,18 @@ duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes"
     <div class="right">
         <img src="<%=asset_url("#{projet.image.to_s}")%>">
         <h3><mark><%= projet.title%></mark></h3>
+
+         <div class="ipad pad">    
+         <h4><%=projet.name_structure%></h4>
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
+                <%end%>
+           
+
+       
+
+         </div>
        
     </div>
     <div class="left">

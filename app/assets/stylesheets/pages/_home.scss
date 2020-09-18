@@ -19,9 +19,11 @@ body{
     }
 }
 
+
+
 .under-card{
     cursor: pointer;
-    width: 250px;
+    width: 100%;
     position: absolute;
     padding: 8px;
     transition: all 0.2s;
@@ -147,6 +149,10 @@ a:hover{
     }
 }
 
+.ipad{
+    display: none;
+}
+
 #quizz-round{
     background-color: red;
 }
@@ -198,10 +204,10 @@ a:hover{
 }
 .menu-btn-container{
    // border: 1px solid red;
-    height: 240px;
-    width: 350px;
+    height: 260px;
+    width: 370px;
     position: absolute;
-    top: 30vw;
+    top: 28vw;
     right: 14vw;
     display: flex;
     align-content: space-between;
@@ -384,6 +390,7 @@ nav{
     width: 100%;
     margin-top: -13vw;
     padding: 7vw;
+    margin-bottom: 5vh;
 }
 
 .hidden{
@@ -459,9 +466,52 @@ select{
 
 }
 
+.modal-container-mobile{
+    position: fixed;
+    top: 10vh;
+    bottom: 10vh;
+    left: 10vw;
+    right: 10vw;
+    background-color: white;
+    display: flex;
+    z-index: 3;
+    .close-btn-black{
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.329);
+        position: absolute;
+        top: 1px;
+        right: 0px;
+        cursor: pointer;
+        z-index: 3;
+
+        img{
+            height: 20px;
+             width: 20px;
+        }
+    }
 
 
-.modal-container{
+
+}
+
+
+.modal-container-mobile::after{
+
+    position: fixed;
+    top:-20vh;
+    left: -20vh;
+    height: 500vh;
+    width: 200vw;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.103);
+    z-index: -1;
+    content: ".";
+}
+
+
+
+
+.modal-container {
     position: fixed;
     top: 18vh;
     bottom: 18vh;
@@ -642,7 +692,61 @@ select{
     }
    // position: relative;
 
-   
+    
+}
+
+
+
+// CARD
+
+.hidden_hover{
+    border-top: none;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+
+
+
+.form_hover{
+    border-top: 1px solid black;
+    padding: 7.5px;
+}
+
+.domain_hover{
+    border-top: 1px solid black;
+   padding: 7.5px;
+}
+
+.other_hover{
+   border-top: 1px solid black;
+   padding: 7.5px;
+   .line{
+       margin-bottom: 4px;
+   }
+   img{
+        height: 18px;
+        width: 18px;
+        margin-right: 7px;
+   }
+}
+
+.form_hover, .domain_hover, .other_hover{
+    border-top: none;
+    padding: 0px 7.5px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+
+#plus{
+    display: none;
+}
+
+#link{
+    display: none;
 }
 
 .card-container{
@@ -650,62 +754,9 @@ select{
     justify-content: start;
     flex-wrap: wrap;
     margin-right: -20px;
+    transition: all 0.3s;
 
-    .card{
-        border: 1px solid grey;
-        width: 23%;
-        min-width: 250px;
-        height: 430px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        z-index: 0;
-        cursor: pointer;
-
-
-        header{
-       
-            height: 230px !important;
-            background-repeat: round;
-
-           
-        }
-
-        main{
-            padding: 7.5px;
-            font-size: 0.7rem;
-            line-height: 1.2;
-            padding-bottom: 40px;
-
-            
-            
-        }
-
-        footer{
-            position: absolute;
-            bottom: 0px;
-            padding: 7.5px;
-            padding-bottom: 10px ;
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.7rem;
-            font-weight: 600;
-            width: 100%;
-            .line2{
-
-                display: flex;
-                align-items: flex-end;
-                width: 35%;
-
-                .logo{padding-top: 3px;}
-            }
-            
-            b{
-                margin-right: 5px;;
-                color:#E2011B;
- 
-            }
-        }
-    }
+    
 
     &.stars{
         justify-content: space-between;
@@ -714,13 +765,82 @@ select{
     
 }
 
-.card-stars{
-    border: none;
-    width: 31%;
+.card{
+    border: 1px solid grey;
+    width: 23%;
     min-width: 250px;
+    height: 430px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    z-index: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    transition: height 0.3s;
+
+
+    header{
+   
+        height: 230px !important;
+        background-repeat: round;
+        transition: all 0.3s;
+        background-repeat-y: no-repeat;
+       
+    }
+
+    main{
+       
+        font-size: 0.7rem;
+        line-height: 1.2;
+        padding-bottom: 40px;
+        transition: all 0.3s;
+
+        .first{
+            padding: 7.5px;
+        }
+
+        
+        
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0px;
+        padding: 7.5px;
+        padding-bottom: 10px ;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.7rem;
+        font-weight: 600;
+        width: 100%;
+        transition: all 0.3s;
+        .line2{
+
+            display: flex;
+            align-items: flex-end;
+            width: 35%;
+
+            .logo{padding-top: 3px;}
+        }
+        
+        b{
+            margin-right: 5px;;
+            color:#E2011B;
+
+        }
+    }
+
+
+    
+}
+
+.card-stars{
+    border: none !important;
+    width: 30% !important;
+    min-width: 200px !important;
     height: auto;
     cursor: pointer;
     font-size: 0.7rem;
+
     
 
     h3{
@@ -736,7 +856,7 @@ select{
 }
 
 
-.background-modal{
+.background-modal, .background-modal-mobile{
     position: fixed;
     top:0px;
     height: 500vh;
@@ -746,8 +866,93 @@ select{
     z-index: 2;
 }
 
+
+
+
+@media only screen and (max-width: 1200px) {
+    .menu-btn-container{display: none}
+
+    .card-container{
+        justify-content: center;
+    }
+
+   
+    
+}
+
 @media only screen and (max-width: 1024px) {
     //ipad
+
+    .card-container{
+        justify-content: center;
+    }
+
+    .ipad{
+        display: block;
+    }
+
+    .modal-container{
+        left: 14vw;
+        right: 14vw;
+
+        .arrow-right{
+            top: auto;
+            bottom: 0px;
+            left: 55px;
+            z-index: 3;
+        }
+
+        .pad{
+            padding: 20px;
+        }
+
+        .arrow-left{
+            top: auto;
+            bottom: 0px;
+            left: 0px;
+            z-index: 3;
+        }
+
+        .right{
+            img{
+                height: 33%;
+
+            }
+            font-size: 0.8rem;
+            h4{
+                font-size: 1.2rem;
+            }
+            
+        }
+
+        .left{
+            header{ display: none}
+
+            .left2{
+                width: 100%;
+                height: 40%;
+                border-top: 1px solid black;
+                border-right: 1px solid black;
+                .domain{ display: none}
+            }
+
+            .right2{
+                width: 100%;
+                height: 60%;
+                border:none;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+
+                .content{
+                    height: 83%;
+                }
+
+                a{
+                height: 17% !important;
+                }
+            }
+        }
+    }
 
     nav{
         #logo_region{
@@ -770,6 +975,12 @@ select{
         margin-left: 6vw;
     }
 
+    .num_100{
+    
+        margin-bottom: 80px;
+        margin-top: -60px;
+    }
+
     .quizz_bg.mobile {
         display: none !important;
     }
@@ -788,12 +999,83 @@ select{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
+
+    .card-stars{
+        width: 80% !important;
+        height: auto !important;
+    }
+
+
+    .modal-container{
+        display: none !important;
+    }
+
+    .background-modal{
+        display: none !important;
+    }
 
     .quizz_bg.desktop {
         display: none !important;
        
     }
+    #plus{
+        display: block;
+    }
+    .card-modal{
+        width: 100% !important;
+        height: auto !important;
+        margin: 0px !important;
+    }
+
+  
+    .card{
+        &:hover, &.hover{
+            height: auto;
+            .form_hover, .domain_hover, .other_hover{
+                border-top: 1px solid black;
+                padding: 7.5px;
+                height: auto;
+                
+            }
+
+            footer{
+                border: none;
+                padding: 0px 7.5px;
+                height: 0px;
+                overflow: hidden;
+            }
+
+            header{
+                height: 150px !important;
+                background-repeat-y: no-repeat;
+            }
+
+            #plus{
+                display: none;
+            }
+
+            #link{
+                display: block;
+            }
+        }
+    }
+
+    
 
     .quizz_bg.mobile {
         display: block !important;
