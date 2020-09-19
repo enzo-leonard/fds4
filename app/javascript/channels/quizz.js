@@ -30,10 +30,11 @@ const initQuizz = () => {
         let prop_1 = document.querySelector(`#projet_${id} [data-type="prop_1"]`)
         let prop_2 = document.querySelector(`#projet_${id} [data-type="prop_2"]`)
         let quizzRound = document.querySelector('#quizz-round') 
-        let quizzRound_mobile = document.querySelector('#quizz-round-mobile') 
+        let quizzRound_mobile = document.querySelector('.quizz-round-mobile') 
         
         if (quizzRound) quizzRound.setAttribute("fill", "#5771BE");
-        if (quizzRound_mobile) quizzRound_mobile.setAttribute("fill", "#5771BE");
+        if (quizzRound_mobile) { quizzRound_mobile.classList.add('active'); ; quizzRound_mobile.classList.remove('answer') }
+        console.log(quizzRound_mobile)
       
        // quizzRound.outerHTML = '<circle id="quizz-round" cx="348.662" cy="348.662" r="400" transform="translate(1309.424 980.356) rotate(180)" fill="#5771BE" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>'
         Ellipse_64
@@ -77,10 +78,10 @@ const initQuizz = () => {
         let color = ""
         let answer = document.querySelector(`#projet_${id} [data-type="answer"]`).content
         let quizzRound = document.querySelector('#quizz-round') 
-        let quizzRound_mobile = document.querySelector('#quizz-round-mobile') 
+        let quizzRound_mobile = document.querySelector('.quizz-round-mobile') 
         quizzRound.setAttribute("fill", "#EFEFEF");
         if (quizzRound) quizzRound.setAttribute("fill", "#EFEFEF");
-        if (quizzRound_mobile) quizzRound_mobile.setAttribute("fill", "#EFEFEF");
+        if (quizzRound_mobile) { quizzRound_mobile.classList.add('answer'); quizzRound_mobile.classList.remove('active')} 
       
         title = (result == true) ?  "Bonne réponse !" :  "Faux"
         color = (result == true) ? "#039F3A" : "#FF010E"
