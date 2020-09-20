@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :quizz, :about, :mention]
+  skip_before_action :authenticate_user!, only: [ :home, :quizz, :about, :mention, :update]
 
   def home
     @projets = Projet.joins(:projet_theme).joins(:projet_target).joins(:projet_form).where(nil).includes(:theme, :form).group('projets.id')
@@ -25,6 +25,17 @@ class PagesController < ApplicationController
   end
 
   def mention
+  end
+
+  def update
+    @projets = Projet.where(nil).includes(:theme, :form)
+    @projets = @projets.where("title ilike ? OR keywords ilike ? OR synopsis ilike ?", "%#{params[:title]}%", "%#{params[:title]}%", "%#{params[:title]}%") if params[:title].present?
+    
+
+    @title_search = "Tous les projets (#{@projets.size})"
+    @title_search = "Résultats de recherche (#{@projets.size})" if (params[:title].present? || params[:theme].present? || params[:target].present?)
+  
+    @projets_stars = Projet.where(stars: true)
   end
 
   

@@ -26,6 +26,30 @@ body{
 }
 
 
+.abs-bottom{
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    z-index: 1;
+
+    div{
+        background-color: white;
+        border: 1px solid black;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 1.1rem;
+
+        i{
+            padding-right: 8px;;
+        }
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
 
 .under-card{
     cursor: pointer;
@@ -515,7 +539,179 @@ select{
 }
 
 
+.modal-container-update{
+    position: fixed;
+    top: 5vh;
+    bottom: 8vh;
+    left: 12vw;
+    right: 12vw;
+    background-color: white;
+    display: flex;
+    z-index: 3;
+    overflow-y: auto;
+    border: 1px solid black;
+    
 
+    form{
+        width: 100%;
+        display: flex;
+        position: relative;
+
+        .right{
+            width: 50%;
+            padding: 12px;
+            height: 100%;
+        }
+        .left{
+            width: 50%;
+            padding: 12px;
+            height: 100%;
+        }
+
+
+        img{width: 100px; height: 100px;}
+
+        input, textarea, select{
+            border: 1px solid rgb(179, 179, 179) !important;
+            background-image: none !important;
+            font-size: 0.75rem;
+        }
+        label, h4{
+            color: #5e5e5e !important;
+            font-size: 0.7rem;
+            margin-bottom: -0.5rem;
+            font-weight: 100;
+        }
+        h4{
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .fix{
+            position: absolute;
+            bottom: 8px;
+            right: 4px;
+
+        }
+
+        label.datetime, .projet_stars_text label {
+            display: none;
+        }
+
+        .form-check{
+            margin-bottom: -14px;
+        }
+
+        .select-form{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 50%;
+            border-right: 1px solid black;
+            z-index: 4;
+            height: 100%;
+            background-color: white;
+            padding: 12px;
+            background-color: rgb(243, 243, 243);
+            transition: all .3s;
+
+            &.hidden{
+                display: block !important;
+                width: 0px;
+                border: none;
+                overflow: hidden;
+                padding: 0px;
+            }
+
+            .item{
+                background-color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgb(212, 212, 212);
+                }
+
+                &.more{
+                    background-color: black;
+                    color:white;
+                    border: none;
+                }
+
+                
+
+            }
+
+            .valid-btn{
+                width: 100%;
+                text-align: center;
+                padding: 18px;
+                font-weight: 600;
+                color: white;
+                background-color: black;
+                position: absolute;
+                bottom: 0px;
+
+            }
+        }
+
+       
+
+        .item-container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+
+            
+            .item{
+                padding: 6px 8px;
+                border: 1px solid rgb(167, 167, 167);
+                margin-right: 2px ;
+                margin-bottom: 2px ;
+                font-size: 0.7rem;
+                border-radius: 2px;
+                color: #495057;  
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 98%;    
+                white-space: nowrap;
+            }
+
+            .plus-item{
+                padding: 6px 10px;
+                border: none;
+                margin-right: 2px ;
+                margin-bottom: 2px ;
+                font-size: 0.7rem;
+                border-radius: 2px;
+                color: white;
+                background-color: #495057;
+            }
+        }
+
+        
+
+        .date, .projet_date{
+
+            div{
+                flex-wrap: wrap;
+               // border: 1px solid;
+                font-size: 0px;
+                justify-content: space-between !important;
+
+
+                select{
+                    width: 17%;
+                    min-width: 0px;
+                    padding-right: 2px;
+                    padding-left: 3px;
+                }
+            }
+            
+            
+        }
+    }
+
+}
 
 .modal-container {
     position: fixed;
@@ -783,13 +979,22 @@ select{
     transition: all 0.3s;
     transition: height 0.3s;
 
+    &:hover{
+       header{ 
+        background-repeat: no-repeat;
+        background-size: 120%;
+       }
+    }
+
 
     header{
    
         height: 230px !important;
         background-repeat: round;
         transition: all 0.3s;
-        background-repeat-y: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: all .2s;
        
     }
 

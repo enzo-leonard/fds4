@@ -1,0 +1,453 @@
+<% 
+difficulty_array = ["Curieux","Amateur","Averti"]
+territory_array = ["Ain", "Ardèche", "Auvergne", "Drôme", "Isère", "Loire", "Rhône", "Savoie", "Haute-Savoie"]
+duration_array = ["","Moins de 5 minutes", "5 à 15 minutes", "15 à 60 minutes", "Plus d'une heure"]
+
+%>
+<div class="background-modal desktop hidden"></div>
+
+<%
+def mobile_device?
+  if session[:mobile_param]
+    session[:mobile_param] == "1"
+  else
+    request.user_agent =~ /Mobile|webOS/
+  end
+end
+
+%>
+<div class="abs-bottom">
+<div data-target="#modal_new" class="btn btn-primay"><i class="fas fa-plus"></i> Ajouter un nouveau projet</div>
+</div>
+
+<div class="container mt-5 pt-5">
+<br><br><br><br>
+<section id="une">
+<h2>Les projets à la Une </h2>
+<i class="fas fa-arrow-down mobile"></i>
+<br>
+<br><br>
+<div class="card-container stars">
+
+<% @projets.first(3).each do |projet| %>
+    <div data-type=open data-support="mobile" data-target="#modal__<%=projet.id%>"  class="card card-stars">
+            <img src="<%= asset_url("#{projet.image}")%>">
+            <h3><mark><%= projet.title%></mark></h3>
+            <div class> <%= projet.synopsis%> </div>
+    </div>
+
+    <%if mobile_device? %>
+    <div class="background-modal-mobile mobile hidden"></div>
+  
+    <div id="modal__<%=projet.id%>" class="modal-container-mobile hidden">
+    <div data-type=close data-target="#modal__<%=projet.id%>" class=close-btn-black>  <%= image_tag "close-btn-white.svg" %></div>
+
+    <div class="card hover card-modal">
+        <header style='background-image: url("<%= asset_url("#{projet.image}") if projet.image%>")'>
+       
+        
+            <h3><mark><%= projet.title%></mark></h3>
+        </header>
+        <main>
+        <div class="first">
+            <h4><%= projet.name_structure%></h4>
+            <%= projet.synopsis %>
+        </div>
+            <div class="form_hover">
+                <b>
+                <% i = 0; max = projet.form.count %>
+                <% projet.form.each do |form| i+=1%>
+                    <%= form.name %><%= "," if i != max%>
+                <%end%>
+                </b>
+            </div>
+
+            <div class="domain_hover">    
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
+                <%end%>
+            </div>
+
+             <div class="other_hover">
+
+                <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)] if projet.territory%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)]%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i><b> En live  <span id=date><%=  projet.date.strftime('%d/%m/%y - %H:%M')if projet.date%></span></b></div><%end%>
+            </div>
+            
+            
+        </main>
+        <footer>
+            <div class=line><%= image_tag "target_logo.svg", class: "logo" %> <%=projet.show_target%> </div>
+            <%if projet.live %><div class="line2"><b>En live</b><%= image_tag "live_logo.svg", class:"logo" %><%end%>
+            
+           
+        </footer>
+        <div id="plus" class="mobile under-card">Voir + d'infos</div>
+        <a id="link" href="<%=projet.url%>" target="_blank" class="mobile under-card">Accéder au projet</a>
+    </div>
+    </div>
+    <%else%>
+
+    <div id="modal__<%=projet.id%>" class="modal-container hidden">
+    <div data-target="#modal__<%=projet.id%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
+    <div class="right">
+        <img src="<%=asset_url("#{projet.image.to_s}")%>">
+        <h3><mark><%= projet.title%></mark></h3>
+       
+       
+    </div>
+    <div class="left">
+        <header><h4><%=projet.name_structure%></h4></header>
+        <div class="left2">
+            <div class="domain">    
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
+                <%end%>
+            </div>
+            <div class="other">
+
+                <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)] if projet.territory%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)]%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i><b> En live  <span id=date><%=  projet.date.strftime('%d/%m/%y - %H:%M')if projet.date%></span></b></div><%end%>
+            </div>
+
+        </div>
+        <div class="right2">
+            <div class=content>
+                <b>
+                <% i = 0; max = projet.form.count %>
+                <% projet.form.each do |form| i+=1%>
+                    <%= form.name %><%= "," if i != max%>
+                <%end%>
+                </b>
+
+                <%= projet.synopsis%>
+            
+            </div>
+        <a href="<%=projet.url%>" target="_blank" class="btn-modal">Accéder au projet</a>
+        </div>
+        
+    </div>
+</div>
+<%end%>
+<%end%>
+</div>
+</section>
+<br><br><br><br>
+
+
+
+
+<section name="form" id=form>
+
+<h2 id="test"><%= @title_search %></h2>
+<i class="fas fa-arrow-down mobile"></i>
+<br>
+<form action="/home#form">
+<input id="searchInput" name="title" placeholder="Rechercher un projet  |" type=text value="<%=params[:title]%>"><br><br>
+
+</div>
+<hr>
+
+</form>
+<br><br>
+
+<div class="container">
+
+<div class="card-container">
+
+    <% 
+    x = 0
+    %> 
+
+    <%id = "new"%>
+
+    <% @projets.each do |projet|%>
+    <% x = x+1 %>
+    <% id= projet.id%>
+ 
+
+    <!-- CARD -->
+    
+
+    <div data-target="#modal_<%=x%>" class="card">
+        <header style='background-image: url("<%= cl_image_path projet.photo.key, height: 400, width: 400, crop: :fill  if projet.photo%>")'>
+       
+        
+        
+            <h3><mark><%= projet.title%></mark></h3>
+        </header>
+        <main>
+        <div class="first">
+            <h4><%= projet.name_structure%></h4>
+            <%= projet.synopsis %>
+        </div>
+            <div class="form_hover">
+                <b>
+                <% i = 0; max = projet.form.count %>
+                <% projet.form.each do |form| i+=1%>
+                    <%= form.name %><%= "," if i != max%>
+                <%end%>
+                </b>
+            </div>
+
+            <div class="domain_hover">    
+                <% i = 0; max = projet.theme.count %>
+                <% projet.theme.each do |theme| i+=1 %>
+                <%= theme.name%> <%= "●" if i != max%>
+                <%end%>
+            </div>
+
+             <div class="other_hover">
+
+                <div class="line"><%= image_tag "target_logo.svg" %><b><%= projet.show_target%></b></div>
+                <div class="line"><%= image_tag "position_logo.svg" %><b><%= territory_array[(projet.territory)] if projet.territory%></b></div>
+                <div class="line"><%= image_tag "time_logo.svg" %><b><%= duration_array[(projet.duration)] if projet.duration%></b></div>
+                <div class="line"><%= image_tag "difficulty_logo.svg" %><b><%= difficulty_array[(projet.difficulty)] if projet.difficulty %></b></div>
+                <% if projet.live%><div class="line"><%= image_tag "live_logo.svg" %></i><b> En live  <span id=date><%=  projet.date.strftime('%d/%m/%y - %H:%M')if projet.date%></span></b></div><%end%>
+            </div>
+            
+            
+        </main>
+        <footer>
+            <div class=line><%= image_tag "target_logo.svg", class: "logo" %> <%=projet.show_target%> </div>
+            <%if projet.live %><div class="line2"><b>En live</b><%= image_tag "live_logo.svg", class:"logo" %><%end%>
+            
+           
+        </footer>
+        <div id="plus" class="mobile under-card">Voir + d'infos</div>
+        <a id="link" href="<%=projet.url%>" target="_blank" class="mobile under-card">Accéder au projet</a>
+    </div>
+
+
+
+
+    
+
+    <!-- MODALE -->
+
+
+    <div id="modal_<%=x%>" class="modal-container-update hidden">
+        <div data-target="#modal_<%=x%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
+        <br><br>
+        <%= simple_form_for(projet) do |form| %>
+    
+        <!--<img src="<%=asset_url("#{projet.image.to_s}")%>">-->
+        <%#= form.input :image, :label => "Image" %>
+        <div class="left">
+        <div class="select-form hidden hidden" id="select-form hidden-<%=id%>">
+            <div style="display: flex"><div data-target="#select-form hidden-<%=id%>" style="padding-right: 12px"><i class="fas fa-arrow-left"></i></div><h5>Selectionner un format</h5></div>
+            <hr>
+            <div class="item-container form">
+                <% Form.all.each do |form| %>
+                    <% array_form = [] %>
+                    <% projet.form.each { |form_| array_form << form_.id.to_i }%>
+                
+                    <div data-id="<%=id%>" data-uid='<%=form.id%>' class="item <%= "more" if array_form.include?(form.id)%>"> <%= form.name%> </div>
+                <%end%>
+            </div>
+
+            + : <input name=more_form id="more-<%=id%>" class="more-form" value>
+            - : <input name=less_form id="less-<%=id%>"  class="less-form" value>
+            <br>
+            <h5>Selectionner un theme</h5>
+            <hr>
+            <div class="item-container theme">
+                <% Theme.all.each do |theme|  %>
+                    <% array_theme = [] %>
+                    <% projet.theme.each { |theme_| array_theme << theme_.id.to_i }%>
+                    <div data-id="<%=id%>" data-uid='<%=theme.id%>' class="item <%= "more" if array_theme.include?(theme.id)%>"> <%= theme.name%> </div>
+                   
+                <%end%>
+            </div>
+
+             + : <input name=more_theme id="more-theme-<%=id%>" class="more-form" value>
+            - : <input name=less_theme id="less-theme-<%=id%>"  class="less-form" value>
+          
+        </div>
+            <%= form.input :photo, as: :file %>
+      
+            <%= form.input :title,  :label => "Titre"  %>
+            <%= form.input :name_structure, :label => "Nom de la structure"  %>
+            <%= form.input :synopsis, :label => "Synopsis" , :input_html => { :rows => 5 }%>
+            <%= form.input :keywords, :label => "Mots clefs"%>
+            <%= form.input :url, :label => "Url du site"%>
+            
+            <%= form.input :live, :label => "Live" %>
+            <%= form.input :date, :label => "Date du live", :input_html => { :class => "date"} %>
+            
+            <%= form.input :stars, :label => "A la Une ?" %>
+            <%= form.input :stars_text, placeholder: "Texte à la une", :label => "Texte à la Une" %>
+        </div>
+        <div class="right">
+            <h4>Format(s)</h4>
+            <div class="item-container">
+                <% i = 0; max = projet.form.count %>
+                    <% projet.form.each do |form| i+=1 %>
+                    <div class="item"> <%= form.name%> </div>
+                <%end%>
+                <div data-target="#select-form hidden-<%=id%>" class="plus-item"><i class="fas fa-plus"></i></div>
+            </div>
+
+            <h4>Theme(s)</h4>
+            <div class="item-container">
+                <% i = 0; max = projet.theme.count %>
+                    <% projet.theme.each do |theme| i+=1 %>
+                    <div class="item"> <%= theme.name%> </div>
+                <%end%>
+                 <div data-target="#select-form hidden-<%=id%>" class="plus-item"><i class="fas fa-plus"></i></div>
+            </div>
+
+            <h4>Target(s)</h4>
+            <div class="item-container">
+                <% i = 0; max = projet.target.count %>
+                    <% projet.target.each do |target| i+=1 %>
+                    <div class="item"> <%= target.name%> </div>
+                <%end%>
+            </div>
+
+            <hr>
+            <%= form.input :question, :label => "Question" %>
+            <%= form.input :good_answer, :label => "Bonne réponse" %>
+            <%= form.input :prop_1, :label => "Choix 1" %>
+            <%= form.input :prop_2, :label => "Choix 2" %>
+            <%= form.input :answer, :label => "Réponse", :input_html => { :rows => 4 }%>
+          
+            <div class="fix">
+            <%= form.button :submit, 'Modifier', class: "btn btn-primary"%>
+            <%= link_to "Remove", projet_path(projet), method: :delete, class: "btn btn-secondary" %>
+            </div>
+        </div>
+
+        <br>
+        <br><br>
+
+    
+        <% #i = 0; max = projet.theme.count %>
+            <%# projet.theme.each do |theme| i+=1 %>
+            <%#= theme.name%> <%= "●" if i != max%>
+        <%#end%>
+            
+
+        
+        <%end%>
+        
+        
+        
+    </div>
+
+
+
+
+
+
+    <%end%>
+
+   
+</div>
+
+<br><br>
+
+
+<div>
+
+</section>
+
+</div>
+</div>
+
+<% id = "new"%>
+<div id="modal_new" class="modal-container-update hidden">
+        <div data-target="#modal_new" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
+        <br><br>
+        <%= simple_form_for(Projet.new) do |form| %>
+    
+        
+        <div class="left">
+        <div class="select-form hidden" id="select-form-<%=id%>">
+            <div style="display: flex"><div data-target="#select-form-<%=id%>" style="padding-right: 12px"><i class="fas fa-arrow-left"></i></div><h5>Selectionner un format</h5></div>
+            <hr>
+            <div class="item-container form">
+                <% Form.all.each do |form| %>
+                    <% array_form = [] %>
+                    
+                
+                    <div data-id="<%=id%>" data-uid='<%=form.id%>' class="item"> <%= form.name%> </div>
+                <%end%>
+            </div>
+
+            + : <input name=more_form id="more-<%=id%>" class="more-form" value>
+            - : <input name=less_form id="less-<%=id%>"  class="less-form" value>
+            <br>
+            <h5>Selectionner un theme</h5>
+            <hr>
+            <div class="item-container theme">
+                <% Theme.all.each do |theme|  %>
+                  
+                    <div data-id="<%=id%>" data-uid='<%=theme.id%>' class="item"> <%= theme.name%> </div>
+                   
+                <%end%>
+            </div>
+
+             + : <input name=more_theme id="more-theme-<%=id%>" class="more-form" value>
+            - : <input name=less_theme id="less-theme-<%=id%>"  class="less-form" value>
+          
+        </div>
+        
+      
+            <%= form.input :title,  :label => "Titre"  %>
+            <%= form.input :name_structure, :label => "Nom de la structure"  %>
+            <%= form.input :synopsis, :label => "Synopsis" , :input_html => { :rows => 5 }%>
+            <%= form.input :keywords, :label => "Mots clefs"%>
+            <%= form.input :url, :label => "Url du site"%>
+            
+            <%= form.input :live, :label => "Live" %>
+            <%= form.input :date, :label => "Date du live", :input_html => { :class => "date"} %>
+            
+            <%= form.input :stars, :label => "A la Une ?" %>
+            <%= form.input :stars_text, placeholder: "Texte à la une", :label => "Texte à la Une" %>
+        </div>
+        <div class="right">
+            <h4>Format(s)</h4>
+            <div class="item-container">
+           
+              
+                <div data-target="#select-form-<%=id%>" class="plus-item"><i class="fas fa-plus"></i></div>
+            </div>
+
+            <h4>Theme(s)</h4>
+            <div class="item-container">
+             
+                 <div data-target="#select-form-<%=id%>" class="plus-item"><i class="fas fa-plus"></i></div>
+            </div>
+
+            <h4>Target(s)</h4>
+            <div class="item-container">
+        
+            </div>
+
+            <hr>
+            <%= form.input :question, :label => "Question" %>
+            <%= form.input :good_answer, :label => "Bonne réponse" %>
+            <%= form.input :prop_1, :label => "Choix 1" %>
+            <%= form.input :prop_2, :label => "Choix 2" %>
+            <%= form.input :answer, :label => "Réponse", :input_html => { :rows => 4 }%>
+          
+            <div class="fix">
+            <%= form.button :submit, 'AJOUTER', class: "btn btn-primary"%>
+        
+            </div>
+        </div>
+
+        <br>
+        <br><br>
+      <%end%>
+     
+    </div>

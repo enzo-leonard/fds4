@@ -94,6 +94,10 @@ image = "037 AUVERGNE - Puy de Science.jpg" if i == 34
 duration = nil
 duration = item['duration'][1..] if item['duration']
 
+file = File.open(File.join(Rails.root,"app/assets/images/#{image}"))
+
+
+
 arg_projet = {
     name_structure:         item["name_structure"],
     title:                  item["title"],
@@ -119,7 +123,7 @@ arg_projet = {
 projet = Projet.new(arg_projet)
 projet.date = date
 projet.save!
-
+projet.photo.attach(io: file, filename: image, content_type: 'image/png')
 
 last_question = item['question']
 

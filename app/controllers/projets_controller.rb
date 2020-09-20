@@ -27,28 +27,80 @@ class ProjetsController < ApplicationController
   def create
     @projet = Projet.new(projet_params)
 
-    respond_to do |format|
-      if @projet.save
-        format.html { redirect_to @projet, notice: 'Projet was successfully created.' }
-        format.json { render :show, status: :created, location: @projet }
-      else
-        format.html { render :new }
-        format.json { render json: @projet.errors, status: :unprocessable_entity }
+
+    if params[:more_form]
+      params[:more_form].split(';').each do |id|
+        form = Form.find(id)
+      
+        ProjetForm.create!({projet: @projet, form: form }) if ProjetForm.where(projet: @projet, form:form).count == 0
       end
     end
+
+    if params[:less_form]
+      params[:less_form].split(';').each do |id|
+        ProjetForm.where(projet: @projet, form: Form.find(id))[0].destroy! if ProjetForm.where(projet: @projet, form: Form.find(id))[0]
+      end
+    end
+
+    if params[:more_theme]
+      params[:more_theme].split(';').each do |id|
+        theme = Theme.find(id)
+      
+        ProjetTheme.create!({projet: @projet, theme: theme }) if ProjetTheme.where(projet: @projet, theme:theme).count == 0
+      end
+    end
+
+    if params[:less_theme]
+      params[:less_theme].split(';').each do |id|
+        ProjetTheme.where(projet: @projet, theme: Theme.find(id))[0].destroy! if ProjetTheme.where(projet: @projet, theme: Theme.find(id))[0]
+      end
+    end
+
+    redirect_to request.referrer
+
+    
+    
   end
 
   # PATCH/PUT /projets/1
   # PATCH/PUT /projets/1.json
   def update
-    respond_to do |format|
+ 
       if @projet.update(projet_params)
-        format.html { redirect_to @projet, notice: 'Projet was successfully updated.' }
-        format.json { render :show, status: :ok, location: @projet }
+
+        if params[:more_form]
+          params[:more_form].split(';').each do |id|
+            form = Form.find(id)
+          
+            ProjetForm.create!({projet: @projet, form: form }) if ProjetForm.where(projet: @projet, form:form).count == 0
+          end
+        end
+
+        if params[:less_form]
+          params[:less_form].split(';').each do |id|
+            ProjetForm.where(projet: @projet, form: Form.find(id))[0].destroy! if ProjetForm.where(projet: @projet, form: Form.find(id))[0]
+          end
+        end
+
+        if params[:more_theme]
+          params[:more_theme].split(';').each do |id|
+            theme = Theme.find(id)
+          
+            ProjetTheme.create!({projet: @projet, theme: theme }) if ProjetTheme.where(projet: @projet, theme:theme).count == 0
+          end
+        end
+
+        if params[:less_theme]
+          params[:less_theme].split(';').each do |id|
+            ProjetTheme.where(projet: @projet, theme: Theme.find(id))[0].destroy! if ProjetTheme.where(projet: @projet, theme: Theme.find(id))[0]
+          end
+        end
+       # format.html { redirect_to @projet, notice: 'Projet was successfully updated.' }
+        #format.json { render :show, status: :ok, location: @projet }
+        redirect_to request.referrer
       else
-        format.html { render :edit }
-        format.json { render json: @projet.errors, status: :unprocessable_entity }
-      end
+       
+
     end
   end
 
@@ -57,7 +109,7 @@ class ProjetsController < ApplicationController
   def destroy
     @projet.destroy
     respond_to do |format|
-      format.html { redirect_to projets_url, notice: 'Projet was successfully destroyed.' }
+      format.html { redirect_to request.referrer, notice: 'Projet supprimé' }
       format.json { head :no_content }
     end
   end
@@ -70,6 +122,6 @@ class ProjetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def projet_params
-      params.require(:projet).permit(:name_structure, :title, :url, :keywords, :difficulty, :date, :live, :synopsis, :image, :territory, :duration, :stars, :stars_text, :double)
+      params.require(:projet).permit(:name_structure, :title, :url, :keywords, :difficulty, :date, :live, :synopsis, :image, :territory, :duration, :stars, :stars_text, :double, :question, :good_answer, :prop_1, :prop_2, :answer, :double, :photo)
     end
 end

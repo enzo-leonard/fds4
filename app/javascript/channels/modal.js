@@ -7,43 +7,87 @@ const initModal = () => {
     const navBar = document.querySelector('nav')
     const underBar = document.querySelector('.under-bar')
     const mobile = document.querySelector('.mobile')
+    
+    let btnsMore = document.querySelectorAll('.item-container.form .item:not(.more) ')
+    let btnsLess = document.querySelectorAll('.item-container.form .item.more')
 
+    let btnsMoreTheme = document.querySelectorAll('.item-container.theme .item:not(.more) ')
+    let btnsLessTheme = document.querySelectorAll('.item-container.theme .item.more')
+
+    btnsMore.forEach((btn) => {
+        let id = btn.dataset.id
+        let inputMore = document.querySelector(`#more-${id}`)
+        let inputLess = document.querySelector(`#less-${id}`)
+ 
+        btn.addEventListener('click', () => {
+            inputMore.value += btn.dataset.uid+';'
+            btn.classList.add('more')
+        })
+    })
+
+    btnsLess.forEach((btn) => {
+        let id = btn.dataset.id
+        let inputMore = document.querySelector(`#more-${id}`)
+        let inputLess = document.querySelector(`#less-${id}`)
+ 
+        btn.addEventListener('click', () => {
+            inputLess.value += btn.dataset.uid+';'
+            btn.classList.remove('more')
+        })
+    })
+
+    btnsMoreTheme.forEach((btn) => {
+        let id = btn.dataset.id
+        let inputMore = document.querySelector(`#more-theme-${id}`)
+        let inputLess = document.querySelector(`#less-theme-${id}`)
+ 
+        btn.addEventListener('click', () => {
+            inputMore.value += btn.dataset.uid+';'
+            btn.classList.add('more')
+        })
+    })
+
+    btnsLessTheme.forEach((btn) => {
+        let id = btn.dataset.id
+        let inputMore = document.querySelector(`#more-theme-${id}`)
+        let inputLess = document.querySelector(`#less-theme-${id}`)
+ 
+        btn.addEventListener('click', () => {
+            inputLess.value += btn.dataset.uid+';'
+            btn.classList.remove('more')
+        })
+    })
+   
+   
  
 
     navBar.addEventListener('click', () => { underBar.classList.toggle('active')})
 
-        // some code..
-       
-         console.log('MOBILE')
 
-        toggleBtn.forEach((btn) => {
-            
+    toggleBtn.forEach((btn) => {
         
-            btn.addEventListener('click', () => {
-                console.log(mobile.style.display)
-
-                const target = btn.dataset.target 
-               
-                document.querySelector(`${target}`).classList.toggle('hidden')
-                
-                if (btn.dataset.type == "close"){
-                    blurBtn[0].classList.add("hidden")
-                }
-                else{
-                    blurBtn[0].classList.remove("hidden")
-                }
-              
-            })
+        btn.addEventListener('click', () => {
+            const target = btn.dataset.target         
+            document.querySelector(`${target}`).classList.toggle('hidden')     
+            console.log(target)  
+            console.log(document.querySelector(`${target}`))  
+            if (btn.dataset.type == "close"){
+                blurBtn[0].classList.add("hidden")
+            }
+            else{
+                blurBtn[0].classList.remove("hidden")
+            }       
         })
+    })
 
         
-        blurBtn.forEach((btn) => {
-            btn.addEventListener('click', () => {
-            modals.forEach((modal) => {modal.classList.add('hidden')})
-            blurBtn[0].classList.add("hidden")
-            })
-
+    blurBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+        modals.forEach((modal) => {modal.classList.add('hidden')})
+        blurBtn[0].classList.add("hidden")
         })
+
+    })
     
 
 }

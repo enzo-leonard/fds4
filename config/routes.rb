@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "quizz", to: "pages#quizz"
   get "about", to: "pages#about"
   get "mention", to: "pages#mention"
+  get "update", to: "pages#update"
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
