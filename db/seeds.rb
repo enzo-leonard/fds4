@@ -2,6 +2,7 @@
 require 'csv'
 def test_in(word, array) array.index(word) end
 
+
 images = []
 Dir.entries("app/assets/images").each do |name|
     images << name if name.start_with?('0')
@@ -95,7 +96,7 @@ duration = nil
 duration = item['duration'][1..] if item['duration']
 
 file = File.open(File.join(Rails.root,"app/assets/images/#{image}"))
-puts file
+puts "OOOOOOO -- " + file
 
 
 arg_projet = {
