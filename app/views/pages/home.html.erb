@@ -224,7 +224,7 @@ end
     </select>
     <select name="territory">
         <option value>Territoire</option>
-        <%i = -1; territory_array.each do |name| i+=1 %> <option value=<%=i%> <%="selected" if  params[:territory] == i.to_s %> > <%= params[:duration]%>  <%=name%></option><%end%>
+        <%i = -1; territory_array.each do |name| i+=1 %> <option value=<%=i%> <%="selected" if  params[:territory] == i.to_s %> > <%=name%></option><%end%>
     </select>
 </div>
 </form>
@@ -244,7 +244,7 @@ end
     
 
     <div data-target="#modal_<%=x%>" class="card">
-        <header style='background-image: url("<%= cl_image_path projet.photo.key, height: 400, width: 400, crop: :fill  if projet.photo%>")'>
+        <header style='background-image: url("<%= cl_image_path projet.photo.key if projet.photo%>")'>
        
         
             <h3><mark><%= projet.title%></mark></h3>

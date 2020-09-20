@@ -560,7 +560,8 @@ select{
         .right{
             width: 50%;
             padding: 12px;
-            height: 100%;
+            height: 90%;
+            overflow: auto;
         }
         .left{
             width: 50%;
@@ -587,11 +588,54 @@ select{
             margin-top: 0.5rem;
         }
 
+        .first-input{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: -10px;
+
+            input{
+                width: 100%;
+            }
+        }
+
         .fix{
             position: absolute;
             bottom: 8px;
             right: 4px;
+            display: flex;
+            align-items: center;
+            height: 10%;
+            width: 50%;
+            input, a{
+                width: 50%;
+                padding: 12px;
+                height: 100%;
+                background-color: black !important;
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
 
+        .img-input{
+            height: 130px;
+            width: 130px;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-color: rgb(235, 235, 235);
+            border-radius: 1px;
+            margin-right: 8px;
+
+            label{
+                display: none !important;
+            }
+
+            input{
+                border: none !important;
+            }
         }
 
         label.datetime, .projet_stars_text label {
@@ -600,6 +644,19 @@ select{
 
         .form-check{
             margin-bottom: -14px;
+        }
+
+        .select-container{
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 24%;
+
+                select{
+                    font-size: 0.7rem;   
+                     color: #495057;
+                }
+            }
         }
 
         .select-form{
@@ -637,7 +694,7 @@ select{
                     border: none;
                 }
 
-                
+
 
             }
 

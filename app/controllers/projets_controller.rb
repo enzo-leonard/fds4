@@ -65,8 +65,9 @@ class ProjetsController < ApplicationController
   # PATCH/PUT /projets/1
   # PATCH/PUT /projets/1.json
   def update
+    
  
-      if @projet.update(projet_params)
+       @projet.update!(projet_params)
 
         if params[:more_form]
           params[:more_form].split(';').each do |id|
@@ -80,6 +81,11 @@ class ProjetsController < ApplicationController
           params[:less_form].split(';').each do |id|
             ProjetForm.where(projet: @projet, form: Form.find(id))[0].destroy! if ProjetForm.where(projet: @projet, form: Form.find(id))[0]
           end
+        end
+
+        if params[:target]
+          ProjetTarget.where({projet: @projet}).destroy_all
+          ProjetTarget.create!({projet: @projet, target: Target.find(params[:target]) }) if ProjetTarget.where(projet: @projet, target: Target.find(params[:target]) ).count == 0
         end
 
         if params[:more_theme]
@@ -97,11 +103,12 @@ class ProjetsController < ApplicationController
         end
        # format.html { redirect_to @projet, notice: 'Projet was successfully updated.' }
         #format.json { render :show, status: :ok, location: @projet }
+        
         redirect_to request.referrer
-      else
+      
        
 
-    end
+    
   end
 
   # DELETE /projets/1
