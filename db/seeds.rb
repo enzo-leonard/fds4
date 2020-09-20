@@ -95,7 +95,7 @@ duration = nil
 duration = item['duration'][1..] if item['duration']
 
 file = File.open(File.join(Rails.root,"app/assets/images/#{image}"))
-
+puts file
 
 
 arg_projet = {

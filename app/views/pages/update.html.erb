@@ -277,7 +277,7 @@ end
                 <%= form.input :photo, as: :file %>
                 </div>
                 
-                <div style="width: 100%"><%= form.input :title,  :label => "Titre"  %>
+                <div style="flex-grow: 1"><%= form.input :title,  :label => "Titre"  %>
                 <%= form.input :name_structure, :label => "Nom de la structure"  %></div>
             </div>
             <%= form.input :synopsis, :label => "Synopsis" , :input_html => { :rows => 5 }%>
@@ -314,11 +314,13 @@ end
                 <div>
                 <h4>Target</h4>
                 <select name="target">
-                    <option value=1 <%="selected" if projet.target[0].id == 1 %>>3 - 6 ans | Maternelle</option>
-                    <option value=2 <%="selected" if projet.target[0].id == 2 %>>6 - 11 ans | Primaire</option>
-                    <option value=3 <%="selected" if projet.target[0].id == 3 %>>11 - 15 ans | Collège</option>
-                    <option value=4 <%="selected" if projet.target[0].id == 4 %>>15 - 18 ans | Lycée</option>
-                    <option value=5 <%="selected" if projet.target[0].id == 5 %>>18 - 25 ans | Étudiant</option>
+                <% id_target = 1
+                id_target = projet.target[0].id if projet.target[0]%>
+                    <option value=1 <%="selected" if id_target == 1 %>>3 - 6 ans | Maternelle</option>
+                    <option value=2 <%="selected" if id_target == 2 %>>6 - 11 ans | Primaire</option>
+                    <option value=3 <%="selected" if id_target == 3 %>>11 - 15 ans | Collège</option>
+                    <option value=4 <%="selected" if id_target == 4 %>>15 - 18 ans | Lycée</option>
+                    <option value=5 <%="selected" if id_target == 5 %>>18 - 25 ans | Étudiant</option>
                 </select>
                 </div>
 
