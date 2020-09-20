@@ -8,8 +8,10 @@ Dir.entries("app/assets/images").each do |name|
     images << name if name.start_with?('0')
 end
 
-images = images.sort
 
+
+images = images.sort
+User.destroy_all
 ProjetTheme.destroy_all
 ProjetTarget.destroy_all
 ProjetForm.destroy_all
@@ -18,6 +20,12 @@ Target.destroy_all
 Form.destroy_all
 Theme.destroy_all
 
+
+
+User.create!(email: "admin@gmail.com", password: "adminadmin")
+User.create!(email: "skoli@gmail.com", password: "skoliskolie")
+User.create!(email: "oka@gmail.com", password: "okaokaoka")
+User.create!(email: "fdsadmin@gmail.com", password: "fdsadmin")
 
 difficulty_array = ["Curieux","Amateur","Averti"]
 territory_array = ["Ain", "Ardèche", "Auvergne", "Drôme", "Isère", "Loire", "Rhône", "Savoie", "Haute-Savoie"]

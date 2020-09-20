@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :quizz, :about, :mention, :update]
+  skip_before_action :authenticate_user!, only: [ :home, :quizz, :about, :mention]
 
   def home
     @projets = Projet.joins(:projet_theme).joins(:projet_target).joins(:projet_form).where(nil).includes(:theme, :form).group('projets.id')

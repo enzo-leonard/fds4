@@ -1,5 +1,5 @@
 const initFilter =  () => {
-    if(!document.querySelector('body.update')) {
+    if(!document.querySelector('body.update, body.sessions')) {
         const inputs = document.querySelectorAll('input, select')
         const form = document.querySelector('form')
         inputs.forEach((input) => {
