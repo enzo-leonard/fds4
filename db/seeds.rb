@@ -96,7 +96,8 @@ duration = nil
 duration = item['duration'][1..] if item['duration']
 
 file = File.open(File.join(Rails.root,"app/assets/images/#{image}"))
-
+puts '--------------------OOOO\n\n\n'
+puts file
 
 
 arg_projet = {
@@ -151,7 +152,8 @@ y = 0
 Projet.all.order(:id).each do |projet|
     y +=1 
 
-    puts "#{y} - name: \t#{projet.title.first(20)} | image:        \t#{projet.image} "
+    puts "#{y} - name: \t#{projet.title.first(20)}"
+    puts projet.photo
   
     # puts "structure:    \t#{projet.name_structure}"
     # puts "url:          \t#{projet.url}"
