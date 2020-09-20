@@ -27,6 +27,11 @@ class ProjetsController < ApplicationController
   def create
     @projet = Projet.new(projet_params)
 
+    if params[:target]
+      ProjetTarget.where({projet: @projet}).destroy_all
+      ProjetTarget.create!({projet: @projet, target: Target.find(params[:target]) }) if ProjetTarget.where(projet: @projet, target: Target.find(params[:target]) ).count == 0
+    end
+
 
     if params[:more_form]
       params[:more_form].split(';').each do |id|

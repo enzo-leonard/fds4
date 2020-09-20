@@ -244,7 +244,7 @@ end
     
 
     <div data-target="#modal_<%=x%>" class="card">
-        <header style='background-image: url("<%= cl_image_path projet.photo.key if projet.photo%>")'>
+        <header style='background-image: url("<%= cl_image_path projet.photo.key if projet.photo.attached?%>")'>
        
         
             <h3><mark><%= projet.title%></mark></h3>
@@ -303,7 +303,7 @@ end
     <div data-target="#modal_<%=x%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
 
     <div class="right">
-        <%= cl_image_tag projet.photo.key, height: 300, width: 400, crop: :fill %>
+        <%= cl_image_tag projet.photo.key if projet.photo.attached? %>
        
         <h3><mark><%= projet.title%></mark></h3>
 

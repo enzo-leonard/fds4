@@ -612,7 +612,7 @@ select{
             height: 10%;
             width: 50%;
             input, a{
-                width: 50%;
+                min-width: 50% ;
                 padding: 12px;
                 height: 100%;
                 background-color: black !important;
@@ -624,6 +624,15 @@ select{
                 justify-content: center;
                 border: none !important;
                 border-radius: 0px !important;
+            }
+
+            a{
+                border-left: 1px solid white;
+            }
+
+            input{
+                flex-grow: 1;
+         
             }
         }
 
@@ -768,11 +777,13 @@ select{
                 #projet_date_3i{
                     width: 50px;
                 }
-                #projet_date_4i::before{
+                #projet_date_4i::after{
                     display: block;
                     content: '-';
                     flex-grow: 1;
                     height: 2px;
+                    width: 40%;
+                    border: 1px solid red;
 
                 }
                 #projet_date_3i, #projet_date_4i, #projet_date_5i{

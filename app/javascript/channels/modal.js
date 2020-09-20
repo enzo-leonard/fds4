@@ -22,6 +22,7 @@ const initModal = () => {
         btn.addEventListener('click', () => {
             inputMore.value += btn.dataset.uid+';'
             btn.classList.add('more')
+            document.querySelector(`#more-${id}`)
         })
     })
 
@@ -67,10 +68,11 @@ const initModal = () => {
     toggleBtn.forEach((btn) => {
         
         btn.addEventListener('click', () => {
-            const target = btn.dataset.target         
-            document.querySelector(`${target}`).classList.toggle('hidden')     
+            const target = btn.dataset.target    
             console.log(target)  
-            console.log(document.querySelector(`${target}`))  
+            console.log(document.querySelector(`${target}`))       
+            document.querySelector(`${target}`).classList.toggle('hidden')     
+      
             if (btn.dataset.type == "close"){
                 blurBtn[0].classList.add("hidden")
             }
