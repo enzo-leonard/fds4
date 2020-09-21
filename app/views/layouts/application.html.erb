@@ -27,6 +27,7 @@
         <a href="/">Catalogue des projets</a>
         <a href="/quizz">Quiz</a>
         <a href="/about">A propos</a>
+         <% if current_user%> <a href="/update">Update</a><%end%>
         </div>
       </div>
       <%= render 'shared/flashes' %>
