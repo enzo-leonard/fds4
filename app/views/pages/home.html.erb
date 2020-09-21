@@ -43,7 +43,7 @@ end
 <br><br>
 <div class="card-container stars">
 
-<% @projets.first(3).each do |projet| %>
+<% @stars.each do |projet| %>
     <div data-type=open data-support="mobile" data-target="#modal__<%=projet.id%>"  class="card card-stars">
             <img src="<%= asset_url("#{projet.image}")%>">
             <h3><mark><%= projet.title%></mark></h3>
@@ -65,7 +65,7 @@ end
         <main>
         <div class="first">
             <h4><%= projet.name_structure%></h4>
-            <%= projet.synopsis %>
+            <%= projet.show_text %>
         </div>
             <div class="form_hover">
                 <b>
@@ -109,7 +109,7 @@ end
     <div id="modal__<%=projet.id%>" class="modal-container hidden">
     <div data-target="#modal__<%=projet.id%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
     <div class="right">
-        <img src="<%=asset_url("#{projet.image.to_s}")%>">
+        <img src="<%= cl_image_path projet.photo.key if projet.photo.attached?%>">
         <h3><mark><%= projet.title%></mark></h3>
        
        

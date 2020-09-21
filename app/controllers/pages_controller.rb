@@ -11,6 +11,8 @@ class PagesController < ApplicationController
     @projets = @projets.where("projet_targets.target_id = ?", "#{params[:target]}") if params[:target].present?
     @projets = @projets.where("projet_forms.form_id = ?", "#{params[:form]}") if params[:form].present?
 
+    @stars = Projet.where(stars: true).includes(:theme, :form)
+
     @title_search = "Tous les projets"
     @title_search = "Résultats de recherche (#{@projets.size.size})" if (params[:title].present? || params[:theme].present? || params[:target].present?)
   
@@ -31,6 +33,7 @@ class PagesController < ApplicationController
     @projets = Projet.where(nil).includes(:theme, :form)
     @projets = @projets.where("title ilike ? OR keywords ilike ? OR synopsis ilike ?", "%#{params[:title]}%", "%#{params[:title]}%", "%#{params[:title]}%") if params[:title].present?
     
+    @stars = Projet.where(stars: true).includes(:theme, :form)
 
     @title_search = "Tous les projets (#{@projets.size})"
     @title_search = "Résultats de recherche (#{@projets.size})" if (params[:title].present? || params[:theme].present? || params[:target].present?)

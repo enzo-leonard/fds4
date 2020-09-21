@@ -17,4 +17,13 @@ class Projet < ApplicationRecord
         end
         data
     end
+
+    def show_text
+        data = self.synopsis
+        if self.stars_text
+            data = self.stars_text if (self.stars_text != "" && self.stars_text != " ")
+        end
+        data
+        
+    end
 end

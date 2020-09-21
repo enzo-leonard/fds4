@@ -29,11 +29,11 @@ end
 <br><br>
 <div class="card-container stars">
 
-<% @projets.first(3).each do |projet| %>
+<% @stars.each do |projet| %>
     <div data-type=open data-support="mobile" data-target="#modal__<%=projet.id%>"  class="card card-stars">
-            <img src="<%= asset_url("#{projet.image}")%>">
+            <img src="<%= cl_image_path projet.photo.key if projet.photo.attached?%>">
             <h3><mark><%= projet.title%></mark></h3>
-            <div class> <%= projet.synopsis%> </div>
+            <div class> <%= projet.show_text%> </div>
     </div>
 
      <!-- MODALE -->
