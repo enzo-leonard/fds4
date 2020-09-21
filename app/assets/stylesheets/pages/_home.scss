@@ -1175,7 +1175,7 @@ select{
 
 
 @media only screen and (max-width: 1200px) {
-    .menu-btn-container{display: none}
+    
 
     .card-container{
         justify-content: center;
@@ -1229,6 +1229,7 @@ select{
 
 @media only screen and (max-width: 1024px) {
     //ipad
+    .menu-btn-container{display: none}
 
     .card-container{
         justify-content: center;
