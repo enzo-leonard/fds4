@@ -16,10 +16,12 @@ class ProjetsController < ApplicationController
   # GET /projets/new
   def new
     @projet = Projet.new
+    redirect_to request.referrer
   end
 
   # GET /projets/1/edit
   def edit
+    redirect_to request.referrer
   end
 
   # POST /projets
