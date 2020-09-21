@@ -54,7 +54,7 @@ end
     <div data-type=close data-target="#modal__<%=projet.id%>" class=close-btn-black>  <%= image_tag "close-btn-white.svg" %></div>
 
     <div class="card hover card-modal">
-        <header style='background-image: url("<%= asset_url("#{projet.image}") if projet.image%>")'>
+        <header style='background-image: url("<%= cl_image_path projet.photo.key if projet.photo.attached?%>")'>
        
         
             <h3><mark><%= projet.title%></mark></h3>
@@ -108,7 +108,7 @@ end
 <div id="modal_<%=projet.id%>" class="modal-container hidden">
     <div data-target="#modal_<%=projet.id%>" class=close-btn>  <%= image_tag "close-btn.svg" %></div>
     <div class="right">
-        <img src="https://picsum.photos/500/500?random=2">
+        <img src="<%= cl_image_path projet.photo.key if projet.photo.attached?%>">
         <h3><mark><%= projet.title%></mark></h3>
        
     </div>

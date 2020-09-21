@@ -57,7 +57,7 @@ end
     <div data-type=close data-target="#modal__<%=projet.id%>" class=close-btn-black>  <%= image_tag "close-btn-white.svg" %></div>
 
     <div class="card hover card-modal">
-        <header style='background-image: url("<%= asset_url("#{projet.image}") if projet.image%>")'>
+         <header style='background-image: url("<%= cl_image_path projet.photo.key if projet.photo.attached?%>")'>
        
         
             <h3><mark><%= projet.title%></mark></h3>
