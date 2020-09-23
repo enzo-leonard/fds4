@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
    
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   
+    <meta property="og:image" content="<%= asset_path('100_numerique.svg')%>">
+    <meta name="twitter:image:src" content="<%= asset_path('100_numerique.svg')%>">
+    
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%= favicon_link_tag asset_path('logo_fds.svg') %>
